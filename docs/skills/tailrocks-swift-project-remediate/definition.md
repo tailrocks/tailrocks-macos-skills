@@ -31,7 +31,7 @@ local baseline references. Policy never enlarges approval.
    [`toolchain.md`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-remediate/references/toolchain.md),
    [`lint-and-format.md`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-remediate/references/lint-and-format.md), then
    [`testing.md`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-remediate/references/testing.md). For absent baseline files, copy exact
-   bytes from setup [`templates/`](../tailrocks-swift-project-setup/templates/)
+   bytes from setup [`templates/`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-setup/templates/)
    and replace marked values literally. Resolve official exact pins; preserve
    stronger compatible local policy. Templates are sources, not blanket
    overwrite authority.

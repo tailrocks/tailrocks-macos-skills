@@ -27,7 +27,7 @@ local baseline references. Copied policy supplies criteria only.
    sources, ignored generated files, deployment target, stable shipping and beta
    forward lanes, exact pins, availability fallback/removal conditions, ad-hoc
    signing, and external derived-data location with setup
-   [`templates/`](../tailrocks-swift-project-setup/templates/) without copying.
+   [`templates/`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-setup/templates/) without copying.
 3. **Inspect policy and gates.** Apply
    [`lint-and-format.md`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-audit/references/lint-and-format.md) and
    [`testing.md`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-audit/references/testing.md). Check strict format/lint, unit/UI and
