@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-swift-project-setup"
-description: ">-"
+description: " Use only when the user explicitly requests this skill. Scaffold a new strict native macOS Swift baseline: declarative generation, deployment and SDK lanes, local signing, strict format/lint gates, tests, and mise-owned command parity. Existing projects route to audit or remediate."
 ---
 
 Generated from [tailrocks-swift-project-setup/SKILL.md](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-setup/SKILL.md).
 
->-
+ Use only when the user explicitly requests this skill. Scaffold a new strict native macOS Swift baseline: declarative generation, deployment and SDK lanes, local signing, strict format/lint gates, tests, and mise-owned command parity. Existing projects route to audit or remediate.
 
 [Read the complete skill definition](definition.md).
 

@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-swift-project-remediate"
-description: ">-"
+description: " Use only when the user explicitly requests this skill. Close exact approved SWIFT-PROJECT gap-ledger rows in an existing native macOS project using canonical references and templates in transactional buildable slices. Never infer approval or discover scope."
 ---
 
 Generated from [tailrocks-swift-project-remediate/SKILL.md](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-remediate/SKILL.md).
 
->-
+ Use only when the user explicitly requests this skill. Close exact approved SWIFT-PROJECT gap-ledger rows in an existing native macOS project using canonical references and templates in transactional buildable slices. Never infer approval or discover scope.
 
 [Read the complete skill definition](definition.md).
 

@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-macos-visual-regression"
-description: ">-"
+description: " Use only when the user explicitly requests this skill. Compare current native macOS running-window captures against one approved baseline package with environment, structural-region, and pixel-budget gates. Read-only on project and baseline; never freezes or approves design."
 ---
 
 Generated from [tailrocks-macos-visual-regression/SKILL.md](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-visual-regression/SKILL.md).
 
->-
+ Use only when the user explicitly requests this skill. Compare current native macOS running-window captures against one approved baseline package with environment, structural-region, and pixel-budget gates. Read-only on project and baseline; never freezes or approves design.
 
 [Read the complete skill definition](definition.md).
 

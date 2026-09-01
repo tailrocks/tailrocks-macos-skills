@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-swift-project-audit"
-description: ">-"
+description: " Use only when the user explicitly requests this skill. Audit an existing native macOS Swift project baseline read-only: generation, pins and SDK lanes, signing, strict gates, tests, derived data, and command parity. Emit fixed-ID gaps; never edit or install."
 ---
 
 Generated from [tailrocks-swift-project-audit/SKILL.md](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-audit/SKILL.md).
 
->-
+ Use only when the user explicitly requests this skill. Audit an existing native macOS Swift project baseline read-only: generation, pins and SDK lanes, signing, strict gates, tests, derived data, and command parity. Emit fixed-ID gaps; never edit or install.
 
 [Read the complete skill definition](definition.md).
 

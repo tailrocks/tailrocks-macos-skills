@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-swift-review"
-description: ">-"
+description: " Use only when the user explicitly requests this skill. Review Swift, SwiftUI, concurrency, accessibility, availability, errors, and narrow AppKit bridges read-only. Report verified code defects; route Rust-core platform architecture separately."
 ---
 
 Generated from [tailrocks-swift-review/SKILL.md](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-review/SKILL.md).
 
->-
+ Use only when the user explicitly requests this skill. Review Swift, SwiftUI, concurrency, accessibility, availability, errors, and narrow AppKit bridges read-only. Report verified code defects; route Rust-core platform architecture separately.
 
 [Read the complete skill definition](definition.md).
 

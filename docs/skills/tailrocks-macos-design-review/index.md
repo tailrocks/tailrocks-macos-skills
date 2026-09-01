@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-macos-design-review"
-description: ">-"
+description: " Use only when the user explicitly requests this skill. Score an existing macOS screen, window, or prototype against the native-design and Liquid Glass contract. Read-only toward the subject; never fixes, blesses, captures, or systematizes."
 ---
 
 Generated from [tailrocks-macos-design-review/SKILL.md](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-design-review/SKILL.md).
 
->-
+ Use only when the user explicitly requests this skill. Score an existing macOS screen, window, or prototype against the native-design and Liquid Glass contract. Read-only toward the subject; never fixes, blesses, captures, or systematizes.
 
 [Read the complete skill definition](definition.md).
 

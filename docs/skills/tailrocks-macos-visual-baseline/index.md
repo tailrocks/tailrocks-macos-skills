@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-macos-visual-baseline"
-description: ">-"
+description: " Use only when the user explicitly requests this skill. Freeze or explicitly re-freeze one blessed native macOS prototype into a reproducible full-matrix baseline package. Never judges production, compares candidates, installs harnesses, or blesses designs."
 ---
 
 Generated from [tailrocks-macos-visual-baseline/SKILL.md](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-visual-baseline/SKILL.md).
 
->-
+ Use only when the user explicitly requests this skill. Freeze or explicitly re-freeze one blessed native macOS prototype into a reproducible full-matrix baseline package. Never judges production, compares candidates, installs harnesses, or blesses designs.
 
 [Read the complete skill definition](definition.md).
 

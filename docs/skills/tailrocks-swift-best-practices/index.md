@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-swift-best-practices"
-description: ">-"
+description: " Apply Swift code policy when writing in-scope Swift, SwiftUI, concurrency, state ownership, accessibility, availability, or narrow AppKit bridges. Not review, refactoring, project setup, Rust-core boundary architecture, or visual-design authority."
 ---
 
 Generated from [tailrocks-swift-best-practices/SKILL.md](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-best-practices/SKILL.md).
 
->-
+ Apply Swift code policy when writing in-scope Swift, SwiftUI, concurrency, state ownership, accessibility, availability, or narrow AppKit bridges. Not review, refactoring, project setup, Rust-core boundary architecture, or visual-design authority.
 
 [Read the complete skill definition](definition.md).
 

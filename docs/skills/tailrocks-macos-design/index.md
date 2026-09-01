@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-macos-design"
-description: ">-"
+description: " Apply macOS visual-design and Liquid Glass policy when in-scope work touches native screen structure, material, component mapping, or a runnable prototype. Selection alone never authorizes blessing, capture, or mutation."
 ---
 
 Generated from [tailrocks-macos-design/SKILL.md](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-design/SKILL.md).
 
->-
+ Apply macOS visual-design and Liquid Glass policy when in-scope work touches native screen structure, material, component mapping, or a runnable prototype. Selection alone never authorizes blessing, capture, or mutation.
 
 [Read the complete skill definition](definition.md).
 
