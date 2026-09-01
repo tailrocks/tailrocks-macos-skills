@@ -1,5 +1,18 @@
 {
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "tailrocks-macos-skills",
-  "description": "Cross-agent Tailrocks skills for strict Rust, Axum, TypeScript, TanStack, native macOS Swift with Liquid Glass, code-health ratchets, and the roadmap delivery pipeline (idea, brainstorm, research, record-decision, finalize, plan, reconcile, portable goal handoff)"
+  "description": "Native macOS Swift and SwiftUI workflows for Liquid Glass design, project setup, Rust-core integration, visual QA, and regression control.",
+  "keywords": [
+    "macos",
+    "swift",
+    "swiftui",
+    "appkit",
+    "liquid-glass",
+    "accessibility",
+    "xcode",
+    "visual-qa",
+    "rust-ffi"
+  ],
+  "homepage": "https://github.com/tailrocks/tailrocks-macos-skills",
+  "repository": "https://github.com/tailrocks/tailrocks-macos-skills"
 }

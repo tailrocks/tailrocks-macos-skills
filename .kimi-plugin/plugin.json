@@ -1,39 +1,17 @@
 {
   "name": "tailrocks-macos-skills",
   "version": "0.28.0",
-  "description": "Cross-agent Tailrocks skills for strict Rust, Axum, TypeScript, TanStack, native macOS Swift with Liquid Glass, code-health ratchets, and the roadmap delivery pipeline (idea, brainstorm, research, record-decision, finalize, plan, reconcile, portable goal handoff)",
+  "description": "Native macOS Swift and SwiftUI workflows for Liquid Glass design, project setup, Rust-core integration, visual QA, and regression control.",
   "keywords": [
-    "tailrocks",
-    "rust",
-    "edition-2024",
-    "skills",
-    "best-practices",
-    "clippy",
-    "rustfmt",
-    "axum",
-    "typescript",
-    "bun",
-    "tanstack",
-    "cargo-deny",
-    "nextest",
-    "mise",
-    "workspace",
-    "code-review",
-    "root-cause",
-    "architecture",
-    "redesign",
-    "first-principles",
-    "correctness",
-    "research",
-    "roadmap",
-    "planning",
-    "goal",
+    "macos",
     "swift",
     "swiftui",
     "appkit",
-    "macos",
     "liquid-glass",
-    "accessibility"
+    "accessibility",
+    "xcode",
+    "visual-qa",
+    "rust-ffi"
   ],
   "author": {
     "name": "tailrocks",
@@ -43,7 +21,23 @@
   "license": "Apache-2.0",
   "skills": "./skills/",
   "interface": {
-    "displayName": "Tailrocks Skills",
-    "shortDescription": "Strict Rust, TypeScript, and native macOS engineering workflows"
-  }
+    "displayName": "macOS Skills",
+    "shortDescription": "Swift, SwiftUI, Liquid Glass, and native macOS workflows.",
+    "longDescription": "Native macOS Swift and SwiftUI workflows for Liquid Glass design, project setup, Rust-core integration, visual QA, and regression control.",
+    "capabilities": [
+      "Design",
+      "Review",
+      "Scaffold",
+      "Audit",
+      "Remediate",
+      "Visual QA"
+    ],
+    "websiteURL": "https://github.com/tailrocks/tailrocks-macos-skills",
+    "defaultPrompt": [
+      "Design this native macOS screen.",
+      "Audit this Swift project baseline.",
+      "Verify this macOS visual state."
+    ]
+  },
+  "repository": "https://github.com/tailrocks/tailrocks-macos-skills"
 }
