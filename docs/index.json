@@ -1,0 +1,122 @@
+[
+  {
+    "name": "tailrocks-macos-design",
+    "description": ">-",
+    "argumentHint": "[design|prototype] <feature or screen>",
+    "overview": "skills/tailrocks-macos-design/index.md",
+    "definition": "skills/tailrocks-macos-design/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-design/SKILL.md"
+  },
+  {
+    "name": "tailrocks-macos-design-review",
+    "description": ">-",
+    "argumentHint": "[preliminary|acceptance] <screen, window, or prototype package> [--deep] [--batch]",
+    "overview": "skills/tailrocks-macos-design-review/index.md",
+    "definition": "skills/tailrocks-macos-design-review/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-design-review/SKILL.md"
+  },
+  {
+    "name": "tailrocks-macos-design-systematize",
+    "description": ">-",
+    "argumentHint": "<approved screen and passing review>",
+    "overview": "skills/tailrocks-macos-design-systematize/index.md",
+    "definition": "skills/tailrocks-macos-design-systematize/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-design-systematize/SKILL.md"
+  },
+  {
+    "name": "tailrocks-macos-visual-baseline",
+    "description": ">-",
+    "argumentHint": "baseline <blessed prototype package> --output <baseline directory>",
+    "overview": "skills/tailrocks-macos-visual-baseline/index.md",
+    "definition": "skills/tailrocks-macos-visual-baseline/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-visual-baseline/SKILL.md"
+  },
+  {
+    "name": "tailrocks-macos-visual-qa",
+    "description": ">-",
+    "argumentHint": "verify <feature or screens>",
+    "overview": "skills/tailrocks-macos-visual-qa/index.md",
+    "definition": "skills/tailrocks-macos-visual-qa/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-visual-qa/SKILL.md"
+  },
+  {
+    "name": "tailrocks-macos-visual-regression",
+    "description": ">-",
+    "argumentHint": "regress <feature or screens> --baseline <baseline directory>",
+    "overview": "skills/tailrocks-macos-visual-regression/index.md",
+    "definition": "skills/tailrocks-macos-visual-regression/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-visual-regression/SKILL.md"
+  },
+  {
+    "name": "tailrocks-swift-agent-integration",
+    "description": ">-",
+    "argumentHint": "<Swift project and approved integration scope>",
+    "overview": "skills/tailrocks-swift-agent-integration/index.md",
+    "definition": "skills/tailrocks-swift-agent-integration/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-agent-integration/SKILL.md"
+  },
+  {
+    "name": "tailrocks-swift-best-practices",
+    "description": ">-",
+    "argumentHint": "<Swift or SwiftUI writing task>",
+    "overview": "skills/tailrocks-swift-best-practices/index.md",
+    "definition": "skills/tailrocks-swift-best-practices/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-best-practices/SKILL.md"
+  },
+  {
+    "name": "tailrocks-swift-project-audit",
+    "description": ">-",
+    "argumentHint": "<existing Swift project path or audit scope>",
+    "overview": "skills/tailrocks-swift-project-audit/index.md",
+    "definition": "skills/tailrocks-swift-project-audit/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-audit/SKILL.md"
+  },
+  {
+    "name": "tailrocks-swift-project-remediate",
+    "description": ">-",
+    "argumentHint": "<approved SWIFT-PROJECT gap IDs and path scope>",
+    "overview": "skills/tailrocks-swift-project-remediate/index.md",
+    "definition": "skills/tailrocks-swift-project-remediate/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-remediate/SKILL.md"
+  },
+  {
+    "name": "tailrocks-swift-project-setup",
+    "description": ">-",
+    "argumentHint": "<new macOS project requirements>",
+    "overview": "skills/tailrocks-swift-project-setup/index.md",
+    "definition": "skills/tailrocks-swift-project-setup/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-setup/SKILL.md"
+  },
+  {
+    "name": "tailrocks-swift-refactor",
+    "description": ">-",
+    "argumentHint": "<Swift refactor target and preservation oracle>",
+    "overview": "skills/tailrocks-swift-refactor/index.md",
+    "definition": "skills/tailrocks-swift-refactor/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-refactor/SKILL.md"
+  },
+  {
+    "name": "tailrocks-swift-review",
+    "description": ">-",
+    "argumentHint": "<Swift review target, diff, or paths>",
+    "overview": "skills/tailrocks-swift-review/index.md",
+    "definition": "skills/tailrocks-swift-review/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-review/SKILL.md"
+  },
+  {
+    "name": "tailrocks-swift-rust-core-boundary",
+    "description": ">-",
+    "argumentHint": "<Rust-core Swift boundary task or review scope>",
+    "overview": "skills/tailrocks-swift-rust-core-boundary/index.md",
+    "definition": "skills/tailrocks-swift-rust-core-boundary/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-rust-core-boundary/SKILL.md"
+  },
+  {
+    "name": "tailrocks-swift-rust-core-setup",
+    "description": ">-",
+    "argumentHint": "<Swift project and approved Rust-core setup scope>",
+    "overview": "skills/tailrocks-swift-rust-core-setup/index.md",
+    "definition": "skills/tailrocks-swift-rust-core-setup/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-rust-core-setup/SKILL.md"
+  }
+]
