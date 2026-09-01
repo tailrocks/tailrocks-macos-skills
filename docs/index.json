@@ -1,7 +1,7 @@
 [
   {
     "name": "tailrocks-macos-design",
-    "description": " Apply macOS visual-design and Liquid Glass policy when in-scope work touches native screen structure, material, component mapping, or a runnable prototype. Selection alone never authorizes blessing, capture, or mutation.",
+    "description": "Apply macOS visual-design and Liquid Glass policy when in-scope work touches native screen structure, material, component mapping, or a runnable prototype. Selection alone never authorizes blessing, capture, or mutation.",
     "argumentHint": "[design|prototype] <feature or screen>",
     "overview": "skills/tailrocks-macos-design/index.md",
     "definition": "skills/tailrocks-macos-design/definition.md",
@@ -9,7 +9,7 @@
   },
   {
     "name": "tailrocks-macos-design-review",
-    "description": " Use only when the user explicitly requests this skill. Score an existing macOS screen, window, or prototype against the native-design and Liquid Glass contract. Read-only toward the subject; never fixes, blesses, captures, or systematizes.",
+    "description": "Use only when the user explicitly requests this skill. Score an existing macOS screen, window, or prototype against the native-design and Liquid Glass contract. Read-only toward the subject; never fixes, blesses, captures, or systematizes.",
     "argumentHint": "[preliminary|acceptance] <screen, window, or prototype package> [--deep] [--batch]",
     "overview": "skills/tailrocks-macos-design-review/index.md",
     "definition": "skills/tailrocks-macos-design-review/definition.md",
@@ -17,7 +17,7 @@
   },
   {
     "name": "tailrocks-macos-design-systematize",
-    "description": " Use only when the user explicitly requests this skill. Turn one user-approved macOS design and independent review into reusable product design-system records. Never designs, reviews, blesses, captures, or edits production code.",
+    "description": "Use only when the user explicitly requests this skill. Turn one user-approved macOS design and independent review into reusable product design-system records. Never designs, reviews, blesses, captures, or edits production code.",
     "argumentHint": "<approved screen and passing review>",
     "overview": "skills/tailrocks-macos-design-systematize/index.md",
     "definition": "skills/tailrocks-macos-design-systematize/definition.md",
@@ -25,7 +25,7 @@
   },
   {
     "name": "tailrocks-macos-visual-baseline",
-    "description": " Use only when the user explicitly requests this skill. Freeze or explicitly re-freeze one blessed native macOS prototype into a reproducible full-matrix baseline package. Never judges production, compares candidates, installs harnesses, or blesses designs.",
+    "description": "Use only when the user explicitly requests this skill. Freeze or explicitly re-freeze one blessed native macOS prototype into a reproducible full-matrix baseline package. Never judges production, compares candidates, installs harnesses, or blesses designs.",
     "argumentHint": "baseline <blessed prototype package> --output <baseline directory>",
     "overview": "skills/tailrocks-macos-visual-baseline/index.md",
     "definition": "skills/tailrocks-macos-visual-baseline/definition.md",
@@ -33,7 +33,7 @@
   },
   {
     "name": "tailrocks-macos-visual-qa",
-    "description": " Use only when the user explicitly requests this skill. Verify a native macOS app's current render through owned window-ID capture, accessibility-tree interaction, the restored state matrix, and app-scoped accessibility audit. Never installs a harness or writes or compares baselines.",
+    "description": "Use only when the user explicitly requests this skill. Verify a native macOS app's current render through owned window-ID capture, accessibility-tree interaction, the restored state matrix, and app-scoped accessibility audit. Never installs a harness or writes or compares baselines.",
     "argumentHint": "verify <feature or screens>",
     "overview": "skills/tailrocks-macos-visual-qa/index.md",
     "definition": "skills/tailrocks-macos-visual-qa/definition.md",
@@ -41,7 +41,7 @@
   },
   {
     "name": "tailrocks-macos-visual-regression",
-    "description": " Use only when the user explicitly requests this skill. Compare current native macOS running-window captures against one approved baseline package with environment, structural-region, and pixel-budget gates. Read-only on project and baseline; never freezes or approves design.",
+    "description": "Use only when the user explicitly requests this skill. Compare current native macOS running-window captures against one approved baseline package with environment, structural-region, and pixel-budget gates. Read-only on project and baseline; never freezes or approves design.",
     "argumentHint": "regress <feature or screens> --baseline <baseline directory>",
     "overview": "skills/tailrocks-macos-visual-regression/index.md",
     "definition": "skills/tailrocks-macos-visual-regression/definition.md",
@@ -49,7 +49,7 @@
   },
   {
     "name": "tailrocks-swift-agent-integration",
-    "description": " Use only when the user explicitly requests this skill. Wire a native Swift/Xcode project for agent-driven build, test, preview, and UI work while preserving one owner per responsibility and pinning third-party knowledge read-only.",
+    "description": "Use only when the user explicitly requests this skill. Wire a native Swift/Xcode project for agent-driven build, test, preview, and UI work while preserving one owner per responsibility and pinning third-party knowledge read-only.",
     "argumentHint": "<Swift project and approved integration scope>",
     "overview": "skills/tailrocks-swift-agent-integration/index.md",
     "definition": "skills/tailrocks-swift-agent-integration/definition.md",
@@ -57,7 +57,7 @@
   },
   {
     "name": "tailrocks-swift-best-practices",
-    "description": " Apply Swift code policy when writing in-scope Swift, SwiftUI, concurrency, state ownership, accessibility, availability, or narrow AppKit bridges. Not review, refactoring, project setup, Rust-core boundary architecture, or visual-design authority.",
+    "description": "Apply Swift code policy when writing in-scope Swift, SwiftUI, concurrency, state ownership, accessibility, availability, or narrow AppKit bridges. Not review, refactoring, project setup, Rust-core boundary architecture, or visual-design authority.",
     "argumentHint": "<Swift or SwiftUI writing task>",
     "overview": "skills/tailrocks-swift-best-practices/index.md",
     "definition": "skills/tailrocks-swift-best-practices/definition.md",
@@ -65,7 +65,7 @@
   },
   {
     "name": "tailrocks-swift-project-audit",
-    "description": " Use only when the user explicitly requests this skill. Audit an existing native macOS Swift project baseline read-only: generation, pins and SDK lanes, signing, strict gates, tests, derived data, and command parity. Emit fixed-ID gaps; never edit or install.",
+    "description": "Use only when the user explicitly requests this skill. Audit an existing native macOS Swift project baseline read-only: generation, pins and SDK lanes, signing, strict gates, tests, derived data, and command parity. Emit fixed-ID gaps; never edit or install.",
     "argumentHint": "<existing Swift project path or audit scope>",
     "overview": "skills/tailrocks-swift-project-audit/index.md",
     "definition": "skills/tailrocks-swift-project-audit/definition.md",
@@ -73,7 +73,7 @@
   },
   {
     "name": "tailrocks-swift-project-remediate",
-    "description": " Use only when the user explicitly requests this skill. Close exact approved SWIFT-PROJECT gap-ledger rows in an existing native macOS project using canonical references and templates in transactional buildable slices. Never infer approval or discover scope.",
+    "description": "Use only when the user explicitly requests this skill. Close exact approved SWIFT-PROJECT gap-ledger rows in an existing native macOS project using canonical references and templates in transactional buildable slices. Never infer approval or discover scope.",
     "argumentHint": "<approved SWIFT-PROJECT gap IDs and path scope>",
     "overview": "skills/tailrocks-swift-project-remediate/index.md",
     "definition": "skills/tailrocks-swift-project-remediate/definition.md",
@@ -81,7 +81,7 @@
   },
   {
     "name": "tailrocks-swift-project-setup",
-    "description": " Use only when the user explicitly requests this skill. Scaffold a new strict native macOS Swift baseline: declarative generation, deployment and SDK lanes, local signing, strict format/lint gates, tests, and mise-owned command parity. Existing projects route to audit or remediate.",
+    "description": "Use only when the user explicitly requests this skill. Scaffold a new strict native macOS Swift baseline: declarative generation, deployment and SDK lanes, local signing, strict format/lint gates, tests, and mise-owned command parity. Existing projects route to audit or remediate.",
     "argumentHint": "<new macOS project requirements>",
     "overview": "skills/tailrocks-swift-project-setup/index.md",
     "definition": "skills/tailrocks-swift-project-setup/definition.md",
@@ -89,7 +89,7 @@
   },
   {
     "name": "tailrocks-swift-refactor",
-    "description": " Use only when the user explicitly requests this skill. Refactor Swift and SwiftUI code under a preservation oracle while retaining behavior, public API, isolation, cancellation, state identity, rendering, accessibility, errors, availability, and bridge lifecycles.",
+    "description": "Use only when the user explicitly requests this skill. Refactor Swift and SwiftUI code under a preservation oracle while retaining behavior, public API, isolation, cancellation, state identity, rendering, accessibility, errors, availability, and bridge lifecycles.",
     "argumentHint": "<Swift refactor target and preservation oracle>",
     "overview": "skills/tailrocks-swift-refactor/index.md",
     "definition": "skills/tailrocks-swift-refactor/definition.md",
@@ -97,7 +97,7 @@
   },
   {
     "name": "tailrocks-swift-review",
-    "description": " Use only when the user explicitly requests this skill. Review Swift, SwiftUI, concurrency, accessibility, availability, errors, and narrow AppKit bridges read-only. Report verified code defects; route Rust-core platform architecture separately.",
+    "description": "Use only when the user explicitly requests this skill. Review Swift, SwiftUI, concurrency, accessibility, availability, errors, and narrow AppKit bridges read-only. Report verified code defects; route Rust-core platform architecture separately.",
     "argumentHint": "<Swift review target, diff, or paths>",
     "overview": "skills/tailrocks-swift-review/index.md",
     "definition": "skills/tailrocks-swift-review/definition.md",
@@ -105,7 +105,7 @@
   },
   {
     "name": "tailrocks-swift-rust-core-boundary",
-    "description": " Use only when the user explicitly requests this skill. Design, implement, or review the thin SwiftUI platform shell over a Rust-owned application runtime: generated FFI, immutable view state, typed actions, durable Apple effects, and one main-actor store.",
+    "description": "Use only when the user explicitly requests this skill. Design, implement, or review the thin SwiftUI platform shell over a Rust-owned application runtime: generated FFI, immutable view state, typed actions, durable Apple effects, and one main-actor store.",
     "argumentHint": "<Rust-core Swift boundary task or review scope>",
     "overview": "skills/tailrocks-swift-rust-core-boundary/index.md",
     "definition": "skills/tailrocks-swift-rust-core-boundary/definition.md",
@@ -113,7 +113,7 @@
   },
   {
     "name": "tailrocks-swift-rust-core-setup",
-    "description": " Use only when the user explicitly requests this skill. Add the project-level Rust-core lane to a native Swift app: one-way generated bindings, isolated bridge packages, binding-drift proof, and Rust gates in the shared pipeline.",
+    "description": "Use only when the user explicitly requests this skill. Add the project-level Rust-core lane to a native Swift app: one-way generated bindings, isolated bridge packages, binding-drift proof, and Rust gates in the shared pipeline.",
     "argumentHint": "<Swift project and approved Rust-core setup scope>",
     "overview": "skills/tailrocks-swift-rust-core-setup/index.md",
     "definition": "skills/tailrocks-swift-rust-core-setup/definition.md",
