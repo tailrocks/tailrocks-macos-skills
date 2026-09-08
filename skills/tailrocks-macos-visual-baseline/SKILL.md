@@ -17,6 +17,7 @@ baseline. It does not judge production, compare a candidate, install a harness,
 or bless a design.
 
 Read [`runtime-trust.md`](references/runtime-trust.md),
+[`design-pipeline.md`](references/design-pipeline.md),
 [`harness-contract.md`](references/harness-contract.md), and
 [`missing-project-policy.md`](references/missing-project-policy.md), then apply
 the region oracle in [`match-policy.md`](references/match-policy.md).
