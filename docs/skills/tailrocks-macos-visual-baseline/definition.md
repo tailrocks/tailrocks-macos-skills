@@ -16,6 +16,7 @@ baseline. It does not judge production, compare a candidate, install a harness,
 or bless a design.
 
 Read [`runtime-trust.md`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-visual-baseline/references/runtime-trust.md),
+[`design-pipeline.md`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-visual-baseline/references/design-pipeline.md),
 [`harness-contract.md`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-visual-baseline/references/harness-contract.md), and
 [`missing-project-policy.md`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-visual-baseline/references/missing-project-policy.md), then apply
 the region oracle in [`match-policy.md`](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-macos-visual-baseline/references/match-policy.md).
