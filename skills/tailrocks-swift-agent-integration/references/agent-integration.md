@@ -76,8 +76,7 @@ Policy:
    network calls before enabling execution.
 5. Record which responsibility it owns.
 6. Disable overlapping automatic skills.
-7. Run a controlled before-and-after comparison rather than assuming improvement.
-8. Update only through reviewed changes.
+7. Update only through reviewed changes.
 
 Two selection cautions specific to this platform:
 
@@ -96,8 +95,9 @@ Two selection cautions specific to this platform:
 
 This collection never links to third-party skills and puts none
 in the repository. Get
-relevant knowledge from third-party skills. Do tests of it with
-Apple documentation and SDKs. Keep it in these skills.
+relevant knowledge from third-party skills. Check each claim
+against Apple documentation and SDKs. Keep the checked result in
+these skills.
 
 - **The official sets have the gap.** Neither Xcode-exported skills
   (see "Vendor upstream agent knowledge read-only" above) nor the major
@@ -114,7 +114,7 @@ Apple documentation and SDKs. Keep it in these skills.
   skills. Make no copy of a recipe.
 - **Licensing in that corpus is unreliable.** Read for analysis only.
   Put no unlicensed content in the repository. This collection only
-  gets knowledge and does tests. Nothing external enters the
+  takes knowledge and checks claims. Nothing external enters the
   repository.
 
 ## Project instructions

@@ -107,6 +107,6 @@ Read these references at the stated times:
   generation state.
 - Read `references/lint-and-format.md` in step 3 for gate state.
 - Read `references/testing.md` in step 3 for test state.
-- Use the `templates/` files: `project.yml`,
+- Use the `assets/` files: `project.yml`,
   `mise.toml`, `gitignore`, `swift-format.json`, `swiftlint.yml`,
   and `Tests.swiftlint.yml`.

@@ -1,18 +1,18 @@
 # AppKit Liquid Glass API — macOS
 
-**Apple ships no downloadable AppKit Liquid Glass sample code.** Verified five independent
-ways: the AppKit framework page has no sample-code section; the AppKit render
-index contains 50 sample nodes and none is glass-related; `NSGlassEffectView`,
-`NSGlassEffectContainerView`, and `NSBackgroundExtensionView` each have zero
-sample-code references; the Sample Code Library's 656 samples match `glass` or
-`liquid` only on the four SwiftUI Landmarks pages; and the AppKit design sessions
-link no sample.
+**Apple ships no downloadable AppKit Liquid Glass sample code.** Five independent
+checks verify this. The AppKit framework page has no sample-code section. The
+AppKit render index contains 50 sample nodes and none is glass-related.
+`NSGlassEffectView`, `NSGlassEffectContainerView`, and `NSBackgroundExtensionView`
+each have zero sample-code references. The Sample Code Library's 656 samples
+match `glass` or `liquid` only on the four SwiftUI Landmarks pages. The AppKit
+design sessions link no sample.
 
 The `Adopting Liquid Glass` guide contains four code listings in total, **all
 SwiftUI or UIKit — not one AppKit listing.**
 
 WWDC26 session 289, *Modernize your AppKit app*, does ship an Apple-authored
-`cornerConfiguration` listing; WWDC25 session 310 and the adoption guide remain
+`cornerConfiguration` listing. WWDC25 session 310 and the adoption guide remain
 prose/API-led for AppKit Liquid Glass. Verify every symbol against the SDK in use.
 
 ## `NSGlassEffectView` — macOS 26.0
@@ -142,15 +142,15 @@ func makeHeroPane(hero: NSImageView) -> NSView {
 }
 ```
 
-Pin the returned view to the window content's full bounds (not the safe area);
-the extension view itself keeps `hero` inside the safe area and synthesizes the
+Pin the returned view to the window content's full bounds (not the safe area).
+The extension view itself keeps `hero` inside the safe area and synthesizes the
 extended edges.
 
 ## Buttons and control metrics
 
 - `NSButton.BezelStyle.glass` — macOS 26.0. A bezel style with a glass effect.
 - **There is no `prominentGlass` or `clearGlass` bezel style on AppKit.** UIKit
-  has four glass button configurations; AppKit has exactly one. Prominence on an
+  has four glass button configurations. AppKit has exactly one. Prominence on an
   AppKit toolbar is expressed with `NSToolbarItem.Style.prominent` plus
   `NSToolbarItem.backgroundTintColor`.
 - `NSControl.ControlSize.extraLarge` — macOS 26.0.
@@ -211,7 +211,7 @@ final class PublishToolbarDelegate: NSObject, NSToolbarDelegate {
 }
 ```
 
-One prominent item per toolbar; prominence on every item is prominence on none.
+One prominent item per toolbar. Prominence on every item is prominence on none.
 
 ## Scroll edge effects — macOS 26.1, not 26.0
 
@@ -223,7 +223,7 @@ This is the availability most often gotten wrong on AppKit.
 - `NSTitlebarAccessoryViewController.preferredScrollEdgeEffectStyle` — macOS
   **26.1**.
 
-Apple's quoted Objective-C snippet uses `softStyle`; the `…Style` suffix drops
+Apple's quoted Objective-C snippet uses `softStyle`. The `…Style` suffix drops
 on Swift import.
 
 Worked pattern — a bottom title-bar accessory that forces a hard edge under a
@@ -310,12 +310,12 @@ of all of them. Two decisions are yours:
 - which `NSVisualEffectView.BlendingMode` to use — behind-window or
   within-window.
 
-Do not leave an `NSVisualEffectView` inside a popover's content view; the
+Do not leave an `NSVisualEffectView` inside a popover's content view. The
 adoption guide says to remove those custom background views.
 
 | Existing `NSVisualEffectView` surface | Migration decision |
 |---|---|
-| Sidebar | Replace custom material with system sidebar construction; do not add glass manually. |
+| Sidebar | Replace custom material with system sidebar construction. Do not add glass manually. |
 | Toolbar accessory | Move into `NSTitlebarAccessoryViewController` or the split-item accessory APIs. |
 | Floating functional panel | Use `NSGlassEffectView` only after the layer model justifies a custom transient surface. |
-| Content | Keep the purpose-appropriate `NSVisualEffectView.Material`; content never becomes glass. |
+| Content | Keep the purpose-appropriate `NSVisualEffectView.Material`. Content never becomes glass. |

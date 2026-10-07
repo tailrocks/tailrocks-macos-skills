@@ -95,9 +95,10 @@ pinned toolchain. A previous version is no evidence.
 
 The Xcode build-settings reference has `SWIFT_STRICT_CONCURRENCY`,
 `SWIFT_DEFAULT_ACTOR_ISOLATION`, and `SWIFT_APPROACHABLE_CONCURRENCY`.
-The setup baseline pins explicit values for all three keys. State no
-other concurrency behavior as pinned. The canonical toolchain
-reference is authoritative.
+The setup baseline pins explicit values for `SWIFT_VERSION` and
+`SWIFT_STRICT_CONCURRENCY` only. State no other concurrency
+behavior as pinned. The canonical toolchain reference is
+authoritative.
 
 ## Parallel tests
 

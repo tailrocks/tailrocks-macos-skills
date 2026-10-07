@@ -67,7 +67,7 @@ running from fixtures with a live sign-off.
 
 1. **Write the experience brief.** Use
    `references/experience-brief.md` and the
-   `templates/ExperienceBrief.md` template. Name the dominant
+   `assets/ExperienceBrief.md` template. Name the dominant
    archetype from `references/archetypes.md` before any layout.
    Read `references/native-behavior.md` before approval of the
    brief. Do not make controls that the system has. Read
@@ -77,7 +77,7 @@ running from fixtures with a live sign-off.
 
 2. **Write the native component map.** Read
    `references/native-component-map.md`. Classify every region with
-   the `templates/NativeComponentMap.md` template. Do this before
+   the `assets/NativeComponentMap.md` template. Do this before
    appearance work. Use `NATIVE` for a standard component,
    `NATIVE-COMPOSED` for an arrangement of standard controls, or
    `CUSTOM` for a unique element. For each `CUSTOM` region, complete
@@ -121,10 +121,10 @@ four laws and six steps in
 
 - **Step 5. Build the committed package.** Build the
    `Design/Prototypes/<Feature>/` package on the project-setup
-   baseline. Copy `templates/ProtoMain.swift` for the
+   baseline. Copy `assets/ProtoMain.swift` for the
    launch-contract harness. Write the view layer as production code
    that lifts verbatim. Write `Regions.md` with the
-   `templates/Regions.md` template per
+   `assets/Regions.md` template per
    `references/match-policy.md`: verify native regions structurally
    through the accessibility tree, never pixel-gated. Give content
    and custom regions pixel budgets. Compare glass only under the
@@ -140,7 +140,7 @@ four laws and six steps in
    `tailrocks-macos-design-review acceptance` PASS on the running
    prototype. Then the user signs off that same reviewed revision:
    every scenario, both appearances, the declared sizes. Record the
-   sign-off in `SIGNOFF.md` with the `templates/SIGNOFF.md`
+   sign-off in `SIGNOFF.md` with the `assets/SIGNOFF.md`
    template. Without both the PASS and the sign-off, the prototype
    stays a draft and the run ends without blessing.
 

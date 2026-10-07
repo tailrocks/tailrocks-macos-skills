@@ -46,7 +46,7 @@ result.
 ## Pin concurrency settings
 
 Pin the exact Swift strict-concurrency mode in
-`templates/project.yml` with `SWIFT_VERSION` and
+`assets/project.yml` with `SWIFT_VERSION` and
 `SWIFT_STRICT_CONCURRENCY`. The template sets `complete` mode.
 
 The Xcode build-settings reference also has
@@ -59,8 +59,8 @@ features DisableOutwardActorInference,
 GlobalActorIsolatedTypesUsability, InferIsolatedConformances,
 InferSendableFromCaptures, and NonisolatedNonsendingByDefault.
 The reference read this way on 2026-10-07. The template pins
-explicit values for both keys. Examine the reference again when
-the lane changes.
+neither key. Record both reference values at setup time.
+Examine the reference again when the lane changes.
 
 An audit identifies a missing concurrency pin as a gap under
 `SWIFT-PROJECT-006`.

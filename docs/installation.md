@@ -24,7 +24,7 @@ Keep the complete package checkout after install. The three
 visual skills run the harness installer from
 `scripts/macos-visual-qa/`.
 The project audit and remediation skills read the setup templates
-under `skills/tailrocks-swift-project-setup/templates/`. Per-skill
+under `skills/tailrocks-swift-project-setup/assets/`. Per-skill
 copies lack these shared paths.
 
 ## User-only skills
@@ -484,8 +484,8 @@ Agent Plugins 1.0.0 schema (observed 2026-10-07). Antigravity
 frontmatter supports only `name` and `description`, so user-only
 entry cannot be enforced here. The agent loads skills without
 selection. Select the thirteen user-only skills only through an
-explicit human `/<skill-name>` command. Keep one copy per skill:
-no precedence is documented.
+explicit human command such as `/tailrocks-swift-review`.
+Keep one copy per skill: no precedence is documented.
 
 ## Grok Build
 

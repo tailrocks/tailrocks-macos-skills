@@ -10,21 +10,21 @@ user-only and need an explicit human command.
 
 | Skill | Task |
 | --- | --- |
-| `tailrocks-macos-design` | Design a native screen and prototype it. |
-| `tailrocks-macos-design-review` | Score a rendered screen. User-only. |
-| `tailrocks-macos-design-systematize` | Record approved learning. User-only. |
-| `tailrocks-macos-visual-baseline` | Freeze a visual baseline. User-only. |
-| `tailrocks-macos-visual-qa` | Verify the current render. User-only. |
-| `tailrocks-macos-visual-regression` | Compare captures. User-only. |
-| `tailrocks-swift-agent-integration` | Wire Xcode for agent work. User-only. |
-| `tailrocks-swift-best-practices` | Write Swift and SwiftUI code. |
-| `tailrocks-swift-project-audit` | Audit a project baseline. User-only. |
-| `tailrocks-swift-project-remediate` | Close baseline gaps. User-only. |
-| `tailrocks-swift-project-setup` | Start a project baseline. User-only. |
-| `tailrocks-swift-refactor` | Restructure Swift code. User-only. |
-| `tailrocks-swift-review` | Review Swift code. User-only. |
-| `tailrocks-swift-rust-core-boundary` | Plan Swift/Rust boundary. User-only. |
-| `tailrocks-swift-rust-core-setup` | Wire the Rust core lane. User-only. |
+| [`tailrocks-macos-design`](skills/tailrocks-macos-design/SKILL.md) | Design a native screen and prototype it. |
+| [`tailrocks-macos-design-review`](skills/tailrocks-macos-design-review/SKILL.md) | Score a rendered screen. User-only. |
+| [`tailrocks-macos-design-systematize`](skills/tailrocks-macos-design-systematize/SKILL.md) | Record approved learning. User-only. |
+| [`tailrocks-macos-visual-baseline`](skills/tailrocks-macos-visual-baseline/SKILL.md) | Freeze a visual baseline. User-only. |
+| [`tailrocks-macos-visual-qa`](skills/tailrocks-macos-visual-qa/SKILL.md) | Verify the current render. User-only. |
+| [`tailrocks-macos-visual-regression`](skills/tailrocks-macos-visual-regression/SKILL.md) | Compare captures. User-only. |
+| [`tailrocks-swift-agent-integration`](skills/tailrocks-swift-agent-integration/SKILL.md) | Wire Xcode for agent work. User-only. |
+| [`tailrocks-swift-best-practices`](skills/tailrocks-swift-best-practices/SKILL.md) | Write Swift and SwiftUI code. |
+| [`tailrocks-swift-project-audit`](skills/tailrocks-swift-project-audit/SKILL.md) | Audit a project baseline. User-only. |
+| [`tailrocks-swift-project-remediate`](skills/tailrocks-swift-project-remediate/SKILL.md) | Close baseline gaps. User-only. |
+| [`tailrocks-swift-project-setup`](skills/tailrocks-swift-project-setup/SKILL.md) | Start a project baseline. User-only. |
+| [`tailrocks-swift-refactor`](skills/tailrocks-swift-refactor/SKILL.md) | Restructure Swift code. User-only. |
+| [`tailrocks-swift-review`](skills/tailrocks-swift-review/SKILL.md) | Review Swift code. User-only. |
+| [`tailrocks-swift-rust-core-boundary`](skills/tailrocks-swift-rust-core-boundary/SKILL.md) | Plan Swift/Rust boundary. User-only. |
+| [`tailrocks-swift-rust-core-setup`](skills/tailrocks-swift-rust-core-setup/SKILL.md) | Wire the Rust core lane. User-only. |
 
 Each skill body lives in its own directory. Read
 `skills/tailrocks-swift-review/SKILL.md` for one complete example.

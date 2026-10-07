@@ -87,7 +87,7 @@ run. Do not let the absence read as a pass.
 
 Cause: a per-skill copy of the audit or remediation skill has no
 sibling setup templates. Fix: keep the complete package checkout
-so `skills/tailrocks-swift-project-setup/templates/` resolves.
+so `skills/tailrocks-swift-project-setup/assets/` resolves.
 Template comparison uses those bytes.
 
 ## Manifests disagree

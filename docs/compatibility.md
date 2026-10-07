@@ -57,3 +57,25 @@ are not install evidence:
 - The Kimi manifest sets `skills` to `./skills/`.
 - Every payload file under `skills/` is text. No file carries the
   executable bit.
+
+## Frontmatter fields
+
+Every `skills/*/SKILL.md` file carries these frontmatter keys.
+Observed 2026-10-07 from the package files:
+
+- `name` (all 15 skills): skill id. It matches the skill
+  directory.
+- `description` (all 15 skills): task summary. It states the
+  user-only rule where it applies.
+- `argument-hint` (all 15 skills): example invocation arguments
+  for pickers.
+- `disable-model-invocation` (all 15 skills): `true` on the 13
+  user-only skills, `false` on the 2 model-selectable skills.
+- `disableModelInvocation` (13 user-only skills): camel-case
+  twin of `disable-model-invocation` for Kimi Code.
+- `license` (all 15 skills): `Apache-2.0`, matching the package
+  license.
+- `user-invocable` (all 15 skills): `true`. A person can invoke
+  every skill.
+- `when_to_use` (2 model-selectable skills): task trigger for
+  model selection. User-only skills omit it.

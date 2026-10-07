@@ -15,7 +15,7 @@ opening the graphical editor, and whose diffs are reviewable.
 
 ## Minimum working manifest
 
-Copy the canonical [`project.yml`](../../tailrocks-swift-project-setup/templates/project.yml)
+Copy the canonical [`project.yml`](../../tailrocks-swift-project-setup/assets/project.yml)
 and replace the marked values. The shape below is
 known to generate and build:
 

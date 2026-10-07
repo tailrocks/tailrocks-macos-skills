@@ -39,7 +39,7 @@ from the source directory. Seed it from the tool's own dump and then narrow:
 xcrun swift-format dump-configuration > .swift-format
 ```
 
-Copy canonical [`swift-format.json`](../../tailrocks-swift-project-setup/templates/swift-format.json)
+Copy canonical [`swift-format.json`](../../tailrocks-swift-project-setup/assets/swift-format.json)
 for a starting policy. Keep one configuration
 per repository; per-directory overrides make the editor's behavior depend on
 which file is open.
@@ -55,12 +55,12 @@ swiftlint --strict
 
 Same rule: strict in the gate.
 
-Copy canonical [`swiftlint.yml`](../../tailrocks-swift-project-setup/templates/swiftlint.yml).
+Copy canonical [`swiftlint.yml`](../../tailrocks-swift-project-setup/assets/swiftlint.yml).
 Two policy points worth stating explicitly in it:
 
 - Force unwrapping, force casting, and force `try` remain errors in application
   code. Copy canonical
-  [`Tests.swiftlint.yml`](../../tailrocks-swift-project-setup/templates/Tests.swiftlint.yml)
+  [`Tests.swiftlint.yml`](../../tailrocks-swift-project-setup/assets/Tests.swiftlint.yml)
   as `Tests/.swiftlint.yml` and
   `UITests/.swiftlint.yml`; it disables those rules only in test trees where the
   failure is the assertion. Warning severity is forbidden because `--strict`

@@ -85,8 +85,8 @@ pressed, selected, disabled, context-menu, drag, rapid-input, and resize states.
 Scale the matrix to the change. A one-line label edit does not need the full
 grid; a new screen does. State which rows were skipped and why — a skipped row
 recorded is information, a skipped row omitted is a false pass.
-See examples/macos-screen/StateMatrix.md for a rejected run that records skipped
-rows explicitly.
+A rejected run records each skipped row with its reason. Do the
+same here.
 
 ## Ordering the run
 

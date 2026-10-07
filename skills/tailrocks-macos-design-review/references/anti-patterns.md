@@ -16,18 +16,18 @@ The non-negotiables, indexed:
   condition where no concentric API exists — and record which applies (§4).
   Tint at most one prominent action per bar, on the background rather than
   the glyph (§5).
-- **Per-row glass — reject.** **Rule:** rows are content; use standard content
+- **Per-row glass — reject.** **Rule:** rows are content. Use standard content
   materials and reserve glass for a functional-layer control. **Mechanism:**
   row glass occupies the wrong compositing layer, breaking the scroll edge
   effect and content-derived adaptation (§1). **Cost:** every unbatched row
   adds its own backdrop-sample, blur, and refraction pass — unbounded in row
   count (§7, the performance framing).
 - Cross-platform spellings that do not exist on macOS 26 — reject on sight and
-  name the correct form (§8, §4): `glassBackgroundEffect(...)` is
-  visionOS-only; `.rect(corner: .containerConcentric)` is the UIKit and AppKit
-  27 beta spelling, and a correction is incomplete unless it supplies both
+  name the correct form (§8, §4). `glassBackgroundEffect(...)` is
+  visionOS-only. `.rect(corner: .containerConcentric)` is the UIKit and AppKit
+  27 beta spelling. A correction is incomplete unless it supplies both
   `ConcentricRectangle` and `Edge.Corner.Style.concentric` with
-  `containerShape(_:)`; `NSGlassEffectView.effectIsInteractive` is macOS 27
+  `containerShape(_:)`. `NSGlassEffectView.effectIsInteractive` is macOS 27
   beta — AppKit has no interactive glass on macOS 26 at all.
 
 ## 1. Glass in the content layer
@@ -175,14 +175,14 @@ Each of these is an availability-verified failure, not a style preference:
   have **no macOS availability at all**.
 - `NSGlassEffectView.effectIsInteractive` is macOS 27 beta — interactive AppKit
   glass is impossible on macOS 26.
-- AppKit has one glass bezel style; UIKit has four button glass configurations.
-- `UIView.cornerConfiguration` is iOS 26; the AppKit equivalent is macOS 27.
+- AppKit has one glass bezel style. UIKit has four button glass configurations.
+- `UIView.cornerConfiguration` is iOS 26. The AppKit equivalent is macOS 27.
 - macOS has **no Dynamic Type**. Do not design bars around text-size scaling.
 - macOS toolbar items have **no bezel**, and the **system** adds the overflow
   menu — "Don't add an overflow menu manually."
 - macOS-only obligations that iOS-shaped code omits: every toolbar item must also
-  exist as a menu-bar command; sidebar icons must honor the user's system accent
-  color; window main, key, and inactive appearances must come from the system.
+  exist as a menu-bar command. Sidebar icons must honor the user's system accent
+  color. Window main, key, and inactive appearances must come from the system.
 - Enlarging an iPhone navigation pattern to desktop size — oversized capsules for
   every action, a card grid standing in for information architecture, hover-only
   actions with no keyboard or menu equivalent.
@@ -235,7 +235,7 @@ glass instead of an integrated glass control: press feedback, tint
 handling, container grouping, and the accessibility substitutions all come
 from the button style, and the wrapped form receives none of them.
 
-**Fix.** Replace the modifier with the style; reserve `.glassProminent` for
+**Fix.** Replace the modifier with the style. Reserve `.glassProminent` for
 the single genuinely primary action per the tint rule.
 
 ## 13. A custom bar as an `overlay` carrying `.glassEffect`
@@ -246,7 +246,7 @@ split-item `top-`/`bottomAlignedAccessoryViewControllers` — never an `overlay`
 carrying `.glassEffect`.
 
 **Mechanism.** The supported APIs adjust bar geometry and the scroll edge
-effect; an overlay adjusts neither, so the bar floats over content the layout
+effect. An overlay adjusts neither, so the bar floats over content the layout
 does not know about and the effect has nothing to key off.
 
 **Fix.** Move the bar into `safeAreaBar` or the accessory-view controller and
@@ -259,15 +259,15 @@ Instruments template.** Any "maximum N glass surfaces" figure is invented — ma
 it as such if it appears in a review.
 
 What Apple does say: combine custom effects in a container to improve rendering
-performance; apply `backgroundExtensionEffect()` with discretion and generally to
-only a single instance of background content; and "Limit the use of Liquid Glass
+performance. Apply `backgroundExtensionEffect()` with discretion and generally to
+only a single instance of background content. Also, "Limit the use of Liquid Glass
 effects onscreen at the same time." Glass cost scales with what is behind it, not
 only with its own area, because the system adapts the material in response to the
 underlying content.
 
-Derived practice, not quoted: one container per visual cluster; one
-`backgroundExtensionEffect()` per window; profile with Time Profiler and the
-animation-hitch model on the lowest-spec Apple silicon Mac you support, with an
-external display attached, since backdrop sampling cost scales with the sampled
+Derived practice, not quoted: use one container per visual cluster. Use one
+`backgroundExtensionEffect()` per window. Profile with Time Profiler and the
+animation-hitch model. Use the lowest-spec Apple silicon Mac you support, with
+an external display attached. Backdrop sampling cost scales with the sampled
 region. Capture a before and an after profile and lock the fix in with a
 performance test.

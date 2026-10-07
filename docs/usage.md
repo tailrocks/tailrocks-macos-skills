@@ -18,7 +18,8 @@ $tailrocks-swift-review Sources/
 
 The first form fits Claude Code. The second form fits Kimi Code.
 The third form fits Codex. The fourth form fits Muse, Antigravity,
-Grok, and OpenCode pickers. Amp has no slash invoke: ask the thread
+and Grok pickers. OpenCode has no slash form: request the skill by
+name in the prompt. Amp has no slash invoke: ask the thread
 for the exact qualified skill by name.
 
 The thirteen user-only skills need an explicit human command on every

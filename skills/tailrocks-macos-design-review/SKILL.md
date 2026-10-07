@@ -155,4 +155,4 @@ Read these references at the stated times:
   mechanism.
 - Read `references/reference-corpus.md` and `references/exemplars.md`
   when the task needs corpus or exemplar guidance.
-- Use `templates/DesignReview.md` for the complete report shape.
+- Use `assets/DesignReview.md` for the complete report shape.

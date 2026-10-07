@@ -38,7 +38,7 @@ This audit is read-only. Never change, install, or correct.
 Command authority is read-only commands with limits on time,
 retries, output, and process cleanup. Template comparison reads
 the setup templates at
-`../tailrocks-swift-project-setup/templates/`. That sibling resolves
+`../tailrocks-swift-project-setup/assets/`. That sibling resolves
 in a complete package install only.
 
 ## Procedure
