@@ -49,7 +49,7 @@ ends without one says so with the Blessed row pending. Only after both gates may
    design stage. Name every consumed artifact with its revision.
 2. **Build the package** per the layout below on
    `tailrocks-swift-project-setup`'s baseline, copying
-   `templates/ProtoMain.swift`. Complete when the package builds and every
+   `assets/ProtoMain.swift`. Complete when the package builds and every
    fixture scenario renders through the contract.
 3. **Review live and iterate** per scenario, both appearances, the declared
    sizes, adjusting within the approved design until the blessing gate is
@@ -80,7 +80,7 @@ ends without one says so with the Blessed row pending. Only after both gates may
 Design/Prototypes/<Feature>/
 ├── Package.swift                  # executable, current macOS platform
 ├── Sources/<Feature>Proto/
-│   ├── ProtoMain.swift            # the launch-contract harness (from templates)
+│   ├── ProtoMain.swift            # the launch-contract harness (from assets)
 │   ├── Fixtures.swift             # scenarios from the design's fixtures
 │   └── <views>.swift              # the view layer — production code
 ├── Regions.md                     # region → class → match mode → budget

@@ -76,10 +76,9 @@ debug = true
 - the bridge CLI version (mise-managed, never a floating install) — crate
   and CLI pinned to the **same** version.
 
-Bridge generators are pre-1.0 and move fast (BoltFFI 0.30.0 at
-verification, 2026-08-16 — re-resolve at execution time); an unpinned CLI
-regenerating different Swift on two machines is the supply-chain version of
-the false-green trap. A bridge upgrade is a dedicated change — bump the
+Bridge generators are pre-1.0 and move fast. Re-resolve the version
+at execution time. An unpinned CLI regenerating different Swift on two
+machines is the supply-chain version of the false-green trap. A bridge upgrade is a dedicated change — bump the
 pins, regenerate the bindings, run the full Apple-target test set — never
 an incidental update inside a feature branch.
 
@@ -100,11 +99,12 @@ checkout builds with the standard task sequence. Build both `arm64` and
 
 Additions to the baseline gate set:
 
-- **Binding-drift gate.** CI regenerates the bindings and fails when the
-  generated Swift differs from what is committed (or, if generated output
-  is intentionally uncommitted, when regeneration changes the package
-  interface) without an intentional bridge change. Silent binding drift is
-  how an action added in Rust ships unreachable from the UI.
+- **Binding-drift gate.** CI regenerates the bindings into a temporary
+  directory — never in place — and fails when a diff with the
+  committed output is non-empty (or, when generated output stays
+  uncommitted, when regeneration changes the package interface) without
+  an intentional bridge change. Silent binding drift is how an action
+  added in Rust ships unreachable from the UI.
 - **Rust test lane.** The behavior tests live in the Rust workspace and run
   with the standard Rust gates — no Xcode required. The Apple CI job runs
   them alongside the Swift build so a domain regression fails the same

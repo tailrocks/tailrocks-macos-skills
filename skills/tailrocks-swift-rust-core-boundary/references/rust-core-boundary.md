@@ -122,21 +122,24 @@ five message concepts:
    invalidation — `revision` plus `changed_features` — **never the state
    itself and never a business event log**. Bridge streams are backed by a
    bounded per-subscription ring buffer that **drops new events when
-   full**; treat every streamed notification as lossy. The resilient
-   protocol: Rust increments the revision and pushes a notice; Swift pulls
-   the latest snapshot for each changed feature and applies it only if
-   newer than the last applied revision. A lost notice self-heals on the
-   next notice, and Swift performs a **full snapshot reconciliation on
-   launch, reconnection, and foreground activation**.
+   full**. Treat every streamed notification as lossy. Rust increments
+   the revision and pushes a notice. Swift pulls the latest snapshot
+   for each changed feature and applies it only when newer than the
+   last applied revision. A new notice alone never repairs a gap: the next
+   notice names only its own changed features, not what a lost notice
+   carried. When `notice.revision > appliedRevision + 1`, Swift pulls
+   every feature snapshot. Swift also performs a **snapshot
+   reconciliation of every feature on launch, reconnection, and
+   foreground activation**.
 4. **`PlatformEffect` / `PlatformEffectResult`** — Rust asks Swift to
    execute an Apple mechanism (purchase, store a secret, request
    notification authorization, schedule background refresh, import a
    document). Effects live in a **durable Rust queue until acknowledged**
    via a completion call; Swift also drains `pendingPlatformEffects()` on
    activation, so a dropped stream event or a backgrounded process never
-   loses an effect. Effect execution is idempotent per effect ID, and one
-   effect ID is never executed twice concurrently. Details:
-   [`apple-platform-shell.md`](apple-platform-shell.md).
+   loses an effect. Delivery is at-least-once. Execution is idempotent
+   per effect ID, and one effect ID never runs twice at the same time.
+   Details: [`apple-platform-shell.md`](apple-platform-shell.md).
 5. **`CoreError`** — Rust → Swift as a typed error with a semantic code and
    structured payload (`permissionDenied(permission:)`,
    `conflict(currentRevision:)`, `temporarilyUnavailable(retryAfter:)`).
@@ -157,12 +160,14 @@ channel, and returns. It must never access the network, run migrations,
 parse a large document, block on a long-held lock, or wait for another
 actor. The UI thread never blocks on product work.
 
-Use `async throws` only for a bounded request that naturally returns one
+Use `async throws` only for a bounded request that returns one
 result (`exportDocument`, `generatePreview`, `loadNextSearchPage`).
-Cancellation propagates to the Rust future but is cooperative: code after
-an `await` may never run after cancellation, so cleanup and durability must
-not depend on reaching it. Streams carry only `UpdateNotice`. A callback
-trait is a rare integration where Swift must supply a service directly.
+Cancellation is cooperative on both sides: the Swift task continues past
+`await` unless it checks for cancellation, and the bridge drops the Rust
+future. Put Swift cleanup in `defer` and Rust cleanup in `Drop` guards.
+Never depend on post-`await` code running. Streams carry only
+`UpdateNotice`. A callback trait is a rare integration where Swift must
+supply a service directly.
 
 ## The store rule
 
@@ -221,6 +226,11 @@ final class AppStore {
 
     private func apply(_ notice: UpdateNotice) {
         guard notice.revision > appliedRevision else { return }   // stale
+        if notice.revision > appliedRevision + 1 {
+            appliedRevision = notice.revision
+            reconcileAllState()   // gap: one or more notices were lost
+            return
+        }
         appliedRevision = notice.revision
         for feature in notice.changedFeatures {
             switch feature {
@@ -349,8 +359,8 @@ copied, and large collections of string-bearing records dominate call cost.
 
 ## Bridge selection
 
-Verified 2026-08-16; bridge generators move fast — re-verify at execution
-time and pin exactly (toolchain, bridge crate, bridge CLI; see
+Re-verify at execution time. Bridge generators move fast. Pin exactly
+(toolchain, bridge crate, bridge CLI — see
 `tailrocks-swift-rust-core-setup` for the pins, the split
 package layout, and the binding-drift gate).
 
@@ -359,7 +369,7 @@ package layout, and the binding-drift gate).
   `AsyncStream` for Rust streams with cancellation propagation, automatic
   XCFramework + local Swift package. Fast-moving; known open issues around
   generated `Sendable` and multi-module Apple packaging — pin exactly
-  (0.30.0 at verification) and keep one FFI module.
+  and keep one FFI module.
 - **UniFFI** — conservative fallback: production-quality Swift generation,
   more established; Swift 6 strict-concurrency support still partial. Choose
   it when bridge stability outweighs packaging convenience or BoltFFI hits a

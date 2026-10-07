@@ -1,23 +1,5 @@
 {
   "name": "tailrocks-macos-skills",
-  "description": "Native macOS Swift and SwiftUI workflows for Liquid Glass design, project setup, Rust-core integration, visual QA, and regression control.",
   "version": "0.28.0",
-  "author": {
-    "name": "tailrocks",
-    "url": "https://github.com/tailrocks"
-  },
-  "homepage": "https://github.com/tailrocks/tailrocks-macos-skills",
-  "repository": "https://github.com/tailrocks/tailrocks-macos-skills",
-  "license": "Apache-2.0",
-  "keywords": [
-    "macos",
-    "swift",
-    "swiftui",
-    "appkit",
-    "liquid-glass",
-    "accessibility",
-    "xcode",
-    "visual-qa",
-    "rust-ffi"
-  ]
+  "description": "Native macOS Swift and SwiftUI workflows for Liquid Glass design, project setup, Rust-core integration, visual QA, and regression control."
 }

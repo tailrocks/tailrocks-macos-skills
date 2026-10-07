@@ -4,14 +4,15 @@ The normative rules stated by Apple's own designers, quoted, with the first-part
 app each was demonstrated on. Use this to answer "what does correct look like"
 without guessing.
 
-Compiled 2026-08-11 from WWDC sessions, Apple Newsroom, and Apple support
-documentation. Apple's Human Interface Guidelines are a JavaScript-rendered
+Compiled from WWDC sessions, Apple Newsroom, and Apple support
+documentation. Do a test of each pattern with current guidance
+before use. Apple's Human Interface Guidelines are a JavaScript-rendered
 application; its backing JSON is fetchable at
 `developer.apple.com/tutorials/data/design/human-interface-guidelines/<slug>.json`
 — note `data/design/…`, not `data/documentation/design/…`, which returns 404.
 That path is how these rules are verifiable rather than remembered.
 
-Every API symbol named below was probe-verified against the local SDK, not
+Every API symbol named below was examined on the local SDK, not
 recalled. The technique, which is worth reusing whenever availability matters:
 compile a file that touches each symbol with an artificially low target and read
 the diagnostics.
@@ -20,17 +21,17 @@ the diagnostics.
 xcrun swiftc -c probe.swift -target arm64-apple-macos10.15 -o /dev/null
 ```
 
-`'X' is only available in macOS N or newer` pins the exact introduction; `has no
+`'X' is only available in macOS N or newer` pins the exact introduction. `has no
 member` or `cannot find … in scope` means the symbol is absent from the SDK
 entirely. Documentation pages cannot give you this, because Apple renders
 declarations from the newest published SDK.
 
 Results against SDK 26.5: `Glass` (with `.identity`, `.interactive()`, `.tint`),
 `backgroundExtensionEffect()`, `ToolbarSpacer`, and SwiftUI
-`scrollEdgeEffectStyle(_:for:)` are **macOS 26.0**; `NSGlassEffectView`,
+`scrollEdgeEffectStyle(_:for:)` are **macOS 26.0**. `NSGlassEffectView`,
 `NSGlassEffectContainerView`, `NSBackgroundExtensionView`,
 `NSView.prefersCompactControlSizeMetrics`, `NSToolbarItem.style` and
-`.backgroundTintColor` are **macOS 26.0**; `NSScrollEdgeEffectStyle` and
+`.backgroundTintColor` are **macOS 26.0**. `NSScrollEdgeEffectStyle` and
 `NSTitlebarAccessoryViewController.preferredScrollEdgeEffectStyle` are **macOS
 26.1**, not 26.0 — that AppKit/SwiftUI split is the availability trap in this
 area.
@@ -84,7 +85,7 @@ Use `backgroundExtensionEffect()` / `NSBackgroundExtensionView`, once per window
 > glass**. Different types of controls are separated out into their own glass
 > elements, like segmented controls, pop-up buttons and the search control.
 
-You do not build the grouping; you *adjust* it with `NSToolbarItemGroup` or with
+You do not build the grouping. You *adjust* it with `NSToolbarItemGroup` or with
 `ToolbarSpacer`. Apple's worked example is Mail: a leading-aligned filter group,
 a trailing-aligned search-plus-compose group.
 
@@ -108,17 +109,17 @@ design and test against your worst-case content, never a neutral background.
 
 AppKit expresses this with `NSToolbarItem.Style.prominent` plus
 `backgroundTintColor`. Apple publishes no numeric limit on *tint*, while the HIG
-mandates one primary action (quoted in `anti-patterns.md`); these are one rule:
+mandates one primary action (quoted in `anti-patterns.md`). These are one rule:
 one tinted primary action per bar, on the trailing side.
 
 ## Scroll edge effects: automatic is the default; hard is the Mac case
 
-HIG revision checked 2026-08-11: Scroll views (latest recorded change
-2026-03-24), Sidebars, Menus, App icons, and Design principles were reread from
-Apple's live Human Interface Guidelines. Platform-specific sidebar-adaptation
+Scroll views, Sidebars, Menus, App icons, and Design principles were
+reread from Apple's live Human Interface Guidelines. Reread them again
+at execution time. Platform-specific sidebar-adaptation
 language is not promoted into a macOS API rule without macOS availability.
 
-Prefer `.automatic`, which commonly resolves soft; force a style only for a
+Prefer `.automatic`, which commonly resolves soft. Force a style only for a
 tested structural need.
 
 > **Hard is mostly used on macOS.** It creates a stronger, more opaque boundary —
@@ -176,7 +177,7 @@ literal derived by eye against macOS 26 is wrong on 27.
 
 Mini, small, medium, large, and — new in macOS 26 — extra large. Mini, small,
 and medium are slightly taller than before and keep rounded-rectangle geometry
-for horizontal density; large and extra large become capsules.
+for horizontal density. Large and extra large become capsules.
 
 Dense inspectors and popovers opt back out with
 `prefersCompactControlSizeMetrics` (AppKit) or `.controlSize(.small)` (SwiftUI).
@@ -197,7 +198,7 @@ macOS 27 reverses it:
 > iPad and Mac Menu Bars now have **a minimal set of icons by default**, reserving
 > them for key actions.
 
-`NSMenu` hides symbol images by default on 27; opt back in per item. An app that
+`NSMenu` hides symbol images by default on 27. Opt back in per item. An app that
 added an icon to every menu item on 26 will look noisy on 27.
 
 ## macOS 27 — what arrives without recompiling
@@ -218,8 +219,8 @@ The toolbar:
 > applied automatically for standard toolbars and can be customized using the
 > existing scroll edge effect APIs.
 
-Also on 27: sidebar selection uses a semi-bold text style for emphasis; bordered
-toolbar items over the sidebar adopt Liquid Glass; and the platform gains a
+Also on 27: sidebar selection uses a semi-bold text style for emphasis. Bordered
+toolbar items over the sidebar adopt Liquid Glass. The platform gains a
 "show borders" environment value.
 
 Interactive glass arrives for AppKit, with Apple's own restraint note:
@@ -291,8 +292,8 @@ most useful process advice in the corpus:
 > process was more adopt and then redesign. Many of the best aspects come from
 > just using the latest version of system components.**
 
-**Adopt, then redesign.** Recompiling gets the material; the usability gains come
-from moving to current system components; a redesign is a separate, later
+**Adopt, then redesign.** Recompiling gets the material. The usability gains come
+from moving to current system components. A redesign is a separate, later
 decision. A team that starts with a redesign will ship neither well.
 
 And on where the material actually belongs:

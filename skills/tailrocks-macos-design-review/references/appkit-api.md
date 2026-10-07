@@ -1,18 +1,18 @@
 # AppKit Liquid Glass API — macOS
 
-**Apple ships no downloadable AppKit Liquid Glass sample code.** Verified five independent
-ways: the AppKit framework page has no sample-code section; the AppKit render
-index contains 50 sample nodes and none is glass-related; `NSGlassEffectView`,
-`NSGlassEffectContainerView`, and `NSBackgroundExtensionView` each have zero
-sample-code references; the Sample Code Library's 656 samples match `glass` or
-`liquid` only on the four SwiftUI Landmarks pages; and the AppKit design sessions
-link no sample.
+**Apple ships no downloadable AppKit Liquid Glass sample code.** Five independent
+checks verify this. The AppKit framework page has no sample-code section. The
+AppKit render index contains 50 sample nodes and none is glass-related.
+`NSGlassEffectView`, `NSGlassEffectContainerView`, and `NSBackgroundExtensionView`
+each have zero sample-code references. The Sample Code Library's 656 samples
+match `glass` or `liquid` only on the four SwiftUI Landmarks pages. The AppKit
+design sessions link no sample.
 
 The `Adopting Liquid Glass` guide contains four code listings in total, **all
 SwiftUI or UIKit — not one AppKit listing.**
 
 WWDC26 session 289, *Modernize your AppKit app*, does ship an Apple-authored
-`cornerConfiguration` listing; WWDC25 session 310 and the adoption guide remain
+`cornerConfiguration` listing. WWDC25 session 310 and the adoption guide remain
 prose/API-led for AppKit Liquid Glass. Verify every symbol against the SDK in use.
 
 ## `NSGlassEffectView` — macOS 26.0
@@ -66,8 +66,9 @@ Apple's own note is the only place the mechanism is named:
 | `spacing: CGFloat` — the proximity at which merging begins | macOS 26.0 |
 
 Worked pattern — a transport-control cluster whose glass surfaces merge when
-close. Compiles with `swiftc -c -target arm64-apple-macos26.0` against the
-macOS 26.5 SDK (Xcode 26.6):
+close. The pattern meets a test with
+`swiftc -c -target arm64-apple-macos26.0` on the shipping 26.x SDK. Do
+the test again with the installed toolchain:
 
 ```swift
 import AppKit
@@ -110,9 +111,9 @@ final class TransportCluster: NSView {
 }
 ```
 
-The numeric edit above was not re-probed. The glass views live inside the container's `contentView` hierarchy; the
-container merges any descendant glass views that come within `spacing` points
-of each other.
+Do a test of the numeric edit above again. The glass views live inside the
+container's `contentView` hierarchy. The container merges any descendant
+glass views that come within `spacing` points of each other.
 
 ## `NSBackgroundExtensionView` — macOS 26.0
 
@@ -125,9 +126,9 @@ the edges to fill the container.
 - `automaticallyPlacesContentView: Bool`
 
 Worked pattern — a hero image that extends under the transparent title bar
-while its safe-area copy stays untouched. Compiles with
-`swiftc -c -target arm64-apple-macos26.0` against the macOS 26.5 SDK
-(Xcode 26.6):
+with its safe-area copy untouched. The pattern meets a test with
+`swiftc -c -target arm64-apple-macos26.0` on the shipping 26.x SDK. Do
+the test again with the installed toolchain:
 
 ```swift
 import AppKit
@@ -141,15 +142,15 @@ func makeHeroPane(hero: NSImageView) -> NSView {
 }
 ```
 
-Pin the returned view to the window content's full bounds (not the safe area);
-the extension view itself keeps `hero` inside the safe area and synthesizes the
+Pin the returned view to the window content's full bounds (not the safe area).
+The extension view itself keeps `hero` inside the safe area and synthesizes the
 extended edges.
 
 ## Buttons and control metrics
 
 - `NSButton.BezelStyle.glass` — macOS 26.0. A bezel style with a glass effect.
 - **There is no `prominentGlass` or `clearGlass` bezel style on AppKit.** UIKit
-  has four glass button configurations; AppKit has exactly one. Prominence on an
+  has four glass button configurations. AppKit has exactly one. Prominence on an
   AppKit toolbar is expressed with `NSToolbarItem.Style.prominent` plus
   `NSToolbarItem.backgroundTintColor`.
 - `NSControl.ControlSize.extraLarge` — macOS 26.0.
@@ -169,8 +170,9 @@ extended edges.
   `NSSegmentedControl.role`, `NSSegmentedControlRole.tabs`.
 
 Worked pattern — one prominent tinted item for the toolbar's primary action.
-Compiles with `swiftc -c -target arm64-apple-macos26.0` against the macOS 26.5
-SDK (Xcode 26.6):
+The pattern meets a test with
+`swiftc -c -target arm64-apple-macos26.0` on the shipping 26.x SDK. Do
+the test again with the installed toolchain:
 
 ```swift
 import AppKit
@@ -209,24 +211,26 @@ final class PublishToolbarDelegate: NSObject, NSToolbarDelegate {
 }
 ```
 
-One prominent item per toolbar; prominence on every item is prominence on none.
+One prominent item per toolbar. Prominence on every item is prominence on none.
 
 ## Scroll edge effects — macOS 26.1, not 26.0
 
 This is the availability most often gotten wrong on AppKit.
 
 - `NSScrollEdgeEffectStyle` (class) — macOS **26.1** — Swift members
-  `.automatic`, `.hard`, `.soft` (spelling per Swift import convention; not
-  re-probed after this edit).
+  `.automatic`, `.hard`, `.soft` (spelling per Swift import convention —
+  test again after any edit).
 - `NSTitlebarAccessoryViewController.preferredScrollEdgeEffectStyle` — macOS
   **26.1**.
 
-Apple's quoted Objective-C snippet uses `softStyle`; the `…Style` suffix drops
+Apple's quoted Objective-C snippet uses `softStyle`. The `…Style` suffix drops
 on Swift import.
 
 Worked pattern — a bottom title-bar accessory that forces a hard edge under a
-pinned filter bar. Compiles with `swiftc -c -target arm64-apple-macos26.0`
-against the macOS 26.5 SDK (Xcode 26.6); the 26.1-only symbols are guarded:
+pinned filter bar. The pattern meets a test with
+`swiftc -c -target arm64-apple-macos26.0` on the shipping 26.x SDK. Do
+the test again with the installed toolchain. The 26.1-only symbols are
+guarded:
 
 ```swift
 import AppKit
@@ -306,12 +310,12 @@ of all of them. Two decisions are yours:
 - which `NSVisualEffectView.BlendingMode` to use — behind-window or
   within-window.
 
-Do not leave an `NSVisualEffectView` inside a popover's content view; the
+Do not leave an `NSVisualEffectView` inside a popover's content view. The
 adoption guide says to remove those custom background views.
 
 | Existing `NSVisualEffectView` surface | Migration decision |
 |---|---|
-| Sidebar | Replace custom material with system sidebar construction; do not add glass manually. |
+| Sidebar | Replace custom material with system sidebar construction. Do not add glass manually. |
 | Toolbar accessory | Move into `NSTitlebarAccessoryViewController` or the split-item accessory APIs. |
 | Floating functional panel | Use `NSGlassEffectView` only after the layer model justifies a custom transient surface. |
-| Content | Keep the purpose-appropriate `NSVisualEffectView.Material`; content never becomes glass. |
+| Content | Keep the purpose-appropriate `NSVisualEffectView.Material`. Content never becomes glass. |

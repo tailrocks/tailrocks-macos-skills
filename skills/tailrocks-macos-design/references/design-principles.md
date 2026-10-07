@@ -5,8 +5,9 @@ are deliberately not scoreable — Apple says so. Platform-citizenship checklist
 supply the **pass/fail tests**. A review needs both: the axes alone produce
 vibes, the tests alone produce a conformant app with no point of view.
 
-Compiled 2026-08-11 from Apple's Human Interface Guidelines and WWDC sessions,
-quoted rather than paraphrased. Apple reintroduced a formal design-principles
+Compiled from Apple's Human Interface Guidelines and WWDC sessions,
+quoted rather than paraphrased. Do a test of each quotation with
+current guidance before use. Apple reintroduced a formal design-principles
 page on 8 June 2026.
 
 ## Apple's eight principles

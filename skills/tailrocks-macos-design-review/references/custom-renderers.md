@@ -52,8 +52,9 @@ components above it, and no glass is drawn inside it.
 A pure-Rust application (no Swift by project constraint) still uses Apple's
 renderer: the `objc2` ecosystem's AppKit bindings expose `NSGlassEffectView`
 (`contentView`, `cornerRadius`, `tintColor`, `style`) and
-`NSGlassEffectContainerView` for system-managed grouping (verified
-2026-08-16). GPUI is not the shell there either. Everything in this skill
+`NSGlassEffectContainerView` for system-managed grouping. Do the
+test again on the installed SDK at execution time. GPUI is not the shell there
+either. Everything in this skill
 applies unchanged — the decision order, layer discipline, container
 batching, and the acceptance gate; the binding changes the calling language,
 not the policy, and AppKit lane limits (no interactive glass on macOS 26,
