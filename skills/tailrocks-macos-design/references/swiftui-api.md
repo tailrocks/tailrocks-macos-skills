@@ -203,7 +203,7 @@ scroll edge effect and is the wrong construction.
 | `ToolbarContent.sharedBackgroundVisibility(_:)` | `func sharedBackgroundVisibility(_ visibility: Visibility) -> some ToolbarContent` | macOS 26.0 |
 | `DefaultToolbarItem` | `struct DefaultToolbarItem` | macOS 26.0 |
 | `ToolbarContent.hidden(_:)` | `func hidden(_ hidden: Bool = true) -> some ToolbarContent` | macOS 15.0 |
-| `ToolbarContent.visibilityPriority(_:)` | `func visibilityPriority(_ priority: ToolbarItemVisibilityPriority) -> some ToolbarContent` | macOS **26.1** at runtime — but the symbol is **absent from the macOS 26.5 SDK** (Xcode 26.6); it compiles only against the macOS 27 beta SDK. Other platforms are 27.0 beta. |
+| `ToolbarContent.visibilityPriority(_:)` | `func visibilityPriority(_ priority: ToolbarItemVisibilityPriority) -> some ToolbarContent` | macOS **26.1** at runtime — but the symbol is not in the shipping 26.x SDK. It compiles only with the macOS 27 beta SDK. Re-resolve other-platform availability at execution time. |
 | `toolbarMinimizationBehavior(_:for:)` | | macOS **27.0 beta** |
 | `toolbarOverflowMenu(content:)`, `ToolbarItemPlacement.topBarPinnedTrailing` | | **no macOS availability** |
 
@@ -299,8 +299,8 @@ macOS 27 beta adds `GeometryProxy.concentricCornerRadii` and
 
 `Landmarks: Building an app with Liquid Glass` —
 `developer.apple.com/documentation/swiftui/landmarks-building-an-app-with-liquid-glass`.
-Native macOS target (`SUPPORTS_MACCATALYST = NO`), deployment target macOS 26.0,
-refreshed June 2026. Its four articles cover background extension, horizontal
+Native macOS target (`SUPPORTS_MACCATALYST = NO`), deployment target macOS 26.0.
+Its four articles cover background extension, horizontal
 scrolling under a sidebar or inspector, toolbar glass grouping, and custom
 activity badges.
 

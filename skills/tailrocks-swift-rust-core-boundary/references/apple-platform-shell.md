@@ -117,8 +117,8 @@ mandatory:
 - Never rely on a Rust shutdown callback running.
 - Persist important state incrementally; make operations resumable;
   checkpoint before and during long work.
-- Treat every foreground activation as potential process recovery: full
-  snapshot reconciliation plus effect-queue drain.
+- Treat every foreground activation as potential process recovery:
+  snapshot reconciliation of every feature plus effect-queue drain.
 
 Swift observes `scenePhase` and sends semantic lifecycle actions —
 `becameActive` (Rust refreshes stale state; the store reconciles),

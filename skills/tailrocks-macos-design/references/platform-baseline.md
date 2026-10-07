@@ -1,44 +1,38 @@
 # Platform baseline and availability
 
 Availability errors are the dominant failure mode when an agent writes Liquid
-Glass code. Apple's documentation site renders declarations from the newest
-published SDK, so a symbol page that looks current may describe an API that does
-not exist on the deployment target. Resolve the target first, then verify each
-symbol.
+Glass code. Apple documentation renders declarations from the newest
+published SDK. A symbol page can describe an API that the deployment target
+does not have. Record the target first, then examine each symbol.
 
 ## Establish the target before writing code
 
-Record all four values and keep them in the project's agent instructions:
+Record these values and keep them in the project agent instructions:
 
 ```
 Minimum deployment target:
-Shipping SDK / Xcode:
-Forward-validation SDK / Xcode:
+Compiler release:
+Language mode:
+Shipping SDK and Xcode:
+Forward-validation SDK and Xcode:
+Host version:
 Behavior when a forward-only API is unavailable:
 ```
 
-An availability guard is not optional decoration. Several glass symbols an agent
-will reach for by analogy with iOS or with a newer SDK do not exist on
-macOS 26 at all.
+An availability guard is not optional decoration. Some glass symbols from
+iOS or from a newer SDK are not on macOS 26.
 
-## State of the platform as verified 2026-08-21
+## Resolve values at execution time
 
-| Fact | Value |
-|---|---|
-| Latest shipping macOS | 26.6.2 "Tahoe" — `gdmf.apple.com/v2/pmv`, 2026-08-21 |
-| macOS 27 | Announced, named "Golden Gate", **not shipping** — beta, "coming this fall" |
-| Shipping toolchain | Xcode 26.6 (17F113), Swift 6.3.3, macOS 26.5 SDK as reported by `xcrun --show-sdk-version` on 2026-08-21; requires host macOS 26.2+ |
-| Beta toolchain | Xcode 27 beta 5, Swift 6.4, macOS 27 SDK; requires host macOS 26.4+; checked 2026-08-17 |
-| Intel | Xcode 27 is Apple-silicon-only; `ARCHS_STANDARD` drops `x86_64` when the deployment target is 27.0 or later. Universal back-deploy to macOS 12 still supported. |
-
-Re-verify these before relying on them. Release notes:
+Get the shipping and forward lane values from the installed toolchain and
+the release notes. Record the date and source. Without fresh values, stop.
+Release notes:
 `developer.apple.com/documentation/macos-release-notes`,
 `developer.apple.com/documentation/xcode-release-notes`.
 
-Apple's macOS 26.6 release notes label the bundled SDK 26.6, while Xcode 26.6's
-release notes and the installed toolchain report 26.5. Treat the local
-`xcrun --show-sdk-version` result as the compile-lane authority; both release
-note pages were rechecked 2026-08-11.
+Use the local `xcrun --show-sdk-version` result as the compile-lane
+authority. When release-note pages and the installed toolchain state
+different SDK numbers, record both values.
 
 ## Almost every 26.x glass symbol is 26.0 — three exceptions
 
@@ -48,7 +42,7 @@ Only three relevant items appear after 26.0 through 26.6:
 |---|---|
 | `NSScrollEdgeEffectStyle` | macOS **26.1** — not 26.0 |
 | `NSTitlebarAccessoryViewController.preferredScrollEdgeEffectStyle` | macOS **26.1** |
-| SwiftUI `ToolbarContent.visibilityPriority(_:)` | macOS **26.1** at runtime, but declared only in the macOS **27 beta SDK** — it does not compile against SDK 26.5 (Xcode 26.6) |
+| SwiftUI `ToolbarContent.visibilityPriority(_:)` | macOS **26.1** at runtime, but declared only in the macOS **27 beta SDK** — it does not compile with the shipping 26.x SDK |
 
 macOS 26.4 fixed one glass defect: a non-opaque window hosting glass content now
 updates the backdrop behind the glass while the window is inactive.
@@ -88,13 +82,13 @@ guard breaks a macOS 26 deployment target.
 | `NSMenuItem.preferredImageVisibility` | controls menu-image visibility |
 
 SwiftUI `windowResizeAnchor(_:)` anchors content-driven window resizing and is
-**macOS 26.0, not 27** — DocC declares 26.0 and it compiles against the 26.5
-SDK (rechecked 2026-08-17). Use `.topLeading` to avoid pixel cracking during
+**macOS 26.0, not 27** — DocC declares 26.0 and it compiles with the
+shipping 26.x SDK. Use `.topLeading` to avoid pixel cracking during
 animated macOS resizes. It appears in the 27 column only in older notes.
 
-`tabViewBottomAccessory(content:)` was rechecked in DocC on 2026-08-17. Its
-documented behavior is iPhone tab-bar placement, so it is not a macOS bar
-construction and remains blocklisted in the router.
+The DocC entry for `tabViewBottomAccessory(content:)` describes iPhone
+tab-bar placement. It is not a macOS bar construction and stays
+blocklisted in the router.
 
 ## macOS 27 rebuild changes
 

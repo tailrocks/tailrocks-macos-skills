@@ -66,8 +66,9 @@ Apple's own note is the only place the mechanism is named:
 | `spacing: CGFloat` — the proximity at which merging begins | macOS 26.0 |
 
 Worked pattern — a transport-control cluster whose glass surfaces merge when
-close. Compiles with `swiftc -c -target arm64-apple-macos26.0` against the
-macOS 26.5 SDK (Xcode 26.6):
+close. The pattern meets a test with
+`swiftc -c -target arm64-apple-macos26.0` on the shipping 26.x SDK. Do
+the test again with the installed toolchain:
 
 ```swift
 import AppKit
@@ -110,9 +111,9 @@ final class TransportCluster: NSView {
 }
 ```
 
-The numeric edit above was not re-probed. The glass views live inside the container's `contentView` hierarchy; the
-container merges any descendant glass views that come within `spacing` points
-of each other.
+Do a test of the numeric edit above again. The glass views live inside the
+container's `contentView` hierarchy. The container merges any descendant
+glass views that come within `spacing` points of each other.
 
 ## `NSBackgroundExtensionView` — macOS 26.0
 
@@ -125,9 +126,9 @@ the edges to fill the container.
 - `automaticallyPlacesContentView: Bool`
 
 Worked pattern — a hero image that extends under the transparent title bar
-while its safe-area copy stays untouched. Compiles with
-`swiftc -c -target arm64-apple-macos26.0` against the macOS 26.5 SDK
-(Xcode 26.6):
+with its safe-area copy untouched. The pattern meets a test with
+`swiftc -c -target arm64-apple-macos26.0` on the shipping 26.x SDK. Do
+the test again with the installed toolchain:
 
 ```swift
 import AppKit
@@ -169,8 +170,9 @@ extended edges.
   `NSSegmentedControl.role`, `NSSegmentedControlRole.tabs`.
 
 Worked pattern — one prominent tinted item for the toolbar's primary action.
-Compiles with `swiftc -c -target arm64-apple-macos26.0` against the macOS 26.5
-SDK (Xcode 26.6):
+The pattern meets a test with
+`swiftc -c -target arm64-apple-macos26.0` on the shipping 26.x SDK. Do
+the test again with the installed toolchain:
 
 ```swift
 import AppKit
@@ -216,8 +218,8 @@ One prominent item per toolbar; prominence on every item is prominence on none.
 This is the availability most often gotten wrong on AppKit.
 
 - `NSScrollEdgeEffectStyle` (class) — macOS **26.1** — Swift members
-  `.automatic`, `.hard`, `.soft` (spelling per Swift import convention; not
-  re-probed after this edit).
+  `.automatic`, `.hard`, `.soft` (spelling per Swift import convention —
+  test again after any edit).
 - `NSTitlebarAccessoryViewController.preferredScrollEdgeEffectStyle` — macOS
   **26.1**.
 
@@ -225,8 +227,10 @@ Apple's quoted Objective-C snippet uses `softStyle`; the `…Style` suffix drops
 on Swift import.
 
 Worked pattern — a bottom title-bar accessory that forces a hard edge under a
-pinned filter bar. Compiles with `swiftc -c -target arm64-apple-macos26.0`
-against the macOS 26.5 SDK (Xcode 26.6); the 26.1-only symbols are guarded:
+pinned filter bar. The pattern meets a test with
+`swiftc -c -target arm64-apple-macos26.0` on the shipping 26.x SDK. Do
+the test again with the installed toolchain. The 26.1-only symbols are
+guarded:
 
 ```swift
 import AppKit

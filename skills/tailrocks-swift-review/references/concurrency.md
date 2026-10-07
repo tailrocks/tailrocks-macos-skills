@@ -83,18 +83,21 @@ behavior; a checked continuation traps on double-resume and logs a leak — whic
 is why the checked form is the default choice. Where a callback can fire more
 than once, a continuation is the wrong tool; use a stream.
 
-## Verify against the toolchain in use
+## Examine the toolchain in use
 
-Swift's concurrency surface has moved every release: default isolation settings,
-approachable-concurrency modes, and non-sending parameter behavior have all
-changed. Do not assume a pattern from memory.
+Swift concurrency changes with each release: default isolation settings,
+approachability features, annotation inference, and Sendable checking have all
+changed. Do not use a pattern from memory.
 
-Confirm the language mode and the concurrency-related build settings the project
-actually uses before writing or reviewing annotations, and check the release
-notes for the pinned toolchain rather than reasoning from a previous version.
-For Xcode 26.6, the setup baseline confirms only `SWIFT_STRICT_CONCURRENCY`;
-default-isolation and approachable-concurrency build-setting names are absent,
-so their behavior must not be claimed as pinned.
+Read the language mode and the concurrency build settings that the project
+uses before writing or examining annotations. Read the release notes for the
+pinned toolchain. A previous version is no evidence.
+
+The Xcode build-settings reference has `SWIFT_STRICT_CONCURRENCY`,
+`SWIFT_DEFAULT_ACTOR_ISOLATION`, and `SWIFT_APPROACHABLE_CONCURRENCY`.
+The setup baseline pins explicit values for all three keys. State no
+other concurrency behavior as pinned. The canonical toolchain
+reference is authoritative.
 
 ## Parallel tests
 

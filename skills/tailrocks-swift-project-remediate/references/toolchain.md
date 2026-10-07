@@ -1,112 +1,142 @@
-# Toolchain and the two-lane SDK strategy
+# Project toolchain and audit ledger
+
+This reference defines the Swift project baseline, the supported
+lanes, and the audit gap ledger. The freshness gate at the top is
+mandatory. No pinned release below replaces live resolution.
 
 ## Freshness gate
 
-Before changing any pin, resolve current releases from official sources —
-`developer.apple.com/documentation/xcode-release-notes` and
-`developer.apple.com/documentation/macos-release-notes` — and select the latest
-compatible stable toolchain. Commit exact versions. If only a prerelease
-satisfies a requirement, report that and require explicit approval.
+An audit, remediation, or setup run first finds the newest
+stable releases. It records the release date and source. It
+finds them again when SDK state changes. Without fresh releases,
+it stops. No cached table approves a lane.
 
-## State of the platform as verified 2026-08-21
+## Supported lanes
 
-Re-verify before relying on these. The shipping column was re-checked on
-2026-08-21 against `gdmf.apple.com/v2/pmv` and the installed toolchain; the
-forward-validation column keeps its 2026-08-11 check, because Xcode 27 beta is
-not installed on the machine that re-verified and a stamp nobody earned reads
-as current when it is not.
+Keep two lanes: one shipping lane and one forward-validation lane.
+The shipping lane uses the newest stable Xcode release. The
+forward-validation lane uses the newest beta or release-candidate
+build. Accept one beta lane per project at a time. Never accept
+two concurrent beta lanes. Never accept a lane that cannot install,
+complete signing, and run.
 
-| | Shipping | Forward validation |
-|---|---|---|
-| macOS | 26.6.2 "Tahoe" | 27 "Golden Gate" — beta, not shipping, "coming this fall" |
-| Xcode | 26.6 (17F113) | 27 beta |
-| Swift | 6.3.3 | 6.4 |
-| SDK | macOS 26.5 | macOS 27 |
-| Host requirement | macOS 26.2+ | macOS 26.4+ |
+The lane gives the compiler release, the Swift language mode, the
+SDK release, and the host version. The deployment target is
+recorded per target alongside the lane. Keep the five values
+separate.
 
-Xcode 27 is **Apple-silicon-only**. Standard architectures drop the Intel
-architecture when the deployment target is 27.0 or later. Universal back-deploy
-to macOS 12 and later remains supported.
+Release one baseline per lane. It runs on old releases. Run the
+baseline gates on every change. Run the forward lane at set times.
+Never run it on every change.
 
-## Declare four values, not one
+## Record five values
 
-A deployment target alone is insufficient. Every project records:
+Record five separate values for the project:
 
-```
-Minimum deployment target:
-Shipping SDK / Xcode:
-Forward-validation SDK / Xcode:
-Behavior when a forward-only API is unavailable:
-```
+1. Deployment target: minimum deployment target per app and test
+   target.
+2. Compiler: exact compiler release in the lane.
+3. Language mode: Swift 6.
+4. SDK: SDK release per lane, shipping and forward.
+5. Host: host version that runs the lane.
 
-Put these in the project's agent instructions file, not only in build settings.
-An agent that cannot see the target will write against the newest documentation
-it finds, and Apple's documentation site renders declarations from the newest
-published SDK.
+State target and lane for each check. Keep lanes separate in each
+result.
 
-## Why two lanes
+## Pin concurrency settings
 
-The shipping lane is what people run. The forward lane catches the changes that
-arrive without a recompile — and on this platform several do:
+Pin the exact Swift strict-concurrency mode in
+`templates/project.yml` with `SWIFT_VERSION` and
+`SWIFT_STRICT_CONCURRENCY`. The template sets `complete` mode.
 
-- Design refinements to the material land automatically on the new OS for apps
-  already built against the previous one.
-- A title bar accessory view controller is allowed to draw outside its bounds by
-  default on macOS 27, **including for apps linked against macOS 26**. Clipping
-  assumptions break silently.
-- Menu symbol images are hidden by default on macOS 27; opting back in is a code
-  change.
+The Xcode build-settings reference also has
+`SWIFT_DEFAULT_ACTOR_ISOLATION` and
+`SWIFT_APPROACHABLE_CONCURRENCY`. The default-isolation key
+controls default actor isolation for unannotated code. When set
+to `MainActor`, the compiler uses `@MainActor` isolation by
+default. The approachable-concurrency key adds the upcoming
+features DisableOutwardActorInference,
+GlobalActorIsolatedTypesUsability, InferIsolatedConformances,
+InferSendableFromCaptures, and NonisolatedNonsendingByDefault.
+The reference read this way on 2026-10-07. The template pins
+explicit values for both keys. Examine the reference again when
+the lane changes.
 
-Run the forward lane on a schedule, not on every change, and never let a
-forward-only symbol reach the shipping target without an availability guard.
+An audit identifies a missing concurrency pin as a gap under
+`SWIFT-PROJECT-006`.
 
-## The compatibility key expires
+## Audit gap ledger
 
-`UIDesignRequiresCompatibility` opts an app out of the new design. The `UI`
-prefix is correct on macOS; there is no platform-specific variant.
+The audit writes the 16-row gap ledger with locked IDs. Exact ID,
+set rule, current state, and gap make each row. IDs stay in the
+same order and do not change. The IDs are `SWIFT-PROJECT-001`
+through `SWIFT-PROJECT-016`:
 
-**The system ignores it when the app is built against the 27 SDK or later**, and
-support for opting into the old design is being removed. Treat it as a migration
-window with a dated exit recorded in the project, never as a strategy. An audit
-must flag its presence with the date the window closes.
+| ID | Set rule |
+| --- | --- |
+| SWIFT-PROJECT-001 | Declarative generation only |
+| SWIFT-PROJECT-002 | No committed generated project |
+| SWIFT-PROJECT-003 | Synchronized sources only |
+| SWIFT-PROJECT-004 | Signing identity set |
+| SWIFT-PROJECT-005 | Zero warnings policy |
+| SWIFT-PROJECT-006 | Exact tool pins, language mode, concurrency-setting pins, and freshness |
+| SWIFT-PROJECT-007 | Lint and format gates complete |
+| SWIFT-PROJECT-008 | TASKS.md parity |
+| SWIFT-PROJECT-009 | Forward lane state recorded |
+| SWIFT-PROJECT-010 | UI tests run in CI |
+| SWIFT-PROJECT-011 | Contract tests for FFI |
+| SWIFT-PROJECT-012 | AX identifiers added |
+| SWIFT-PROJECT-013 | Release build examined |
+| SWIFT-PROJECT-014 | Cache isolation holds |
+| SWIFT-PROJECT-015 | No toolchains in the repository |
+| SWIFT-PROJECT-016 | Thread and memory checks clean |
 
-## Tool pinning
+## Version source policy
 
-Pin every tool that can change the output. The formatter ships with Xcode, so it
-is pinned by the Xcode version rather than separately — do **not** install a
-second copy, which will disagree with the one the editor uses.
+Get versions from the declared source for each boundary
+(Microsoft `winget`, Apple software update, project manifests).
+The version tool pins exact releases for Xcode, Swift toolchain,
+`mise`, `xcodegen`, `swiftlint`, `swiftformat`, and Rust stable.
+Each lane keeps exact pins, a scheduled forward check, and a
+dated removal condition. No tool keeps an older release. Record
+each older release that stays.
 
-```toml
-[tools]
-swiftlint = "0.65.0"
-xcodegen = "2.46.0"
-xcbeautify = "3.2.1"
-periphery = "3.8.0"
-```
+The template pins exact tool releases. `mise` is the version
+source for tools. The Cargo index is the version source for Rust
+crates. The version tool pins every tool to the newest compatible
+version. The source refreshes at set times.
 
-Replace with the current versions at execution time. Record why each tool exists;
-a pinned tool nobody can justify is removed at the next audit.
+## mise task parity
 
-## Tasks
+Each build, format, lint, test, and release task has one `mise`
+task name. CI runs the same task names. This keeps local and
+CI behavior the same. CI never duplicates commands.
 
-Local and continuous-integration commands must resolve through the same
-definitions, or the two drift and the pipeline stops predicting the local result.
-The canonical task set is
-[`mise.toml`](../../tailrocks-swift-project-setup/templates/mise.toml);
-continuous integration invokes those task names without restating commands.
+## Freshness gate checks
 
-## Language mode
+| Check | Rule |
+| --- | --- |
+| Installed tools have pinned versions | Run at each gate |
+| Pinned SDKs still install and run | Run at each gate |
+| Swift toolchain lane state | Record shipping and forward state |
+| Beta lane has authorization | One beta lane at a time, with user authorization |
 
-Target the current Swift language mode with strict concurrency. Record the
-language mode explicitly in build settings rather than inheriting whatever the
-toolchain defaults to, so a toolchain bump does not silently change the
-diagnostics an agent sees.
+## Forward lane
 
-`SWIFT_VERSION` is the language mode, not the compiler release. Legal values are
-`4`, `4.2`, `5`, and `6`; never write a release such as `6.3` there.
+Never move a beta lane to shipping without an explicit user
+decision. An audit must identify its presence. A beta toolchain,
+SDK, or OS release can break the build. Use it as a migration
+window with a dated exit, never as a strategy. Host requirements
+for the bridge come from the installed Xcode, not from a cached
+table.
 
-The Xcode 26.6 build-settings reference exposes `SWIFT_STRICT_CONCURRENCY` but
-does not expose build-setting keys for "default isolation" or "approachable
-concurrency". The template therefore pins only the confirmed key. Do not invent
-silent YAML keys; re-probe the build-settings reference when the toolchain lane
-changes and record any newly shipping names before adding them.
+## Cache isolation
+
+Derived data, build caches, and test artifacts stay outside the
+repository and outside the packaged app. Each lane uses separate
+derived-data paths.
+
+## No vendored toolchains
+
+Keep toolchains out of the repository. Install them through the
+version tool. Never stop the shipping lane for the newest release.

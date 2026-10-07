@@ -41,10 +41,8 @@ Two limits to record so nobody assumes otherwise:
 
 ## One owner per responsibility
 
-Installing more design skills does not monotonically improve output. Published
-evaluation of curated agent skills found an average pass-rate improvement
-alongside a meaningful set of tasks made *worse*, with focused two-or-three-module
-skills outperforming comprehensive documentation. Retrieval degrades as a skill
+More installed skills do not always give better output. Focused skills
+work better than broad collections, and retrieval gets worse as a
 collection grows.
 
 Assign exactly one automatic owner per responsibility and make everything else
@@ -65,11 +63,9 @@ features rather than as an error.
 
 ## Third-party skills are dependencies
 
-Treat every installed third-party skill as a dependency with the same review a library gets.
-An empirical study of a large public skill corpus reported that roughly a quarter
-contained at least one identified vulnerability pattern, with skills bundling
-executable scripts significantly more likely to. That is one methodology and not
-proof about any particular repository, but it justifies dependency-level review.
+Treat every installed third-party skill as a dependency with the same
+review a library gets. Give bundled executable scripts the closest
+review.
 
 Policy:
 
@@ -85,47 +81,48 @@ Policy:
 
 Two selection cautions specific to this platform:
 
-- **License.** Much of the macOS and Liquid Glass skill ecosystem ships with no
-  license file at all. Read a skill for ideas freely; do not vendor an unlicensed
-  one into a repository.
-- **Web-built design skills.** The most popular design-taste skills are built for
-  the web, and their defaults — avoid system fonts, avoid neutral grays, avoid
-  spring easing — are reasonable there and wrong on Apple platforms, where the
-  system font, semantic neutrals, and interruptible springs are the correct
-  tools. A web taste skill left automatically active will push an agent toward
-  hand-rolled glassmorphism instead of the real material APIs.
+- **License.** Some third-party skills ship with no license file. Read a
+  skill for ideas freely. Do not put an unlicensed one into a
+  repository.
+- **Web-built design skills.** Web-oriented design-taste skills carry
+  defaults — avoid system fonts, avoid neutral grays, avoid
+  spring easing — that are reasonable for the web and wrong on Apple
+  platforms, where the system font, semantic neutrals, and interruptible
+  springs are the correct tools. A web taste skill left automatically
+  active pushes an agent toward hand-rolled glassmorphism instead of the
+  real material APIs.
 
-## What the skill ecosystem does and does not cover (surveyed 2026-08-11)
+## Third-party skills stay outside this collection
 
-The public agent-skill ecosystem was surveyed and analyzed rather than
-adopted: this collection never links to or vendors third-party skills.
-Relevant knowledge is extracted, verified against Apple's own documentation
-and SDKs, and carried in these skills directly. The survey's durable findings:
+This collection never links to third-party skills and puts none
+in the repository. Get
+relevant knowledge from third-party skills. Do tests of it with
+Apple documentation and SDKs. Keep it in these skills.
 
-- **The official sets have the gap.** Neither Apple's Xcode-exported skills
+- **The official sets have the gap.** Neither Xcode-exported skills
   (see "Vendor upstream agent knowledge read-only" above) nor the major
   first-party skill collections contains a Liquid Glass skill or a macOS
-  skill. Native macOS material policy has to come from a project's own
-  skills — which is exactly what this family provides.
-- **Popularity concentrates on web.** Every widely adopted design skill is
-  web-oriented or process-generic; native macOS coverage in the wild is
-  sparse, young, and thin. Popularity is not a signal of macOS correctness.
-- **"Liquid glass" in a name does not mean the material.** A large share of
-  self-described liquid-glass guidance teaches CSS/React glassmorphism — the
-  hand-rolled imitation the web-taste caution above warns about. Anything
-  adopted by analogy from that corpus produces frozen fakes instead of the
-  system material. Extract ideas; never copy recipes.
-- **Licensing in that corpus is unreliable.** Much of it ships with no
-  license at all. Read for analysis only; never vendor unlicensed content —
-  and since this collection extracts and re-verifies rather than vendors,
-  nothing external enters the repository either way.
+  skill. Native macOS material policy comes from a project's own
+  skills — that is what this family provides.
+- **Popularity is not a signal of macOS correctness.** Look at the
+  behavior on Apple platforms, not at the adoption.
+- **"Liquid glass" in a name does not mean the material.** Much
+  self-described liquid-glass guidance describes CSS/React glassmorphism —
+  the hand-rolled imitation the web-taste caution above warns about.
+  Anything adopted by analogy from that corpus produces frozen fakes
+  instead of the system material. Get ideas from third-party
+  skills. Make no copy of a recipe.
+- **Licensing in that corpus is unreliable.** Read for analysis only.
+  Put no unlicensed content in the repository. This collection only
+  gets knowledge and does tests. Nothing external enters the
+  repository.
 
 ## Project instructions
 
-Keep the repository's agent instructions file compact: platform and the four
-target values, architecture, build and test commands, the native-first
-requirement, where the design artifacts live, the required review sequence,
-completion criteria, and prohibited patterns.
+Keep the repository's agent instructions file compact: platform and the
+recorded target values, architecture, build and test commands, the
+native-first requirement, where the design artifacts live, the required
+review sequence, completion criteria, and prohibited patterns.
 
 Do not put a design textbook in it. Long reusable workflows belong in skills,
 which load on demand; instructions files are loaded for every task and compete

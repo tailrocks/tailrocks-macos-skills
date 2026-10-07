@@ -4,14 +4,15 @@ The normative rules stated by Apple's own designers, quoted, with the first-part
 app each was demonstrated on. Use this to answer "what does correct look like"
 without guessing.
 
-Compiled 2026-08-11 from WWDC sessions, Apple Newsroom, and Apple support
-documentation. Apple's Human Interface Guidelines are a JavaScript-rendered
+Compiled from WWDC sessions, Apple Newsroom, and Apple support
+documentation. Do a test of each pattern with current guidance
+before use. Apple's Human Interface Guidelines are a JavaScript-rendered
 application; its backing JSON is fetchable at
 `developer.apple.com/tutorials/data/design/human-interface-guidelines/<slug>.json`
 — note `data/design/…`, not `data/documentation/design/…`, which returns 404.
 That path is how these rules are verifiable rather than remembered.
 
-Every API symbol named below was probe-verified against the local SDK, not
+Every API symbol named below was examined on the local SDK, not
 recalled. The technique, which is worth reusing whenever availability matters:
 compile a file that touches each symbol with an artificially low target and read
 the diagnostics.
@@ -113,9 +114,9 @@ one tinted primary action per bar, on the trailing side.
 
 ## Scroll edge effects: automatic is the default; hard is the Mac case
 
-HIG revision checked 2026-08-11: Scroll views (latest recorded change
-2026-03-24), Sidebars, Menus, App icons, and Design principles were reread from
-Apple's live Human Interface Guidelines. Platform-specific sidebar-adaptation
+Scroll views, Sidebars, Menus, App icons, and Design principles were
+reread from Apple's live Human Interface Guidelines. Reread them again
+at execution time. Platform-specific sidebar-adaptation
 language is not promoted into a macOS API rule without macOS availability.
 
 Prefer `.automatic`, which commonly resolves soft; force a style only for a
