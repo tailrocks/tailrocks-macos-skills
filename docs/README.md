@@ -1,23 +1,65 @@
-# tailrocks-macos-skills
+# macOS skills guides
 
-Generated documentation for 15 skills.
+This package holds fifteen skills. The skills design native macOS
+interfaces, scaffold and audit Swift projects, integrate a Rust
+application core, and verify rendering through capture and comparison.
 
-Regenerate with: bun scripts/generate-docs.ts
+Two skills are model-selectable. Thirteen skills are user-only and
+need an explicit human command:
+
+- `tailrocks-macos-design-review` scores a rendered screen.
+- `tailrocks-macos-design-systematize` persists approved design
+  learning.
+- `tailrocks-macos-visual-baseline` freezes a visual baseline.
+- `tailrocks-macos-visual-qa` verifies the current render.
+- `tailrocks-macos-visual-regression` compares captures with a
+  baseline.
+- `tailrocks-swift-agent-integration` wires Xcode for agent work.
+- `tailrocks-swift-project-audit` audits a project baseline.
+- `tailrocks-swift-project-remediate` closes approved baseline gaps.
+- `tailrocks-swift-project-setup` scaffolds a new project baseline.
+- `tailrocks-swift-refactor` restructures Swift code.
+- `tailrocks-swift-review` reviews Swift code.
+- `tailrocks-swift-rust-core-boundary` designs the Swift and Rust
+  boundary.
+- `tailrocks-swift-rust-core-setup` wires the Rust core lane.
+
+## Guides
+
+- `installation.md` installs the package on eight coding agents.
+- `usage.md` shows how to select each skill and what each skill
+  returns.
+- `compatibility.md` records the test result of each client route.
+- `maintenance.md` lists the checks, the policy version, and the
+  release procedure.
+- `troubleshooting.md` fixes common install and selection failures.
 
 ## Skills
 
-- [tailrocks-macos-design](skills/tailrocks-macos-design/index.md)
-- [tailrocks-macos-design-review](skills/tailrocks-macos-design-review/index.md)
-- [tailrocks-macos-design-systematize](skills/tailrocks-macos-design-systematize/index.md)
-- [tailrocks-macos-visual-baseline](skills/tailrocks-macos-visual-baseline/index.md)
-- [tailrocks-macos-visual-qa](skills/tailrocks-macos-visual-qa/index.md)
-- [tailrocks-macos-visual-regression](skills/tailrocks-macos-visual-regression/index.md)
-- [tailrocks-swift-agent-integration](skills/tailrocks-swift-agent-integration/index.md)
-- [tailrocks-swift-best-practices](skills/tailrocks-swift-best-practices/index.md)
-- [tailrocks-swift-project-audit](skills/tailrocks-swift-project-audit/index.md)
-- [tailrocks-swift-project-remediate](skills/tailrocks-swift-project-remediate/index.md)
-- [tailrocks-swift-project-setup](skills/tailrocks-swift-project-setup/index.md)
-- [tailrocks-swift-refactor](skills/tailrocks-swift-refactor/index.md)
-- [tailrocks-swift-review](skills/tailrocks-swift-review/index.md)
-- [tailrocks-swift-rust-core-boundary](skills/tailrocks-swift-rust-core-boundary/index.md)
-- [tailrocks-swift-rust-core-setup](skills/tailrocks-swift-rust-core-setup/index.md)
+| Skill | Task |
+| --- | --- |
+| `tailrocks-macos-design` | Design a native screen and prototype it. |
+| `tailrocks-macos-design-review` | Score a rendered screen. User-only. |
+| `tailrocks-macos-design-systematize` | Record approved learning. User-only. |
+| `tailrocks-macos-visual-baseline` | Freeze a visual baseline. User-only. |
+| `tailrocks-macos-visual-qa` | Verify the current render. User-only. |
+| `tailrocks-macos-visual-regression` | Compare captures. User-only. |
+| `tailrocks-swift-agent-integration` | Wire Xcode for agent work. User-only. |
+| `tailrocks-swift-best-practices` | Write Swift and SwiftUI code. |
+| `tailrocks-swift-project-audit` | Audit a project baseline. User-only. |
+| `tailrocks-swift-project-remediate` | Close baseline gaps. User-only. |
+| `tailrocks-swift-project-setup` | Start a project baseline. User-only. |
+| `tailrocks-swift-refactor` | Restructure Swift code. User-only. |
+| `tailrocks-swift-review` | Review Swift code. User-only. |
+| `tailrocks-swift-rust-core-boundary` | Plan Swift/Rust boundary. User-only. |
+| `tailrocks-swift-rust-core-setup` | Wire the Rust core lane. User-only. |
+
+Each skill body lives in its own directory under `skills/`. Read
+`skills/tailrocks-swift-review/SKILL.md` for one complete example.
+
+## Requirements
+
+Build and test work needs Xcode on macOS. Visual work needs an
+interactive graphical session with Screen Recording, Accessibility,
+and Automation grants. Keep the complete package checkout for
+the visual harness installer and the project setup templates.

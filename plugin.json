@@ -1,7 +1,15 @@
 {
-  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "tailrocks-macos-skills",
+  "version": "0.28.0",
   "description": "Native macOS Swift and SwiftUI workflows for Liquid Glass design, project setup, Rust-core integration, visual QA, and regression control.",
+  "author": {
+    "name": "tailrocks",
+    "url": "https://github.com/tailrocks"
+  },
+  "homepage": "https://github.com/tailrocks/tailrocks-macos-skills",
+  "repository": "https://github.com/tailrocks/tailrocks-macos-skills",
+  "license": "Apache-2.0",
   "keywords": [
     "macos",
     "swift",
@@ -12,7 +20,5 @@
     "xcode",
     "visual-qa",
     "rust-ffi"
-  ],
-  "homepage": "https://github.com/tailrocks/tailrocks-macos-skills",
-  "repository": "https://github.com/tailrocks/tailrocks-macos-skills"
+  ]
 }
