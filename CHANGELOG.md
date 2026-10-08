@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.28.1 - 2026-10-08
 
 Applied the common active-package structure on branch
 `standardize/package-rewrite`:
@@ -31,9 +31,6 @@ Applied the common active-package structure on branch
   claim, the update-notice recovery, the binding-drift procedure,
   and the platform-effect wording. Removed custom loader tools
   and unsupported statistics.
-
-## 0.28.1 - 2026-10-08
-
 - Regenerated CI with Velnor Actions 0.1.4.
 - Replaced the `.github/CLAUDE.md` symlink with a regular pointer
   file. Installers that reject symlinks now accept the package.
