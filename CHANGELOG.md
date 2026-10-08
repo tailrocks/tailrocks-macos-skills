@@ -32,6 +32,12 @@ Applied the common active-package structure on branch
   and the platform-effect wording. Removed custom loader tools
   and unsupported statistics.
 
+## 0.28.1 - 2026-10-08
+
+- Regenerated CI with Velnor Actions 0.1.4.
+- Replaced the `.github/CLAUDE.md` symlink with a regular pointer
+  file. Installers that reject symlinks now accept the package.
+
 ## 0.28.0 - 2026-10-02
 
 Fifteen-skill package at commit `eb0be5522fe0c1c9c74d41ee354446a011b10c74`
