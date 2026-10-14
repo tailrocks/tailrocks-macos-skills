@@ -1,0 +1,28 @@
+---
+title: "Tailrocks: tailrocks-swift-project-setup"
+description: " Use only when the user explicitly requests this skill. Scaffold a new strict native macOS Swift baseline: declarative generation, deployment and SDK lanes, local signing, strict format/lint gates, tests, and mise-owned command parity. Existing projects route to audit or remediate."
+---
+
+Generated from [tailrocks-swift-project-setup/SKILL.md](https://github.com/tailrocks/tailrocks-macos-skills/blob/main/skills/tailrocks-swift-project-setup/SKILL.md).
+
+ Use only when the user explicitly requests this skill. Scaffold a new strict native macOS Swift baseline: declarative generation, deployment and SDK lanes, local signing, strict format/lint gates, tests, and mise-owned command parity. Existing projects route to audit or remediate.
+
+[Read the complete skill definition](definition.md).
+
+## References
+
+- [lint-and-format.md](../../../skills/tailrocks-swift-project-setup/references/lint-and-format.md)
+- [project-generation.md](../../../skills/tailrocks-swift-project-setup/references/project-generation.md)
+- [runtime-trust.md](../../../skills/tailrocks-swift-project-setup/references/runtime-trust.md)
+- [shared-version-policy.md](../../../skills/tailrocks-swift-project-setup/references/shared-version-policy.md)
+- [testing.md](../../../skills/tailrocks-swift-project-setup/references/testing.md)
+- [toolchain.md](../../../skills/tailrocks-swift-project-setup/references/toolchain.md)
+
+## Templates
+
+- [Tests.swiftlint.yml](../../../skills/tailrocks-swift-project-setup/templates/Tests.swiftlint.yml)
+- [gitignore](../../../skills/tailrocks-swift-project-setup/templates/gitignore)
+- [mise.toml](../../../skills/tailrocks-swift-project-setup/templates/mise.toml)
+- [project.yml](../../../skills/tailrocks-swift-project-setup/templates/project.yml)
+- [swift-format.json](../../../skills/tailrocks-swift-project-setup/templates/swift-format.json)
+- [swiftlint.yml](../../../skills/tailrocks-swift-project-setup/templates/swiftlint.yml)
