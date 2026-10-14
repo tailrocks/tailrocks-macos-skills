@@ -1,0 +1,2663 @@
+{
+  "archive_directory_path_map": [
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/logs",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/logs"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/logs/refs",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/logs/refs"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/logs/refs/heads",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/logs/refs/heads"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/logs/refs/heads/codex",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/logs/refs/heads/codex"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/logs/refs/remotes",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/logs/refs/remotes"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/logs/refs/remotes/origin",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/logs/refs/remotes/origin"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/logs/refs/remotes/origin/codex",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/logs/refs/remotes/origin/codex"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/objects",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/objects"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/objects/a0",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/objects/a0"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/objects/e0",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/objects/e0"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/objects/e7",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/objects/e7"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/objects/e8",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/objects/e8"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/objects/eb",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/objects/eb"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/refs",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/refs"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/refs/heads",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/refs/heads"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/refs/heads/codex",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/refs/heads/codex"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/refs/remotes",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/refs/remotes"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/refs/remotes/origin",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/refs/remotes/origin"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/refs/remotes/origin/codex",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".git/refs/remotes/origin/codex"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/worktree/.github",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".github"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/worktree/.github.velnor-stage",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".github.velnor-stage"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/worktree/.github.velnor-stage/spare",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".github.velnor-stage/spare"
+    },
+    {
+      "archive_directory": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/worktree/.velnor",
+      "empty_or_present": true,
+      "source_mode": 448,
+      "source_path": ".velnor"
+    }
+  ],
+  "archive_file_path_map": [
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/COMMIT_EDITMSG",
+      "blob_oid": "fb35a99bba0e25653a411e0d554beeb50006727e",
+      "git_mode": "100644",
+      "sha256": "5bd4a5e2e6bba5679b831c7ab3b7b9576e01916bfcda925e0282f69baa057a77",
+      "size": 84,
+      "source_mode": 384,
+      "source_path": ".git/COMMIT_EDITMSG"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/index",
+      "blob_oid": "6c63fcda493b950e5f114009695a3ac4c63a8058",
+      "git_mode": "100644",
+      "sha256": "aeea2288ee538f86c65651815343c514a434563fcbd388ffef00526e594ffa6f",
+      "size": 27159,
+      "source_mode": 384,
+      "source_path": ".git/index"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/logs/HEAD",
+      "blob_oid": "a23867a914ce26acce6cff951f25e3b7893c5c2f",
+      "git_mode": "100644",
+      "sha256": "840ab6deb0c9b3455634619f1509ecfa8c8e7ae245138d0c20c81926e2b49092",
+      "size": 2069,
+      "source_mode": 384,
+      "source_path": ".git/logs/HEAD"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/logs/refs/heads/codex/chatgpt-web-consumer-validators",
+      "blob_oid": "f22677e2ed5b6c3c85f6f3fd82504036ab97d8b3",
+      "git_mode": "100644",
+      "sha256": "a28985e0824c6fd2a82512ee3fc86bee5e6bef7fb4740fd8fb5c05f508eaafeb",
+      "size": 777,
+      "source_mode": 384,
+      "source_path": ".git/logs/refs/heads/codex/chatgpt-web-consumer-validators"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/logs/refs/remotes/origin/codex/chatgpt-web-consumer-validators",
+      "blob_oid": "43626124277df82468cda3ede9b9a05d3ea477a0",
+      "git_mode": "100644",
+      "sha256": "c5b89d9cdb582f226be3a1194a69716dbabc238563323e4321b7d0fed8c04143",
+      "size": 450,
+      "source_mode": 384,
+      "source_path": ".git/logs/refs/remotes/origin/codex/chatgpt-web-consumer-validators"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/objects/a0/8dd8edd604063e2a8762bf5c74029aaa9d1351",
+      "blob_oid": "5a61f88c3f7775d43e6880ffc46c8fe94fbdb742",
+      "git_mode": "100644",
+      "sha256": "94a0d71ca05deb0cdb6a5b47b9eccb90ceb48455de8cfe230a691fff78d215f6",
+      "size": 1271,
+      "source_mode": 256,
+      "source_path": ".git/objects/a0/8dd8edd604063e2a8762bf5c74029aaa9d1351"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/objects/e0/a54ffde537414825aac71f362d5d804c802a62",
+      "blob_oid": "a4458fb35f93fff59240b9db4d38159e1f5a6c19",
+      "git_mode": "100644",
+      "sha256": "51251f0ffc300123d9272e8eb08f96c350ef020856ae185ddbf41664ad495639",
+      "size": 55,
+      "source_mode": 256,
+      "source_path": ".git/objects/e0/a54ffde537414825aac71f362d5d804c802a62"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/objects/e7/6be1abb79374fb06ee928e48675c372c4eb1cb",
+      "blob_oid": "1508ce69d69b760024da208425b45e4a4b408e0a",
+      "git_mode": "100644",
+      "sha256": "6fba28150b9466544d4d186d04eb8b69560e61078a89a292e3d5ab7cf1f14918",
+      "size": 55,
+      "source_mode": 256,
+      "source_path": ".git/objects/e7/6be1abb79374fb06ee928e48675c372c4eb1cb"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/objects/e8/dad674b9b587962de7c87279bfe8ad0a188e56",
+      "blob_oid": "15e3fb0813f43486b224cc3fc36fd481785f1a9c",
+      "git_mode": "100644",
+      "sha256": "3b61d527d63f47db214d348b45f42958238bc680670791c4ee8a335353c41fca",
+      "size": 194,
+      "source_mode": 256,
+      "source_path": ".git/objects/e8/dad674b9b587962de7c87279bfe8ad0a188e56"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/objects/eb/4b4c3ca438a0137dc161a3296193ed43367679",
+      "blob_oid": "41d4cff7d884d9fc744790dd211f1c45a947a106",
+      "git_mode": "100644",
+      "sha256": "c00bc884b7323f3962d85e89a500dc06837739a3823500a2d0f2bcd373355b9c",
+      "size": 159,
+      "source_mode": 256,
+      "source_path": ".git/objects/eb/4b4c3ca438a0137dc161a3296193ed43367679"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/refs/heads/codex/chatgpt-web-consumer-validators",
+      "blob_oid": "6a3a9d3c967005fa0eb6c8cd52e2bd87cac2aaab",
+      "git_mode": "100644",
+      "sha256": "258e133d0a071be296d92c27bb723425eff1034f5159843d73d44c7803e4be67",
+      "size": 41,
+      "source_mode": 384,
+      "source_path": ".git/refs/heads/codex/chatgpt-web-consumer-validators"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin/refs/remotes/origin/codex/chatgpt-web-consumer-validators",
+      "blob_oid": "6a3a9d3c967005fa0eb6c8cd52e2bd87cac2aaab",
+      "git_mode": "100644",
+      "sha256": "258e133d0a071be296d92c27bb723425eff1034f5159843d73d44c7803e4be67",
+      "size": 41,
+      "source_mode": 384,
+      "source_path": ".git/refs/remotes/origin/codex/chatgpt-web-consumer-validators"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/worktree/.velnor/config.toml",
+      "blob_oid": "10f15e81f063223aa34ccd58e5fe008efee9220b",
+      "git_mode": "100644",
+      "sha256": "2bfa2d253f9ca1efbf7d1d050a381e5fac0dd161415da975b61d89205c4996c3",
+      "size": 650,
+      "source_mode": 384,
+      "source_path": ".velnor/config.toml"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/worktree/.velnor/release-manifest.json",
+      "blob_oid": "7341cc988702a00c9abce76d0a3ddd3777502f81",
+      "git_mode": "100644",
+      "sha256": "eeecd05bd116504734e97b071a8f666e705c881184a1ff7f56012e4e8e81f39b",
+      "size": 953,
+      "source_mode": 384,
+      "source_path": ".velnor/release-manifest.json"
+    },
+    {
+      "archive_path": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/manifest/snapshot-manifest.json",
+      "blob_oid": "18818035bc97a303ea6415021852c2a7a3ccfc0c",
+      "git_mode": "100644",
+      "sha256": "2507731142ffb0caac66164c6afa763056d50945f4bf4ef19216f2efa7d622a4",
+      "size": 23572,
+      "source_mode": 420,
+      "source_path": "/Users/donbeave/.local/state/github-repatriation/operations/user-request-20261013T2201Z/supplemental-icloud-28/reappeared-quarantine-recovery-v1/snapshots/e2cce056821f9b4d7f8d6560/097ad53cf54a9c37a1e6f676/snapshot-manifest.json"
+    }
+  ],
+  "archive_files_exclude_dotgit_path_component": true,
+  "frozen_quarantine_scope_sha256": "a73bc4e46636990fd55c0c72f270d891600dbd74cec1f03eb334af8d7d6f4486",
+  "group_id": "e2cce056821f9b4d7f8d6560",
+  "incarnation_source_id": "ab3306e3fe7ad9c83be787f1",
+  "index_exactly_matches_remote_pull8_tree": true,
+  "missing_tracked_worktree_paths": [
+    {
+      "blob_oid": "da881f0d97a11ab3ae324de12db8fc9420e767ff",
+      "mode": "100644",
+      "path": ".alint.yml",
+      "remote_refs_reachable": true,
+      "sha256": "a708e340a4cf23ac28fb162c03a2d258321496515efc6acdd057f621ae2310fe",
+      "size": 795
+    },
+    {
+      "blob_oid": "894e48a9658d3417c1396bf6946a39a245b2dd91",
+      "mode": "100644",
+      "path": ".claude-plugin/plugin.json",
+      "remote_refs_reachable": true,
+      "sha256": "17d05f264fae535fb5572df5f372ef1cc838fb0aef488fbf7570df9c0568d526",
+      "size": 221
+    },
+    {
+      "blob_oid": "a08dd8edd604063e2a8762bf5c74029aaa9d1351",
+      "mode": "100644",
+      "path": ".github/AGENTS.md",
+      "remote_refs_reachable": true,
+      "sha256": "e7cfdf22075e1ed5d755c0dc6d7e3ee032283cef6097945edf97da01f92b489b",
+      "size": 2739
+    },
+    {
+      "blob_oid": "43c994c2d3617f947bcb5adf1933e21dabe46bb5",
+      "mode": "100644",
+      "path": ".github/CLAUDE.md",
+      "remote_refs_reachable": true,
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "size": 11
+    },
+    {
+      "blob_oid": "16fd09c4f0051f3a0aaf8a423f79f42930bb6e88",
+      "mode": "100644",
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "remote_refs_reachable": true,
+      "sha256": "44a7c92b6d1b8432993bdd48783f185a48e3c3f11468cd615a8fe69911d32cf7",
+      "size": 689
+    },
+    {
+      "blob_oid": "b7d79d57e76450fe6e2392c61d336dddda7e94e9",
+      "mode": "100644",
+      "path": ".github/actionlint.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "b654b735a199dc415c17b05106cc1820f53566b328987f1822880e69ce1d2fa0",
+      "size": 150
+    },
+    {
+      "blob_oid": "c1f7b4d032cca4e50be98f9a1f47bd972b52be47",
+      "mode": "100644",
+      "path": ".github/actions/u26/action.yml",
+      "remote_refs_reachable": true,
+      "sha256": "88cd150e3705c174c837ab576c4fca8acc95e9018ace861c432b214c1bf50629",
+      "size": 1574
+    },
+    {
+      "blob_oid": "895c6ba00a52d59449eff60c34c2ac95dd2134a6",
+      "mode": "100644",
+      "path": ".github/actions/velnor-tool-seed/action.yml",
+      "remote_refs_reachable": true,
+      "sha256": "912b153c2c885d3754139e82a185e51c7b0c5a94adea3bb7d93cacf529e257be",
+      "size": 5909
+    },
+    {
+      "blob_oid": "89cb2705c721646378cc73aabe59a2bf58dadd24",
+      "mode": "100644",
+      "path": ".github/actions/velnor-tools-cache-restore/action.yml",
+      "remote_refs_reachable": true,
+      "sha256": "3cb6dda1f789147cb5f62b5a07913d4381330e5aa20386291c0a5846b5208a29",
+      "size": 2535
+    },
+    {
+      "blob_oid": "a40594b54de7524d79fb5393bfc4ab52042f044a",
+      "mode": "100644",
+      "path": ".github/actions/velnor-tools-prelude-u26/action.yml",
+      "remote_refs_reachable": true,
+      "sha256": "1885cab527ad97e6cd114b610f99b1b35c9984e1bf78e32a01957c8515a7798e",
+      "size": 902
+    },
+    {
+      "blob_oid": "11f1ca2a1ecbca02ceed3233a3b7d640a534709a",
+      "mode": "100644",
+      "path": ".github/scripts/velnor-tools-cache-identity.sh",
+      "remote_refs_reachable": true,
+      "sha256": "8cbfb0a9b7dcb964365cebd2caa825475b1f206332d3edd2ed0b9ef104ec1289",
+      "size": 5808
+    },
+    {
+      "blob_oid": "f63c601ea2fc4de0bed8d86576072f1b82bf2f75",
+      "mode": "100644",
+      "path": ".github/workflows/ci.yml",
+      "remote_refs_reachable": true,
+      "sha256": "fcba4d4e6b83532f034421bb7ef519d10ca42d03e233133a06d30fb4002dbc4b",
+      "size": 30278
+    },
+    {
+      "blob_oid": "9c07c1cc503660276fbefbf83c0a9fa964af450a",
+      "mode": "100644",
+      "path": ".gitignore",
+      "remote_refs_reachable": true,
+      "sha256": "41800e3b692ad00973c93e191196cfdb0d7657482e6b5066b25fd3c90c46fe56",
+      "size": 48
+    },
+    {
+      "blob_oid": "49395fa8f3074752eee411f9fe6212eed622d7fe",
+      "mode": "100644",
+      "path": ".kimi-plugin/plugin.json",
+      "remote_refs_reachable": true,
+      "sha256": "0a28e188b160de15a7d62392d55565bbc3af316256d73f4746057d9bbd219ebe",
+      "size": 494
+    },
+    {
+      "blob_oid": "e6f98bc824f6aa4247f26a1ce4e1f96c8bac60c7",
+      "mode": "100644",
+      "path": "AGENTS.md",
+      "remote_refs_reachable": true,
+      "sha256": "35cc2b91e1761f0d1c5520bcbc779b93899062bc4d2ecda526787ce5b33aff12",
+      "size": 1438
+    },
+    {
+      "blob_oid": "d3560bb9a6cdef876c570fa31c1742553c0fd08f",
+      "mode": "100644",
+      "path": "CHANGELOG.md",
+      "remote_refs_reachable": true,
+      "sha256": "8549fca7b8e864f7f3636f59ef258baaddfdc0afdf9319ce772e1e1ef650f4b7",
+      "size": 1955
+    },
+    {
+      "blob_oid": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "mode": "100644",
+      "path": "LICENSE",
+      "remote_refs_reachable": true,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    {
+      "blob_oid": "048cfa4c02d21dea38b064ddcacfc582b50d3fe0",
+      "mode": "100644",
+      "path": "README.md",
+      "remote_refs_reachable": true,
+      "sha256": "33e6af4a62cf2a554058cdbcd672f550b05bf999969de44071ba3b08e571f7ba",
+      "size": 5466
+    },
+    {
+      "blob_oid": "7fb928fca4ed63c4b18c08bf6765c9fcd6227f47",
+      "mode": "100644",
+      "path": "docs/README.md",
+      "remote_refs_reachable": true,
+      "sha256": "478e2530d8cda81bd07da4be300f2b869509c1959c961e55c7dd645101f78fa8",
+      "size": 3089
+    },
+    {
+      "blob_oid": "4a0e88814220d3fd571d87a9fef71db6e680280e",
+      "mode": "100644",
+      "path": "docs/compatibility.md",
+      "remote_refs_reachable": true,
+      "sha256": "ab07803bc39c914dea27b4537ad020af1c43685b981adc1058ff7aa1b1f6dfd2",
+      "size": 3471
+    },
+    {
+      "blob_oid": "e32cd4dad6564c128383c7f9bb4c8dec15765fa4",
+      "mode": "100644",
+      "path": "docs/installation.md",
+      "remote_refs_reachable": true,
+      "sha256": "5fd80e44caf9ba47f0cd657864751d33e34ace564c5f238087cb674f91cca4d8",
+      "size": 23354
+    },
+    {
+      "blob_oid": "59c438dafd869b39a8296357f322e187fa3d45a7",
+      "mode": "100644",
+      "path": "docs/maintenance.md",
+      "remote_refs_reachable": true,
+      "sha256": "07ac6d945590dc35023cf1dbc5e7d2e087ab3293000a0657b9d0e87a646ef272",
+      "size": 5482
+    },
+    {
+      "blob_oid": "7e23c930608e018b5c2f52bed508234d344836a1",
+      "mode": "100644",
+      "path": "docs/troubleshooting.md",
+      "remote_refs_reachable": true,
+      "sha256": "9eb85768b28be11ce951133c3b891a6da7af315e814a5dae686d735c3eca112b",
+      "size": 4557
+    },
+    {
+      "blob_oid": "5494726ef914ceb975c7c9733840ba8e2ddc2b9f",
+      "mode": "100644",
+      "path": "docs/usage.md",
+      "remote_refs_reachable": true,
+      "sha256": "0f26de1da7fdd496a29b08c1724f65c282733b0790aa7d867c8a55eb882730e0",
+      "size": 4585
+    },
+    {
+      "blob_oid": "d41be1c1365529585dd8a00f33762d979462c8f3",
+      "mode": "100644",
+      "path": "plugin.json",
+      "remote_refs_reachable": true,
+      "sha256": "5bf191b9252153814b746d9a7f6f60d969b0d3a151dc27f9d3e7e772d65db021",
+      "size": 711
+    },
+    {
+      "blob_oid": "493ca8c0a78bf796f4dfb71542990b51cc845973",
+      "mode": "100644",
+      "path": "scripts/atomic-file-transaction.ts",
+      "remote_refs_reachable": true,
+      "sha256": "6daa208950e61947ed9637fc9dd96f71eae83f3d8c5109e4983c4811d7ebd0f1",
+      "size": 17189
+    },
+    {
+      "blob_oid": "ee45ca75902739e9c4226f64b7a849a5289eeb79",
+      "mode": "100644",
+      "path": "scripts/macos-visual-qa/README.md",
+      "remote_refs_reachable": true,
+      "sha256": "5414e57ad80778402b5724a3a32e6b56219f7e358519192b68138882f492cf90",
+      "size": 3250
+    },
+    {
+      "blob_oid": "72ddd85cfc3b126b171b7e5971428154f3083445",
+      "mode": "100644",
+      "path": "scripts/macos-visual-qa/install.ts",
+      "remote_refs_reachable": true,
+      "sha256": "5efb380c8b3a183046ea7edba71d3d5899f4c9d43ab2b2d826dcceea78990c9b",
+      "size": 5683
+    },
+    {
+      "blob_oid": "44ec33a585782242d5a6cdab416108fc5d2a775d",
+      "mode": "100644",
+      "path": "scripts/macos-visual-qa/templates/AuditTests.swift",
+      "remote_refs_reachable": true,
+      "sha256": "488f3f3eb426599701bfca092ddd4cb91530ff378cf7899d143e69d294c1d5ee",
+      "size": 644
+    },
+    {
+      "blob_oid": "5875afe7b9de14b6b1e2c7c043af5c20f65a91e1",
+      "mode": "100644",
+      "path": "scripts/macos-visual-qa/templates/app-launcher.swift",
+      "remote_refs_reachable": true,
+      "sha256": "11c7b2c98fdca6bee08543919363c56fcdafd087593ed8f7baae4175ee2eecb6",
+      "size": 2616
+    },
+    {
+      "blob_oid": "ab713026d1611ecdc97c1d6cb1fa3d0381334b01",
+      "mode": "100644",
+      "path": "scripts/macos-visual-qa/templates/ax-drive.swift",
+      "remote_refs_reachable": true,
+      "sha256": "11154a8721455c43e78b729253eeb7e26d720ef82a462406d3b07e3bebcbdd51",
+      "size": 1832
+    },
+    {
+      "blob_oid": "3c2024c7a4195e1381bc1fd27bb5c0d69b797182",
+      "mode": "100755",
+      "path": "scripts/macos-visual-qa/templates/capture.sh",
+      "remote_refs_reachable": true,
+      "sha256": "5b59251fea0862f271ba0407fee2db6c182faf68958422080cf98e419956f6d2",
+      "size": 8178
+    },
+    {
+      "blob_oid": "e5c1b6fd898c1e243e683793d9ae0abb1cb36374",
+      "mode": "100644",
+      "path": "scripts/macos-visual-qa/templates/permissions.swift",
+      "remote_refs_reachable": true,
+      "sha256": "cbdf2d14d7aae8c48daeb0fe48562fc67aa8e543e9f41547f0802e5a0e50c1f9",
+      "size": 2342
+    },
+    {
+      "blob_oid": "533de05796f63ac98d54fbee8f1a75ebc0c00512",
+      "mode": "100644",
+      "path": "scripts/macos-visual-qa/templates/process-owner.swift",
+      "remote_refs_reachable": true,
+      "sha256": "7bce70e95a7d6dd0ae5a3ce4ebb742f6e2d0e6d91120f20bac98683f9ad4e2b0",
+      "size": 2392
+    },
+    {
+      "blob_oid": "4ec7c992bb3841633727ae688e7b4cc0ef15b260",
+      "mode": "100644",
+      "path": "scripts/macos-visual-qa/templates/run.ts",
+      "remote_refs_reachable": true,
+      "sha256": "1a27e9ab96784175fa69298db2af7387c2eb433a87474f5fb81678eb5dd0643e",
+      "size": 15925
+    },
+    {
+      "blob_oid": "cd4946dbe7aad1b26171fa8bfd4e4850e46af99d",
+      "mode": "100755",
+      "path": "scripts/macos-visual-qa/templates/state.sh",
+      "remote_refs_reachable": true,
+      "sha256": "bb6284b6400df1c41ec187b86ca438cdf907b538283bb9618fdcdc1c9b033cae",
+      "size": 6117
+    },
+    {
+      "blob_oid": "9f35832c341c0d8e9d119ede3be2d29efa270c09",
+      "mode": "100644",
+      "path": "scripts/macos-visual-qa/templates/window-id.swift",
+      "remote_refs_reachable": true,
+      "sha256": "16698b4ed53ee09ffeabc0610cee12710b362c1b99cc7dabca30fdc7829f89b3",
+      "size": 2912
+    },
+    {
+      "blob_oid": "f84c3ab7b34f7bfd36af106607285b02f70bdf25",
+      "mode": "100644",
+      "path": "scripts/macos-visual-qa/test-apps/FixtureApp.swift",
+      "remote_refs_reachable": true,
+      "sha256": "4646c1d42e41523399a1bd24c0c93ab8df0409bf633424c244fb9f3cdd0ffc9f",
+      "size": 1162
+    },
+    {
+      "blob_oid": "998d166b4360d162096216b63ff0a5dc5c2045da",
+      "mode": "100755",
+      "path": "scripts/macos-visual-qa/test-apps/build.sh",
+      "remote_refs_reachable": true,
+      "sha256": "baa927f17b4d6ec8f32b301d4aada1533e648bcf07361a4c723d2d40104c6103",
+      "size": 1407
+    },
+    {
+      "blob_oid": "27b0bad5a61ed97beaae8f0e2ce5afa7b8436eeb",
+      "mode": "100755",
+      "path": "scripts/macos-visual-qa/test-support/fake-defaults.ts",
+      "remote_refs_reachable": true,
+      "sha256": "6d8717d97972be6cec9b9c0a84c018be1c2dc9a6bce4cc99faf298f4ff372a9e",
+      "size": 1431
+    },
+    {
+      "blob_oid": "127199ba6ff719b640af7820313189322d14f483",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "fe36cccd95619b903384c2b4b822d56410cef0b3e302c3e6ccedf42bd25c86e7",
+      "size": 6992
+    },
+    {
+      "blob_oid": "edb937cc53878972b0c8bbf6d8d2dc15e1bdbe89",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "bac9e1e94383f8371f85673e15d5c1516a8316bbde92bff0639fa73466ecbd8f",
+      "size": 335
+    },
+    {
+      "blob_oid": "5bb915b49a2879019e72b32274c51f603012bf5d",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/assets/DesignReview.md",
+      "remote_refs_reachable": true,
+      "sha256": "41228378204ea3c68629c1f625c146b8870e03f0ffe2c7564bccc64a1556123f",
+      "size": 3874
+    },
+    {
+      "blob_oid": "c0f6fc404c83e3d62cdb278ef187b20fa5979d13",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/anti-patterns.md",
+      "remote_refs_reachable": true,
+      "sha256": "2d92b5544920d137696affd17f3b2f341613c3281752b2354660a7f4f86b7fc4",
+      "size": 14424
+    },
+    {
+      "blob_oid": "55fe384dd47a6e04816083464f5203e62b3891c8",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/appkit-api.md",
+      "remote_refs_reachable": true,
+      "sha256": "e4aa1ca1e4022d28ae7de188e156125d61aa823e9de281c1ada3af79dbbe0d7f",
+      "size": 12857
+    },
+    {
+      "blob_oid": "6842c3e5e1c2aad4966a11e08405db0c11dd8cc1",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/apple-patterns.md",
+      "remote_refs_reachable": true,
+      "sha256": "7ae9f7ffad72ab37f7cade1cecb189cf92445b952de965d64e85f4567ee41eff",
+      "size": 14310
+    },
+    {
+      "blob_oid": "77de2c17522e938642ca2a408f895e69794c628c",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/archetypes.md",
+      "remote_refs_reachable": true,
+      "sha256": "bc9d9ef9cd118e9b7d7ab8c66e11f3c661f3297257c727bcecf842c39a920668",
+      "size": 7934
+    },
+    {
+      "blob_oid": "2ed3280882acbf851c2fe62a0d28a5716d91223f",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/custom-component-contract.md",
+      "remote_refs_reachable": true,
+      "sha256": "ef8798e1d76936b3b6077db8b318e7151e08e2177b7a8ead3fa0a4bfc6842f54",
+      "size": 3358
+    },
+    {
+      "blob_oid": "3c8b7a258855203c3ae506940e8c5d841ae70f32",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/custom-renderers.md",
+      "remote_refs_reachable": true,
+      "sha256": "0caada2ad7b16c7301d34aa7f29b8cc8b88fda9bb035fff941f7b5cdce2d0634",
+      "size": 3766
+    },
+    {
+      "blob_oid": "c45d54b9beaf5b01fb3439e7f4a687d90a221b8f",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/design-principles.md",
+      "remote_refs_reachable": true,
+      "sha256": "eaeb105ec0ce092bb1ef16efa4bb54bef8b8fb6e2df4691961d6708a74667340",
+      "size": 17943
+    },
+    {
+      "blob_oid": "908ad959f06878a0d04d6dc17ceb53ee56ffb938",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/exemplars.md",
+      "remote_refs_reachable": true,
+      "sha256": "02f8d91c698d02bf3c33be75abc29cf1efcbefe0b5c1f5127b1494ba9db2f2cc",
+      "size": 2343
+    },
+    {
+      "blob_oid": "72ad0ba244f3edb53cfeb3dd30f7038e751b6adf",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/experience-brief.md",
+      "remote_refs_reachable": true,
+      "sha256": "f35dff29b3d3310775bcd825d75a874b6d1a4c20a1a72b7c7f758adeda0ce0d9",
+      "size": 4682
+    },
+    {
+      "blob_oid": "c2bb35312ab1b13438641b7a677450f0ffe6d7f3",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/layer-model.md",
+      "remote_refs_reachable": true,
+      "sha256": "bb3d6c82566c60ff3a1eeb9630cec378d73fea798e36db2912de0c713cfddeb6",
+      "size": 10414
+    },
+    {
+      "blob_oid": "e56be6b1329ae3e5d4b8199932b24f6be16cadff",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/macos-craft.md",
+      "remote_refs_reachable": true,
+      "sha256": "7cd9494812218d8ec9719142b0683d1c0d7d40e219578362a0fe2e7bd94e2e0f",
+      "size": 9145
+    },
+    {
+      "blob_oid": "aa5360e10682fb7acfe04d07a1fd50c7f8e991fa",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/match-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "becc11e4b1497541ea50613b3d8eb8b8a707c688ab0eea5973f5ecd2868cb070",
+      "size": 3041
+    },
+    {
+      "blob_oid": "13254413d1b604914faeb69e36ac12c510e61248",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/motion.md",
+      "remote_refs_reachable": true,
+      "sha256": "4d025ff671d0a2bd54d809bab0b2cbed8f1c9a64c1c1dd43532d8901e6f0f37c",
+      "size": 7167
+    },
+    {
+      "blob_oid": "b5d3106d0198368709ab3065592b1c261c0ec7f9",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/native-behavior.md",
+      "remote_refs_reachable": true,
+      "sha256": "20bdc41dc3ef2975cec63008dd9d5dae5aa6e8e91826e2ba8a94f0a295560a64",
+      "size": 12182
+    },
+    {
+      "blob_oid": "337dac65af21b5d5efa0c5376dea70e43729ff15",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/native-component-map.md",
+      "remote_refs_reachable": true,
+      "sha256": "9efbd68278db8c087b0c8775a17e96eade3ea9ddaa85f9f0b3443a7b65d003dd",
+      "size": 4795
+    },
+    {
+      "blob_oid": "e76fd498aa0762d886d21495b3af0e9eecf45989",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/platform-baseline.md",
+      "remote_refs_reachable": true,
+      "sha256": "03b4099344a4776aafd19ff49fb3ed515b08967eee7f832ca26277af7f694f0a",
+      "size": 7300
+    },
+    {
+      "blob_oid": "99716095cd26baa3af6ad88adec522e610130387",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/reference-corpus.md",
+      "remote_refs_reachable": true,
+      "sha256": "8b50aec90d9242dd15cc64d58265e4c2362417cb6f89e20a3798aaeb5d7e0afb",
+      "size": 2669
+    },
+    {
+      "blob_oid": "c3f660cf02116718ced386a81dbb2643e12134e8",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/review-mode.md",
+      "remote_refs_reachable": true,
+      "sha256": "9c433e36f763201c8872544008a204f278b3b521ba03acc4e6a29ee7142159a5",
+      "size": 2372
+    },
+    {
+      "blob_oid": "7ba469b2ae3e86fc6b7556c377a82e8a81fbc155",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/rubric.md",
+      "remote_refs_reachable": true,
+      "sha256": "7a43c819b503f5da5de65914c0aea334690721ff0d52a2a2e30ea7764ab41b4d",
+      "size": 13187
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "6d4d7c3ed96a745626953a1e6d040ad0a1751e37",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/swiftui-api.md",
+      "remote_refs_reachable": true,
+      "sha256": "a1c995a86b4d4d26b43960f2a0254350d1c41389dcc91b85d35929585038d271",
+      "size": 13867
+    },
+    {
+      "blob_oid": "96714287aec04b5a98710573b90c723de3cd5399",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-review/references/verification.md",
+      "remote_refs_reachable": true,
+      "sha256": "fba1487ec6dbdcba3addaf2e31da6d52e563f20adcef6f4d5a11550973143ef9",
+      "size": 5783
+    },
+    {
+      "blob_oid": "7e524a0b6e444454557cd1a04eff448cc11f7ff6",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-systematize/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "8c63f3f132c6a72338107887e07c3f4a9ea69259c8d54c23cd0cda822f645d4f",
+      "size": 4945
+    },
+    {
+      "blob_oid": "2ed5c0dbcafa9173610dd9c729fbd536731150c1",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-systematize/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "7d6075a1aec87bf8e0b759759adc26fdf1780676a97f3ae086c9a0e4791faf5f",
+      "size": 399
+    },
+    {
+      "blob_oid": "908ad959f06878a0d04d6dc17ceb53ee56ffb938",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-systematize/references/exemplars.md",
+      "remote_refs_reachable": true,
+      "sha256": "02f8d91c698d02bf3c33be75abc29cf1efcbefe0b5c1f5127b1494ba9db2f2cc",
+      "size": 2343
+    },
+    {
+      "blob_oid": "99716095cd26baa3af6ad88adec522e610130387",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-systematize/references/reference-corpus.md",
+      "remote_refs_reachable": true,
+      "sha256": "8b50aec90d9242dd15cc64d58265e4c2362417cb6f89e20a3798aaeb5d7e0afb",
+      "size": 2669
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design-systematize/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "c0be3d5664701ce6822e9b47b5b2df2c0469235f",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "b44361d9da1dfbbeb7bb306bff351a36a11f277e1c4876ab88005d82c5f19a8d",
+      "size": 12060
+    },
+    {
+      "blob_oid": "801174bf4abe9d2f0a4bef07a8b5d0a4e736b48a",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "66b5cc05fffbd1662537491c28dbe71fb9670062ebbad8b32c9f5f1748e6af57",
+      "size": 508
+    },
+    {
+      "blob_oid": "24d4be2ddc53391120b57cf4b6f889f87ade6c7e",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/assets/ExperienceBrief.md",
+      "remote_refs_reachable": true,
+      "sha256": "ad85bd4aed1330d91edc54648b6762ca82a014d391dd953b373e804322d60a95",
+      "size": 2276
+    },
+    {
+      "blob_oid": "0386b68116eefd15dc65bd3c9448e2c1dca7c8af",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/assets/NativeComponentMap.md",
+      "remote_refs_reachable": true,
+      "sha256": "5bdb8e2769e42e8ee71557f22ca294957d6baf83c6b6cb78410b8998d624f73f",
+      "size": 1489
+    },
+    {
+      "blob_oid": "0525b246ff5f5c50f34c04ed2ac8fbafbafa74dd",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/assets/ProtoMain.swift",
+      "remote_refs_reachable": true,
+      "sha256": "78ea7c4a3cbc8f09a68589654701cf9c0079f2fb52fbb2511b3b406237a07459",
+      "size": 5299
+    },
+    {
+      "blob_oid": "0b0028eab8a053d90bc3b923870cb62d97484b4a",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/assets/Regions.md",
+      "remote_refs_reachable": true,
+      "sha256": "f0126feb68dfbf3691f6e326a3bd2c182a53fc9c97cf4d21e34eb3e34d090f8e",
+      "size": 727
+    },
+    {
+      "blob_oid": "1c7fd4bcadf1ea77a143027071574865aa4246d7",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/assets/SIGNOFF.md",
+      "remote_refs_reachable": true,
+      "sha256": "1a32a30906310d0a381faafdfa5703220be12ff1e22a049e11fc3e65ae95b875",
+      "size": 668
+    },
+    {
+      "blob_oid": "c0f6fc404c83e3d62cdb278ef187b20fa5979d13",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/anti-patterns.md",
+      "remote_refs_reachable": true,
+      "sha256": "2d92b5544920d137696affd17f3b2f341613c3281752b2354660a7f4f86b7fc4",
+      "size": 14424
+    },
+    {
+      "blob_oid": "55fe384dd47a6e04816083464f5203e62b3891c8",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/appkit-api.md",
+      "remote_refs_reachable": true,
+      "sha256": "e4aa1ca1e4022d28ae7de188e156125d61aa823e9de281c1ada3af79dbbe0d7f",
+      "size": 12857
+    },
+    {
+      "blob_oid": "6842c3e5e1c2aad4966a11e08405db0c11dd8cc1",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/apple-patterns.md",
+      "remote_refs_reachable": true,
+      "sha256": "7ae9f7ffad72ab37f7cade1cecb189cf92445b952de965d64e85f4567ee41eff",
+      "size": 14310
+    },
+    {
+      "blob_oid": "77de2c17522e938642ca2a408f895e69794c628c",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/archetypes.md",
+      "remote_refs_reachable": true,
+      "sha256": "bc9d9ef9cd118e9b7d7ab8c66e11f3c661f3297257c727bcecf842c39a920668",
+      "size": 7934
+    },
+    {
+      "blob_oid": "2ed3280882acbf851c2fe62a0d28a5716d91223f",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/custom-component-contract.md",
+      "remote_refs_reachable": true,
+      "sha256": "ef8798e1d76936b3b6077db8b318e7151e08e2177b7a8ead3fa0a4bfc6842f54",
+      "size": 3358
+    },
+    {
+      "blob_oid": "3c8b7a258855203c3ae506940e8c5d841ae70f32",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/custom-renderers.md",
+      "remote_refs_reachable": true,
+      "sha256": "0caada2ad7b16c7301d34aa7f29b8cc8b88fda9bb035fff941f7b5cdce2d0634",
+      "size": 3766
+    },
+    {
+      "blob_oid": "38989094702c17364049dee430b8d431da6c3fa0",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/design-pipeline.md",
+      "remote_refs_reachable": true,
+      "sha256": "00bbf16de54860b26445c91e75b408b1536a5025c698923aee7241f7ab6e3de9",
+      "size": 952
+    },
+    {
+      "blob_oid": "c45d54b9beaf5b01fb3439e7f4a687d90a221b8f",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/design-principles.md",
+      "remote_refs_reachable": true,
+      "sha256": "eaeb105ec0ce092bb1ef16efa4bb54bef8b8fb6e2df4691961d6708a74667340",
+      "size": 17943
+    },
+    {
+      "blob_oid": "908ad959f06878a0d04d6dc17ceb53ee56ffb938",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/exemplars.md",
+      "remote_refs_reachable": true,
+      "sha256": "02f8d91c698d02bf3c33be75abc29cf1efcbefe0b5c1f5127b1494ba9db2f2cc",
+      "size": 2343
+    },
+    {
+      "blob_oid": "72ad0ba244f3edb53cfeb3dd30f7038e751b6adf",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/experience-brief.md",
+      "remote_refs_reachable": true,
+      "sha256": "f35dff29b3d3310775bcd825d75a874b6d1a4c20a1a72b7c7f758adeda0ce0d9",
+      "size": 4682
+    },
+    {
+      "blob_oid": "faeccc3f1ee305e973169c5147afccc48874573e",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/launch-contract.md",
+      "remote_refs_reachable": true,
+      "sha256": "34be3880415b0dd6bd8aa18078dced25c12d25df5aa5d313a1c5a3ad683532f3",
+      "size": 2862
+    },
+    {
+      "blob_oid": "c2bb35312ab1b13438641b7a677450f0ffe6d7f3",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/layer-model.md",
+      "remote_refs_reachable": true,
+      "sha256": "bb3d6c82566c60ff3a1eeb9630cec378d73fea798e36db2912de0c713cfddeb6",
+      "size": 10414
+    },
+    {
+      "blob_oid": "e56be6b1329ae3e5d4b8199932b24f6be16cadff",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/macos-craft.md",
+      "remote_refs_reachable": true,
+      "sha256": "7cd9494812218d8ec9719142b0683d1c0d7d40e219578362a0fe2e7bd94e2e0f",
+      "size": 9145
+    },
+    {
+      "blob_oid": "aa5360e10682fb7acfe04d07a1fd50c7f8e991fa",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/match-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "becc11e4b1497541ea50613b3d8eb8b8a707c688ab0eea5973f5ecd2868cb070",
+      "size": 3041
+    },
+    {
+      "blob_oid": "13254413d1b604914faeb69e36ac12c510e61248",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/motion.md",
+      "remote_refs_reachable": true,
+      "sha256": "4d025ff671d0a2bd54d809bab0b2cbed8f1c9a64c1c1dd43532d8901e6f0f37c",
+      "size": 7167
+    },
+    {
+      "blob_oid": "b5d3106d0198368709ab3065592b1c261c0ec7f9",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/native-behavior.md",
+      "remote_refs_reachable": true,
+      "sha256": "20bdc41dc3ef2975cec63008dd9d5dae5aa6e8e91826e2ba8a94f0a295560a64",
+      "size": 12182
+    },
+    {
+      "blob_oid": "337dac65af21b5d5efa0c5376dea70e43729ff15",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/native-component-map.md",
+      "remote_refs_reachable": true,
+      "sha256": "9efbd68278db8c087b0c8775a17e96eade3ea9ddaa85f9f0b3443a7b65d003dd",
+      "size": 4795
+    },
+    {
+      "blob_oid": "e76fd498aa0762d886d21495b3af0e9eecf45989",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/platform-baseline.md",
+      "remote_refs_reachable": true,
+      "sha256": "03b4099344a4776aafd19ff49fb3ed515b08967eee7f832ca26277af7f694f0a",
+      "size": 7300
+    },
+    {
+      "blob_oid": "c6cc9a87231cc99ca4483254db10ce46cf333b96",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/prototype-package.md",
+      "remote_refs_reachable": true,
+      "sha256": "0b67b3f7be8291fbc21a38d35bda94b477bfd79e69a0f7a5fb081de5db70f188",
+      "size": 8861
+    },
+    {
+      "blob_oid": "99716095cd26baa3af6ad88adec522e610130387",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/reference-corpus.md",
+      "remote_refs_reachable": true,
+      "sha256": "8b50aec90d9242dd15cc64d58265e4c2362417cb6f89e20a3798aaeb5d7e0afb",
+      "size": 2669
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "6d4d7c3ed96a745626953a1e6d040ad0a1751e37",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/swiftui-api.md",
+      "remote_refs_reachable": true,
+      "sha256": "a1c995a86b4d4d26b43960f2a0254350d1c41389dcc91b85d35929585038d271",
+      "size": 13867
+    },
+    {
+      "blob_oid": "96714287aec04b5a98710573b90c723de3cd5399",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-design/references/verification.md",
+      "remote_refs_reachable": true,
+      "sha256": "fba1487ec6dbdcba3addaf2e31da6d52e563f20adcef6f4d5a11550973143ef9",
+      "size": 5783
+    },
+    {
+      "blob_oid": "6d7da5a68b17463ed424120c9d2259a1c5d101f9",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "4a3a1ef93c9c72f5fe71e3b93fb99c0a7b7d25b21696a0c5a0b6f80531583a67",
+      "size": 7050
+    },
+    {
+      "blob_oid": "836f4e105f751bb8c206438f40a8dac091096ff7",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "1bd1e19b4eb998703e3043d1de8e9417736d4317d6d72d224f0bbd532abc3537",
+      "size": 357
+    },
+    {
+      "blob_oid": "353bac6b78d11d1440d0d32474cc2c7d417fb1a6",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/references/baseline-metadata.md",
+      "remote_refs_reachable": true,
+      "sha256": "02756630bc552b99ee0b8b078b1e898ed5977d97fc4b6657885a4e6db933a043",
+      "size": 780
+    },
+    {
+      "blob_oid": "38989094702c17364049dee430b8d431da6c3fa0",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/references/design-pipeline.md",
+      "remote_refs_reachable": true,
+      "sha256": "00bbf16de54860b26445c91e75b408b1536a5025c698923aee7241f7ab6e3de9",
+      "size": 952
+    },
+    {
+      "blob_oid": "17e63cc124b7027fdde80891749d432a8e53248d",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/references/harness-contract.md",
+      "remote_refs_reachable": true,
+      "sha256": "2812badb21d8bf0134fd5db7d51cc34fe6099d01f501eaf317a5e5883168c37e",
+      "size": 3155
+    },
+    {
+      "blob_oid": "818648ab66732d7acbd1e40f635ed00d3b4b56da",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/references/interaction.md",
+      "remote_refs_reachable": true,
+      "sha256": "f7cb528cb5b9d25f4b876ef9a146baf04d0d0dd60fc9c4347059201036c4bf59",
+      "size": 5357
+    },
+    {
+      "blob_oid": "faeccc3f1ee305e973169c5147afccc48874573e",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/references/launch-contract.md",
+      "remote_refs_reachable": true,
+      "sha256": "34be3880415b0dd6bd8aa18078dced25c12d25df5aa5d313a1c5a3ad683532f3",
+      "size": 2862
+    },
+    {
+      "blob_oid": "aa5360e10682fb7acfe04d07a1fd50c7f8e991fa",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/references/match-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "becc11e4b1497541ea50613b3d8eb8b8a707c688ab0eea5973f5ecd2868cb070",
+      "size": 3041
+    },
+    {
+      "blob_oid": "d2a8c0cc92cb1ce204ddce47631e948e72054ecb",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/references/missing-project-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "85952788f2fb21647f5ebd8feb74488226030f4fcb1bac487bf68466ef29e831",
+      "size": 541
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "5418890ae8979efc0673e4e38776b2d9069a0df1",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/references/state-matrix.md",
+      "remote_refs_reachable": true,
+      "sha256": "305558d595b114ea8d42d1f568dc7ed36a6b7a4795771bdc6f74a23373c1b5e5",
+      "size": 4991
+    },
+    {
+      "blob_oid": "96714287aec04b5a98710573b90c723de3cd5399",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-baseline/references/verification.md",
+      "remote_refs_reachable": true,
+      "sha256": "fba1487ec6dbdcba3addaf2e31da6d52e563f20adcef6f4d5a11550973143ef9",
+      "size": 5783
+    },
+    {
+      "blob_oid": "798eebf1baf10e84359a6f35649b44679ee20a9b",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-qa/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "01293711026691c5e25cafc6cba673e42959fa90d9a784aae58c1512723e0df7",
+      "size": 7551
+    },
+    {
+      "blob_oid": "7f6958adf690e59a3411fc316387237182bbbd72",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-qa/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "88afa9d6d094234c69fdb33fa38adb53dc9e55410cbbfa38fbd457e04815ffb3",
+      "size": 377
+    },
+    {
+      "blob_oid": "17e63cc124b7027fdde80891749d432a8e53248d",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-qa/references/harness-contract.md",
+      "remote_refs_reachable": true,
+      "sha256": "2812badb21d8bf0134fd5db7d51cc34fe6099d01f501eaf317a5e5883168c37e",
+      "size": 3155
+    },
+    {
+      "blob_oid": "818648ab66732d7acbd1e40f635ed00d3b4b56da",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-qa/references/interaction.md",
+      "remote_refs_reachable": true,
+      "sha256": "f7cb528cb5b9d25f4b876ef9a146baf04d0d0dd60fc9c4347059201036c4bf59",
+      "size": 5357
+    },
+    {
+      "blob_oid": "faeccc3f1ee305e973169c5147afccc48874573e",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-qa/references/launch-contract.md",
+      "remote_refs_reachable": true,
+      "sha256": "34be3880415b0dd6bd8aa18078dced25c12d25df5aa5d313a1c5a3ad683532f3",
+      "size": 2862
+    },
+    {
+      "blob_oid": "aa5360e10682fb7acfe04d07a1fd50c7f8e991fa",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-qa/references/match-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "becc11e4b1497541ea50613b3d8eb8b8a707c688ab0eea5973f5ecd2868cb070",
+      "size": 3041
+    },
+    {
+      "blob_oid": "d2a8c0cc92cb1ce204ddce47631e948e72054ecb",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-qa/references/missing-project-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "85952788f2fb21647f5ebd8feb74488226030f4fcb1bac487bf68466ef29e831",
+      "size": 541
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-qa/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "5418890ae8979efc0673e4e38776b2d9069a0df1",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-qa/references/state-matrix.md",
+      "remote_refs_reachable": true,
+      "sha256": "305558d595b114ea8d42d1f568dc7ed36a6b7a4795771bdc6f74a23373c1b5e5",
+      "size": 4991
+    },
+    {
+      "blob_oid": "96714287aec04b5a98710573b90c723de3cd5399",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-qa/references/verification.md",
+      "remote_refs_reachable": true,
+      "sha256": "fba1487ec6dbdcba3addaf2e31da6d52e563f20adcef6f4d5a11550973143ef9",
+      "size": 5783
+    },
+    {
+      "blob_oid": "daa835fcd7e9da9d1d22b21cf36254d0c83561ef",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-regression/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "5aaa5f2edf4a3718de576aa1e3b6676e653b5e5556d8d9609a7ce0355223abe8",
+      "size": 6052
+    },
+    {
+      "blob_oid": "e81edbd363763688d664f9c39784afa62f9d2b62",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-regression/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "775c218012ad32ee29a6f67ce36c673742af8a6d38f9fd12076f130551662970",
+      "size": 368
+    },
+    {
+      "blob_oid": "17e63cc124b7027fdde80891749d432a8e53248d",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-regression/references/harness-contract.md",
+      "remote_refs_reachable": true,
+      "sha256": "2812badb21d8bf0134fd5db7d51cc34fe6099d01f501eaf317a5e5883168c37e",
+      "size": 3155
+    },
+    {
+      "blob_oid": "818648ab66732d7acbd1e40f635ed00d3b4b56da",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-regression/references/interaction.md",
+      "remote_refs_reachable": true,
+      "sha256": "f7cb528cb5b9d25f4b876ef9a146baf04d0d0dd60fc9c4347059201036c4bf59",
+      "size": 5357
+    },
+    {
+      "blob_oid": "faeccc3f1ee305e973169c5147afccc48874573e",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-regression/references/launch-contract.md",
+      "remote_refs_reachable": true,
+      "sha256": "34be3880415b0dd6bd8aa18078dced25c12d25df5aa5d313a1c5a3ad683532f3",
+      "size": 2862
+    },
+    {
+      "blob_oid": "aa5360e10682fb7acfe04d07a1fd50c7f8e991fa",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-regression/references/match-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "becc11e4b1497541ea50613b3d8eb8b8a707c688ab0eea5973f5ecd2868cb070",
+      "size": 3041
+    },
+    {
+      "blob_oid": "d2a8c0cc92cb1ce204ddce47631e948e72054ecb",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-regression/references/missing-project-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "85952788f2fb21647f5ebd8feb74488226030f4fcb1bac487bf68466ef29e831",
+      "size": 541
+    },
+    {
+      "blob_oid": "39a9db064ffbe49a7fb7676462b6ad8e7352a597",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-regression/references/regression.md",
+      "remote_refs_reachable": true,
+      "sha256": "60faef4420aa2414c336f2f152078ba76cd20adcfb0ba5c27a97e3e534d9957d",
+      "size": 2443
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-regression/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "5418890ae8979efc0673e4e38776b2d9069a0df1",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-regression/references/state-matrix.md",
+      "remote_refs_reachable": true,
+      "sha256": "305558d595b114ea8d42d1f568dc7ed36a6b7a4795771bdc6f74a23373c1b5e5",
+      "size": 4991
+    },
+    {
+      "blob_oid": "96714287aec04b5a98710573b90c723de3cd5399",
+      "mode": "100644",
+      "path": "skills/tailrocks-macos-visual-regression/references/verification.md",
+      "remote_refs_reachable": true,
+      "sha256": "fba1487ec6dbdcba3addaf2e31da6d52e563f20adcef6f4d5a11550973143ef9",
+      "size": 5783
+    },
+    {
+      "blob_oid": "d402d73385b6bc461d54f2c22303325e4c01014e",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-agent-integration/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "b92747fd81117723ad82f916bd57da9ae23816bc5ff484485ae932a3eb6ae714",
+      "size": 4745
+    },
+    {
+      "blob_oid": "d64e2226fdac1b7f684ffaec9af2e95f1eebc32c",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-agent-integration/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "de53e1c6c9627c2e7bb12136492bfd70b21943bd2b3d230110b00559bf13b3f9",
+      "size": 346
+    },
+    {
+      "blob_oid": "9c5f97fe3da97e8b90c81fa0a5df9980f68e8280",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-agent-integration/references/agent-integration.md",
+      "remote_refs_reachable": true,
+      "sha256": "ce1ece2382983e7bbe650bef4dc0813f0e29204c8fd168be97734008c4d67701",
+      "size": 6151
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-agent-integration/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "23aaad6193e390de04d41170cc40b7055e6b6df1",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-best-practices/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "5507a59cfeee69a1f0faaefb78ecc8efdf88d0001c51ab44a65c76ce7a7b2ea6",
+      "size": 5035
+    },
+    {
+      "blob_oid": "bbef67505536832a196f93d63db17c56c4509c15",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-best-practices/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "a9027dbb5fc9d8fdd2d6b77dd4b4fe267c2cec40204c7fe7d1479106182d87b0",
+      "size": 420
+    },
+    {
+      "blob_oid": "9c12bbf2f5f81f9b300e0b053ed4d49b2f21a5e2",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-best-practices/references/accessibility.md",
+      "remote_refs_reachable": true,
+      "sha256": "dd88b9c13523e1777f0d02cc712a30e5ce882cedd4ad9c87b97be944a06359d9",
+      "size": 4347
+    },
+    {
+      "blob_oid": "8465e6213d1c42fd52788513bd38279de6151100",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-best-practices/references/appkit-interop.md",
+      "remote_refs_reachable": true,
+      "sha256": "0a17010c4358cdf39ed2cccacadd1ff6097e302d354388a9ab8043b40d632da9",
+      "size": 4756
+    },
+    {
+      "blob_oid": "5b6013fbc17c84b3607f955c33a18cd4b31e6826",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-best-practices/references/concurrency.md",
+      "remote_refs_reachable": true,
+      "sha256": "600c49b631ea1a06c7d28bd9bae14233581c99dd03855fcc1c4dc99457c9533e",
+      "size": 4398
+    },
+    {
+      "blob_oid": "2c48bbd7db9fa264d1615fc226c09f1b5125a927",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-best-practices/references/errors-and-api.md",
+      "remote_refs_reachable": true,
+      "sha256": "e21382c58b017044437ab1a34d345224736ce9ef181266b44ea1543163ab4b29",
+      "size": 4444
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-best-practices/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "5470cba67edd8c9eaad3d4d77f4d280f0d39b58b",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-best-practices/references/swiftui.md",
+      "remote_refs_reachable": true,
+      "sha256": "7bc15182dd86b56d827a3e5b4d994bea337239bcc54472888882889136da8ab1",
+      "size": 5483
+    },
+    {
+      "blob_oid": "87253238bab43463fb1815750a4ff07e2ac679ae",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-audit/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "e58804c269d3d64fb861ede8499f73c869c0fab5996d1089eeff14f044e0c1eb",
+      "size": 3668
+    },
+    {
+      "blob_oid": "51c3f225622d85ae00d3eb6cad9725136ed2ee6a",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-audit/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "6d4b3c1b6b042e61618dab0e78f63a284be98311c18fe7dd3c0f173506a8703b",
+      "size": 339
+    },
+    {
+      "blob_oid": "bc7dcbbcca30903799bb7e1f5eefec3dda47426a",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-audit/references/lint-and-format.md",
+      "remote_refs_reachable": true,
+      "sha256": "53146a4f4bbb3650c485e924fc0a9490c0e6134559fc2b3c9413013a24cc5582",
+      "size": 3827
+    },
+    {
+      "blob_oid": "39699f80dc3abe3dbb594fe4a1aa562f9fbb8313",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-audit/references/project-generation.md",
+      "remote_refs_reachable": true,
+      "sha256": "a837e2136710246a041f9a190f46cc9f8cae9b5a9cda4f4fba67d9e5094b5f62",
+      "size": 4493
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-audit/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "2ccb1ad300b7156982ebdc21786ae59be0733fdb",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-audit/references/shared-version-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "2a739014e0781f5b19ba90fc41cc95f025eabe80e032094d4ae89241e847f136",
+      "size": 871
+    },
+    {
+      "blob_oid": "22ffb296bed2f45e66e6bce58d356f6cb5c18b49",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-audit/references/testing.md",
+      "remote_refs_reachable": true,
+      "sha256": "9ea1639ae7e49921b5ecfc00dbcffcdb3871e629b613f540b4eab2e0d4d496e9",
+      "size": 5032
+    },
+    {
+      "blob_oid": "13f0652c3351da9b94064bed885933b30947c867",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-audit/references/toolchain.md",
+      "remote_refs_reachable": true,
+      "sha256": "3401103489bfa02951894d81ebe0cff1791977df04cd9c79af62a3a283b411be",
+      "size": 5497
+    },
+    {
+      "blob_oid": "182e5d6d63913a41c9390386fd3efa164b75ec31",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-remediate/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "a913d14cab2140128bda21846511f78acdb88d0c4a0bc61dc7a5dcafaf9fb38e",
+      "size": 3880
+    },
+    {
+      "blob_oid": "f5c1e90ba02c2348779d6d14d78c157e8461a3b1",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-remediate/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "76444fa4a9c8dcd9c0716a6a9178b816761aa0e21ec6e7102d6ae1ff8c5102c6",
+      "size": 307
+    },
+    {
+      "blob_oid": "bc7dcbbcca30903799bb7e1f5eefec3dda47426a",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-remediate/references/lint-and-format.md",
+      "remote_refs_reachable": true,
+      "sha256": "53146a4f4bbb3650c485e924fc0a9490c0e6134559fc2b3c9413013a24cc5582",
+      "size": 3827
+    },
+    {
+      "blob_oid": "39699f80dc3abe3dbb594fe4a1aa562f9fbb8313",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-remediate/references/project-generation.md",
+      "remote_refs_reachable": true,
+      "sha256": "a837e2136710246a041f9a190f46cc9f8cae9b5a9cda4f4fba67d9e5094b5f62",
+      "size": 4493
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-remediate/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "2ccb1ad300b7156982ebdc21786ae59be0733fdb",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-remediate/references/shared-version-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "2a739014e0781f5b19ba90fc41cc95f025eabe80e032094d4ae89241e847f136",
+      "size": 871
+    },
+    {
+      "blob_oid": "22ffb296bed2f45e66e6bce58d356f6cb5c18b49",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-remediate/references/testing.md",
+      "remote_refs_reachable": true,
+      "sha256": "9ea1639ae7e49921b5ecfc00dbcffcdb3871e629b613f540b4eab2e0d4d496e9",
+      "size": 5032
+    },
+    {
+      "blob_oid": "13f0652c3351da9b94064bed885933b30947c867",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-remediate/references/toolchain.md",
+      "remote_refs_reachable": true,
+      "sha256": "3401103489bfa02951894d81ebe0cff1791977df04cd9c79af62a3a283b411be",
+      "size": 5497
+    },
+    {
+      "blob_oid": "5965f91f278d35730f1ac33ccdaf242d53c29c1a",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "a2ffd2d7ec69481497b2c6784a74ed98b2e31ed67c35c0aff0c858b85167d897",
+      "size": 4276
+    },
+    {
+      "blob_oid": "a92d2d9ff37be9cc4b28191d1371864532a56122",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "09d79b9654f02e2d925017b44473a4995add0a271bcd4afafa0042f8ebf3be12",
+      "size": 393
+    },
+    {
+      "blob_oid": "1f5c20f29064e2c2f90656e97b299973202e47c9",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/assets/Tests.swiftlint.yml",
+      "remote_refs_reachable": true,
+      "sha256": "74c9f5a9037fa3d944d45c8b9dc62e22a36a139c8e0dcf00c893cec82c502068",
+      "size": 409
+    },
+    {
+      "blob_oid": "7063bd5596b047e0df0ecf96b32c0823ca0f47a1",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/assets/gitignore",
+      "remote_refs_reachable": true,
+      "sha256": "f70a3743e7bfa155ba2dd5874a34eb2a94d378f5cbad7aa57b2205a971260355",
+      "size": 47
+    },
+    {
+      "blob_oid": "3729717e83a7210c40cbd094509236d489c4858a",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/assets/mise.toml",
+      "remote_refs_reachable": true,
+      "sha256": "04438761e85de715d6b59ae21cf74cb7d36eb8ba126ea3b939b3a8cc2c58fb34",
+      "size": 3364
+    },
+    {
+      "blob_oid": "a8f25ae72975e0efb7b35d4027578d25e1b3780f",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/assets/project.yml",
+      "remote_refs_reachable": true,
+      "sha256": "332c59c7c0b26eaf6308c2a5cb6cff0234f83aa91d663fc33dd9a8e6edad6f1e",
+      "size": 2986
+    },
+    {
+      "blob_oid": "d36444ca66133825885370ace802ad6d4b93f26b",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/assets/swift-format.json",
+      "remote_refs_reachable": true,
+      "sha256": "c3656ef0407f96ab0c53b72fdec661ecfb051dddbfd5bc26636905a6c910575c",
+      "size": 2388
+    },
+    {
+      "blob_oid": "d844451e33a60672625cf7f4cfec319703ca1bb7",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/assets/swiftlint.yml",
+      "remote_refs_reachable": true,
+      "sha256": "87cbc5bbec5f14b7dd7dcc57ae5a4c6061a72b21fbbf0b85e29482a1ed998b21",
+      "size": 3091
+    },
+    {
+      "blob_oid": "bc7dcbbcca30903799bb7e1f5eefec3dda47426a",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/references/lint-and-format.md",
+      "remote_refs_reachable": true,
+      "sha256": "53146a4f4bbb3650c485e924fc0a9490c0e6134559fc2b3c9413013a24cc5582",
+      "size": 3827
+    },
+    {
+      "blob_oid": "39699f80dc3abe3dbb594fe4a1aa562f9fbb8313",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/references/project-generation.md",
+      "remote_refs_reachable": true,
+      "sha256": "a837e2136710246a041f9a190f46cc9f8cae9b5a9cda4f4fba67d9e5094b5f62",
+      "size": 4493
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "2ccb1ad300b7156982ebdc21786ae59be0733fdb",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/references/shared-version-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "2a739014e0781f5b19ba90fc41cc95f025eabe80e032094d4ae89241e847f136",
+      "size": 871
+    },
+    {
+      "blob_oid": "22ffb296bed2f45e66e6bce58d356f6cb5c18b49",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/references/testing.md",
+      "remote_refs_reachable": true,
+      "sha256": "9ea1639ae7e49921b5ecfc00dbcffcdb3871e629b613f540b4eab2e0d4d496e9",
+      "size": 5032
+    },
+    {
+      "blob_oid": "13f0652c3351da9b94064bed885933b30947c867",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-project-setup/references/toolchain.md",
+      "remote_refs_reachable": true,
+      "sha256": "3401103489bfa02951894d81ebe0cff1791977df04cd9c79af62a3a283b411be",
+      "size": 5497
+    },
+    {
+      "blob_oid": "bfa14433a3d1ff1907285f5df3f78c67f2a05dce",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-refactor/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "776efd283e1fbfa0925a5ae904e7a876df48ac964b705cd165d179687b799b6a",
+      "size": 3437
+    },
+    {
+      "blob_oid": "1c837886691664809ae310b13a55a47bcc118f63",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-refactor/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "357fead152819be8c6fb8d3310905fc1792221f27314852b2f2c59d0a11b3bae",
+      "size": 355
+    },
+    {
+      "blob_oid": "9c12bbf2f5f81f9b300e0b053ed4d49b2f21a5e2",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-refactor/references/accessibility.md",
+      "remote_refs_reachable": true,
+      "sha256": "dd88b9c13523e1777f0d02cc712a30e5ce882cedd4ad9c87b97be944a06359d9",
+      "size": 4347
+    },
+    {
+      "blob_oid": "8465e6213d1c42fd52788513bd38279de6151100",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-refactor/references/appkit-interop.md",
+      "remote_refs_reachable": true,
+      "sha256": "0a17010c4358cdf39ed2cccacadd1ff6097e302d354388a9ab8043b40d632da9",
+      "size": 4756
+    },
+    {
+      "blob_oid": "5b6013fbc17c84b3607f955c33a18cd4b31e6826",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-refactor/references/concurrency.md",
+      "remote_refs_reachable": true,
+      "sha256": "600c49b631ea1a06c7d28bd9bae14233581c99dd03855fcc1c4dc99457c9533e",
+      "size": 4398
+    },
+    {
+      "blob_oid": "2c48bbd7db9fa264d1615fc226c09f1b5125a927",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-refactor/references/errors-and-api.md",
+      "remote_refs_reachable": true,
+      "sha256": "e21382c58b017044437ab1a34d345224736ce9ef181266b44ea1543163ab4b29",
+      "size": 4444
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-refactor/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "5470cba67edd8c9eaad3d4d77f4d280f0d39b58b",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-refactor/references/swiftui.md",
+      "remote_refs_reachable": true,
+      "sha256": "7bc15182dd86b56d827a3e5b4d994bea337239bcc54472888882889136da8ab1",
+      "size": 5483
+    },
+    {
+      "blob_oid": "8c23370e99f70a46acdd6f24b5ac46b9e54e31bd",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-review/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "436d39780a176ef4bf3e708058b29839cdc58e5621066eeb440d58ef854650b5",
+      "size": 3406
+    },
+    {
+      "blob_oid": "b6969fe55028bb8beb1ba3f04f1d47119fa9bcb7",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-review/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "014e039a019690525dde27401a24863eb8402db9612d8366a19b7390e0f5c02e",
+      "size": 315
+    },
+    {
+      "blob_oid": "9c12bbf2f5f81f9b300e0b053ed4d49b2f21a5e2",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-review/references/accessibility.md",
+      "remote_refs_reachable": true,
+      "sha256": "dd88b9c13523e1777f0d02cc712a30e5ce882cedd4ad9c87b97be944a06359d9",
+      "size": 4347
+    },
+    {
+      "blob_oid": "8465e6213d1c42fd52788513bd38279de6151100",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-review/references/appkit-interop.md",
+      "remote_refs_reachable": true,
+      "sha256": "0a17010c4358cdf39ed2cccacadd1ff6097e302d354388a9ab8043b40d632da9",
+      "size": 4756
+    },
+    {
+      "blob_oid": "5b6013fbc17c84b3607f955c33a18cd4b31e6826",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-review/references/concurrency.md",
+      "remote_refs_reachable": true,
+      "sha256": "600c49b631ea1a06c7d28bd9bae14233581c99dd03855fcc1c4dc99457c9533e",
+      "size": 4398
+    },
+    {
+      "blob_oid": "2c48bbd7db9fa264d1615fc226c09f1b5125a927",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-review/references/errors-and-api.md",
+      "remote_refs_reachable": true,
+      "sha256": "e21382c58b017044437ab1a34d345224736ce9ef181266b44ea1543163ab4b29",
+      "size": 4444
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-review/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "5470cba67edd8c9eaad3d4d77f4d280f0d39b58b",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-review/references/swiftui.md",
+      "remote_refs_reachable": true,
+      "sha256": "7bc15182dd86b56d827a3e5b4d994bea337239bcc54472888882889136da8ab1",
+      "size": 5483
+    },
+    {
+      "blob_oid": "cf5522a80eaad3c915e2075e5433122877859fd1",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-rust-core-boundary/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "14ee920b6067a67d3dc122642d4541951a9885926a4d18191815bc672a10dd36",
+      "size": 4309
+    },
+    {
+      "blob_oid": "73c940bfef1ed5658299943fd7c4faacfde35d27",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-rust-core-boundary/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "a8fb7b006a36f2b25e2bfa861112fc31f068fe2a2ee7384f8aab4d3c2fc43247",
+      "size": 408
+    },
+    {
+      "blob_oid": "8499a12fc12d7289a35b78ff2b90659151f39547",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-rust-core-boundary/references/apple-platform-shell.md",
+      "remote_refs_reachable": true,
+      "sha256": "66ac864ce4c0aa5519d5788069a9c2465d6e2b9b05244f9aece849ad0b799ac4",
+      "size": 6858
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-rust-core-boundary/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "2bf304f567133663ac8b417e08ca1c93e81bc609",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-rust-core-boundary/references/rust-core-boundary.md",
+      "remote_refs_reachable": true,
+      "sha256": "c812ebf405bdf75566c94e7f29c2180da6c405d209c455c8d04c7c41b1708c68",
+      "size": 20892
+    },
+    {
+      "blob_oid": "eb228144ce7b7be94739699721c56e2103dfbaa1",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-rust-core-setup/SKILL.md",
+      "remote_refs_reachable": true,
+      "sha256": "855a716e5004f50e241f12422b1641e55cb635d7a0ef0cefade7c86da097b3d5",
+      "size": 3488
+    },
+    {
+      "blob_oid": "88e9bb18d473680e0c4ba9b7b966c0b8a5395f83",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-rust-core-setup/agents/openai.yaml",
+      "remote_refs_reachable": true,
+      "sha256": "da8d4b54e91daccd959542c2bd3437ef8d7706b0379dcdf007c3829cd30ea49f",
+      "size": 339
+    },
+    {
+      "blob_oid": "84131afd634b2c2a3be326cd7beb6452f9b38050",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-rust-core-setup/references/runtime-trust.md",
+      "remote_refs_reachable": true,
+      "sha256": "d87639c38ec9d99b6e843282d2b4e5f208157eadad9c622ed64b650220170134",
+      "size": 821
+    },
+    {
+      "blob_oid": "ba527f3eb51781ce07dd0bad82d07541760ca4d7",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-rust-core-setup/references/rust-core.md",
+      "remote_refs_reachable": true,
+      "sha256": "897a4ea9934c5ccb48c426bf79daac27d8f239d05cf6c7321ab08f114a706b94",
+      "size": 5575
+    },
+    {
+      "blob_oid": "2ccb1ad300b7156982ebdc21786ae59be0733fdb",
+      "mode": "100644",
+      "path": "skills/tailrocks-swift-rust-core-setup/references/shared-version-policy.md",
+      "remote_refs_reachable": true,
+      "sha256": "2a739014e0781f5b19ba90fc41cc95f025eabe80e032094d4ae89241e847f136",
+      "size": 871
+    }
+  ],
+  "missing_tracked_worktree_paths_disposition": "UNKNOWN_INCOMPLETE_CHECKOUT; do not synthesize D changes; each missing path maps to verified base tree bytes",
+  "original_source_path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12/goal-mission-make-tailrocks-skills-work/work/dco/macos/repo",
+  "original_source_path_absent_nofollow": true,
+  "present_worktree_bytes_archived_under": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/worktree",
+  "quarantine_parent_chain": [
+    {
+      "dev": 16777234,
+      "ino": 20994,
+      "mode": 493,
+      "path": "/Users"
+    },
+    {
+      "dev": 16777234,
+      "ino": 47530,
+      "mode": 488,
+      "path": "/Users/donbeave"
+    },
+    {
+      "dev": 16777234,
+      "ino": 47537,
+      "mode": 448,
+      "path": "/Users/donbeave/Library"
+    },
+    {
+      "dev": 16777234,
+      "ino": 81285,
+      "mode": 320,
+      "path": "/Users/donbeave/Library/Mobile Documents"
+    },
+    {
+      "dev": 16777234,
+      "ino": 81286,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs"
+    },
+    {
+      "dev": 16777234,
+      "ino": 108966,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents"
+    },
+    {
+      "dev": 16777234,
+      "ino": 138943,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex"
+    },
+    {
+      "dev": 16777234,
+      "ino": 112658265,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12"
+    },
+    {
+      "dev": 16777234,
+      "ino": 112658271,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12/goal-mission-make-tailrocks-skills-work"
+    },
+    {
+      "dev": 16777234,
+      "ino": 112658344,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12/goal-mission-make-tailrocks-skills-work/work"
+    },
+    {
+      "dev": 16777234,
+      "ino": 112697987,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12/goal-mission-make-tailrocks-skills-work/work/dco"
+    },
+    {
+      "dev": 16777234,
+      "ino": 112698001,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12/goal-mission-make-tailrocks-skills-work/work/dco/macos"
+    }
+  ],
+  "quarantine_path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12/goal-mission-make-tailrocks-skills-work/work/dco/macos/repo.user-repatriation-quarantine-e2cce056821f9b4d7f8d6560",
+  "raw_git_admin_bytes_archived_under": "recovery/source-only/e2cce056821f9b4d7f8d6560/ab3306e3fe7ad9c83be787f1/git-admin",
+  "remote_base_commit": "e8dad674b9b587962de7c87279bfe8ad0a188e56",
+  "remote_base_ref": "refs/pull/8/head",
+  "repository": "tailrocks/tailrocks-macos-skills",
+  "repository_id": 1353757777,
+  "schema": "source-only-github-recovery-archive-v1",
+  "snapshot_entries": [
+    {
+      "ctime_ns": 1791951171119564134,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117930550,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 7,
+      "relative_path": ".git",
+      "size": 224,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951813737678541,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117935281,
+      "kind": "file",
+      "mode": 384,
+      "mtime_ns": 1791906105000000000,
+      "nlink": 1,
+      "relative_path": ".git/COMMIT_EDITMSG",
+      "sha256": "5bd4a5e2e6bba5679b831c7ab3b7b9576e01916bfcda925e0282f69baa057a77",
+      "size": 84,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951814225335456,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117935282,
+      "kind": "file",
+      "mode": 384,
+      "mtime_ns": 1791906105000000000,
+      "nlink": 1,
+      "relative_path": ".git/index",
+      "sha256": "aeea2288ee538f86c65651815343c514a434563fcbd388ffef00526e594ffa6f",
+      "size": 27159,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951230577273876,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117935283,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 4,
+      "relative_path": ".git/logs",
+      "size": 128,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951814691209007,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117940197,
+      "kind": "file",
+      "mode": 384,
+      "mtime_ns": 1791906105000000000,
+      "nlink": 1,
+      "relative_path": ".git/logs/HEAD",
+      "sha256": "840ab6deb0c9b3455634619f1509ecfa8c8e7ae245138d0c20c81926e2b49092",
+      "size": 2069,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951290867996053,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117940198,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 4,
+      "relative_path": ".git/logs/refs",
+      "size": 128,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951814717386185,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117946306,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 3,
+      "relative_path": ".git/logs/refs/heads",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951814754231836,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117973003,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 3,
+      "relative_path": ".git/logs/refs/heads/codex",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951815275414967,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117973004,
+      "kind": "file",
+      "mode": 384,
+      "mtime_ns": 1791906105000000000,
+      "nlink": 1,
+      "relative_path": ".git/logs/refs/heads/codex/chatgpt-web-consumer-validators",
+      "sha256": "a28985e0824c6fd2a82512ee3fc86bee5e6bef7fb4740fd8fb5c05f508eaafeb",
+      "size": 777,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951815303027653,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117946307,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 3,
+      "relative_path": ".git/logs/refs/remotes",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951815336610911,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117973012,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 3,
+      "relative_path": ".git/logs/refs/remotes/origin",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951815367865699,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117973013,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951082000000000,
+      "nlink": 3,
+      "relative_path": ".git/logs/refs/remotes/origin/codex",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951815866160669,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117973014,
+      "kind": "file",
+      "mode": 384,
+      "mtime_ns": 1791906107000000000,
+      "nlink": 1,
+      "relative_path": ".git/logs/refs/remotes/origin/codex/chatgpt-web-consumer-validators",
+      "sha256": "c5b89d9cdb582f226be3a1194a69716dbabc238563323e4321b7d0fed8c04143",
+      "size": 450,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951230583306280,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117935284,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951080000000000,
+      "nlink": 7,
+      "relative_path": ".git/objects",
+      "size": 224,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951290609601431,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117940199,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951080000000000,
+      "nlink": 3,
+      "relative_path": ".git/objects/a0",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951816294790902,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117946294,
+      "kind": "file",
+      "mode": 256,
+      "mtime_ns": 1791906105000000000,
+      "nlink": 1,
+      "relative_path": ".git/objects/a0/8dd8edd604063e2a8762bf5c74029aaa9d1351",
+      "sha256": "94a0d71ca05deb0cdb6a5b47b9eccb90ceb48455de8cfe230a691fff78d215f6",
+      "size": 1271,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951291142766628,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117940200,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951080000000000,
+      "nlink": 3,
+      "relative_path": ".git/objects/e0",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951816686372359,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117946313,
+      "kind": "file",
+      "mode": 256,
+      "mtime_ns": 1791906105000000000,
+      "nlink": 1,
+      "relative_path": ".git/objects/e0/a54ffde537414825aac71f362d5d804c802a62",
+      "sha256": "51251f0ffc300123d9272e8eb08f96c350ef020856ae185ddbf41664ad495639",
+      "size": 55,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951816709367853,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117940201,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951080000000000,
+      "nlink": 3,
+      "relative_path": ".git/objects/e7",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951817100423182,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117973031,
+      "kind": "file",
+      "mode": 256,
+      "mtime_ns": 1791906105000000000,
+      "nlink": 1,
+      "relative_path": ".git/objects/e7/6be1abb79374fb06ee928e48675c372c4eb1cb",
+      "sha256": "6fba28150b9466544d4d186d04eb8b69560e61078a89a292e3d5ab7cf1f14918",
+      "size": 55,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951290886687476,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117940202,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951080000000000,
+      "nlink": 3,
+      "relative_path": ".git/objects/e8",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951817586225629,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117946309,
+      "kind": "file",
+      "mode": 256,
+      "mtime_ns": 1791906105000000000,
+      "nlink": 1,
+      "relative_path": ".git/objects/e8/dad674b9b587962de7c87279bfe8ad0a188e56",
+      "sha256": "3b61d527d63f47db214d348b45f42958238bc680670791c4ee8a335353c41fca",
+      "size": 194,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951290612530446,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117940203,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951080000000000,
+      "nlink": 3,
+      "relative_path": ".git/objects/eb",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951817976897956,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117946297,
+      "kind": "file",
+      "mode": 256,
+      "mtime_ns": 1791906105000000000,
+      "nlink": 1,
+      "relative_path": ".git/objects/eb/4b4c3ca438a0137dc161a3296193ed43367679",
+      "sha256": "c00bc884b7323f3962d85e89a500dc06837739a3823500a2d0f2bcd373355b9c",
+      "size": 159,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951230706416332,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117935285,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 4,
+      "relative_path": ".git/refs",
+      "size": 128,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951290608940512,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117940213,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 3,
+      "relative_path": ".git/refs/heads",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951817997903065,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117946293,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 3,
+      "relative_path": ".git/refs/heads/codex",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951818534422568,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117973050,
+      "kind": "file",
+      "mode": 384,
+      "mtime_ns": 1791906105000000000,
+      "nlink": 1,
+      "relative_path": ".git/refs/heads/codex/chatgpt-web-consumer-validators",
+      "sha256": "258e133d0a071be296d92c27bb723425eff1034f5159843d73d44c7803e4be67",
+      "size": 41,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951290889839783,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117940214,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 3,
+      "relative_path": ".git/refs/remotes",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951350692252813,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117946308,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 3,
+      "relative_path": ".git/refs/remotes/origin",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951818565912607,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117948840,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951083000000000,
+      "nlink": 3,
+      "relative_path": ".git/refs/remotes/origin/codex",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951818992733372,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117973057,
+      "kind": "file",
+      "mode": 384,
+      "mtime_ns": 1791906107000000000,
+      "nlink": 1,
+      "relative_path": ".git/refs/remotes/origin/codex/chatgpt-web-consumer-validators",
+      "sha256": "258e133d0a071be296d92c27bb723425eff1034f5159843d73d44c7803e4be67",
+      "size": 41,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951171123398194,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117930551,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951049000000000,
+      "nlink": 2,
+      "relative_path": ".github",
+      "size": 64,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951170849449664,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117930552,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951066000000000,
+      "nlink": 3,
+      "relative_path": ".github.velnor-stage",
+      "size": 96,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951819018157838,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117935271,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951066000000000,
+      "nlink": 2,
+      "relative_path": ".github.velnor-stage/spare",
+      "size": 64,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951171120223846,
+      "dev": 16777234,
+      "flags": 32768,
+      "gid": 20,
+      "ino": 117930553,
+      "kind": "directory",
+      "mode": 448,
+      "mtime_ns": 1791951047000000000,
+      "nlink": 4,
+      "relative_path": ".velnor",
+      "size": 128,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951819412916936,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117935286,
+      "kind": "file",
+      "mode": 384,
+      "mtime_ns": 1791845321000000000,
+      "nlink": 1,
+      "relative_path": ".velnor/config.toml",
+      "sha256": "2bfa2d253f9ca1efbf7d1d050a381e5fac0dd161415da975b61d89205c4996c3",
+      "size": 650,
+      "uid": 501,
+      "xattrs": {}
+    },
+    {
+      "ctime_ns": 1791951819801379334,
+      "dev": 16777234,
+      "flags": 32832,
+      "gid": 20,
+      "ino": 117935287,
+      "kind": "file",
+      "mode": 384,
+      "mtime_ns": 1791906061000000000,
+      "nlink": 1,
+      "relative_path": ".velnor/release-manifest.json",
+      "sha256": "eeecd05bd116504734e97b071a8f666e705c881184a1ff7f56012e4e8e81f39b",
+      "size": 953,
+      "uid": 501,
+      "xattrs": {}
+    }
+  ],
+  "snapshot_manifest_sha256": "2507731142ffb0caac66164c6afa763056d50945f4bf4ef19216f2efa7d622a4",
+  "snapshot_manifest_source_path": "/Users/donbeave/.local/state/github-repatriation/operations/user-request-20261013T2201Z/supplemental-icloud-28/reappeared-quarantine-recovery-v1/snapshots/e2cce056821f9b4d7f8d6560/097ad53cf54a9c37a1e6f676/snapshot-manifest.json",
+  "snapshot_tree_sha256": "097ad53cf54a9c37a1e6f676e2274ed7ed7ca39564e5fd42cb0bbb05bc0010f9",
+  "source_branch_refs": {
+    "refs/heads/codex/chatgpt-web-consumer-validators": "e8dad674b9b587962de7c87279bfe8ad0a188e56",
+    "refs/remotes/origin/codex/chatgpt-web-consumer-validators": "e8dad674b9b587962de7c87279bfe8ad0a188e56"
+  },
+  "source_config_file_present": false,
+  "source_current_identity": {
+    "dev": 16777234,
+    "ino": 117928491,
+    "mode": 448,
+    "mtime_ns": 1791951083000000000,
+    "size": 192
+  },
+  "source_head_file_present": false,
+  "source_head_reflog_terminal_sha": "e8dad674b9b587962de7c87279bfe8ad0a188e56",
+  "source_id": "3a591f692c4c281520e1d93b",
+  "source_parent_chain": [
+    {
+      "dev": 16777234,
+      "ino": 20994,
+      "mode": 493,
+      "path": "/Users"
+    },
+    {
+      "dev": 16777234,
+      "ino": 47530,
+      "mode": 488,
+      "path": "/Users/donbeave"
+    },
+    {
+      "dev": 16777234,
+      "ino": 47537,
+      "mode": 448,
+      "path": "/Users/donbeave/Library"
+    },
+    {
+      "dev": 16777234,
+      "ino": 81285,
+      "mode": 320,
+      "path": "/Users/donbeave/Library/Mobile Documents"
+    },
+    {
+      "dev": 16777234,
+      "ino": 81286,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs"
+    },
+    {
+      "dev": 16777234,
+      "ino": 108966,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents"
+    },
+    {
+      "dev": 16777234,
+      "ino": 138943,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex"
+    },
+    {
+      "dev": 16777234,
+      "ino": 112658265,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12"
+    },
+    {
+      "dev": 16777234,
+      "ino": 112658271,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12/goal-mission-make-tailrocks-skills-work"
+    },
+    {
+      "dev": 16777234,
+      "ino": 112658344,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12/goal-mission-make-tailrocks-skills-work/work"
+    },
+    {
+      "dev": 16777234,
+      "ino": 112697987,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12/goal-mission-make-tailrocks-skills-work/work/dco"
+    },
+    {
+      "dev": 16777234,
+      "ino": 112698001,
+      "mode": 448,
+      "path": "/Users/donbeave/Library/Mobile Documents/com~apple~CloudDocs/Documents/Codex/2026-10-12/goal-mission-make-tailrocks-skills-work/work/dco/macos"
+    }
+  ]
+}
