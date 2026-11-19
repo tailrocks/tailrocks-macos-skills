@@ -5,11 +5,7 @@ description: >-
   declarative generation, exact pins, SDK lanes, strict gates, and
   numbered tests. Use this skill only when the user explicitly
   requests it. It refuses a non-empty target.
-argument-hint: "<new macOS app requirements>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # Swift Project Setup
@@ -27,6 +23,11 @@ files belongs to `tailrocks-swift-project-audit` or
 `tailrocks-swift-project-remediate`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
+
+Start only when the user explicitly requests this skill.
 
 Obey the active user request first. If the request conflicts with a
 safety rule in this skill, stop. Report the conflict.

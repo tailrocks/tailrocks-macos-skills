@@ -6,11 +6,7 @@ description: >-
   skill only when the user explicitly requests it. It is read-only
   toward the subject. Repairs, blessings, captures, and corpus
   records belong to other owners.
-argument-hint: "[preliminary|acceptance] <screen, window, or prototype package> [--deep] [--batch]"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # macOS Design Review
@@ -29,6 +25,11 @@ later go to `tailrocks-macos-design-systematize`. Findings give no
 authority.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
+
+Start only when the user explicitly requests this skill.
 
 Obey the active user request first. If the request conflicts with a
 safety rule in this skill, stop. Report the conflict.

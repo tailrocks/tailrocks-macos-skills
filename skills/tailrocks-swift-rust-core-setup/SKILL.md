@@ -5,11 +5,7 @@ description: >-
   generated bindings, bridge packages, drift checks, and Rust gates.
   Use this skill only when the user explicitly requests it. Boundary
   architecture belongs to a separate owner.
-argument-hint: "<Swift project and Rust core sources>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # Swift Rust-Core Setup
@@ -25,6 +21,11 @@ Swift and Rust message contract. That architecture belongs to
 `tailrocks-swift-rust-core-boundary`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
+
+Start only when the user explicitly requests this skill.
 
 Obey the active user request first. If the request conflicts with a
 safety rule in this skill, stop. Report the conflict.

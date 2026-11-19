@@ -6,11 +6,7 @@ description: >-
   accessibility audit. Use this skill only when the user explicitly
   requests it. Harness installation, baseline writes, and baseline
   comparison belong to other owners.
-argument-hint: "verify <feature or screens>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # macOS Visual QA
@@ -30,6 +26,11 @@ belongs to `tailrocks-macos-visual-regression`. There is no
 deprecated alias or compatibility route.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
+
+Start only when the user explicitly requests this skill.
 
 Obey the active user request first. If the request conflicts with a
 safety rule in this skill, stop. Report the conflict.

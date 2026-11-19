@@ -1,81 +1,64 @@
-# Compatibility
+# Compatibility and verification
 
-This record covers each client and route. The default outcome is
-unverified. Each unverified row names its reason. A route is never
-unsupported only because its binary is missing. A route is never
-verified only because a different client accepted the same files.
+`tailrocks-macos-skills` version `0.29.0` publishes 15 skills from
+one `skills/<id>/SKILL.md` tree. Each skill keeps its references, scripts,
+and assets in the installed package.
 
-## Results
+## Install routes
 
-| Client | Version | Route | Outcome |
-| --- | --- | --- | --- |
-| Claude Code | 2.1.289 | Marketplace | Unverified: not run. |
-| Claude Code | 2.1.289 | Local path | Unverified: not run. |
-| Codex | 0.160.1 | Marketplace | Unverified: not run. |
-| Codex | 0.160.1 | Local path | Unverified: not run. |
-| Amp | unversioned | Per-skill add | Unverified: no CLI. |
-| Muse Code | 1.4.3 | Marketplace | Unverified: not run. |
-| Muse Code | 1.4.3 | Local path | Unverified: not run. |
-| OpenCode V1 | unversioned | Skills copy | Unverified: no CLI. |
-| OpenCode V2 | unversioned | Skills copy | Unverified: no CLI. |
-| Antigravity | unversioned | Local path | Unverified: no CLI. |
-| Antigravity | unversioned | Skills copy | Unverified: no CLI. |
-| Grok Build | unversioned | Marketplace | Unverified: no CLI. |
-| Grok Build | unversioned | Skills copy | Unverified: no CLI. |
-| Kimi Code | unversioned | Manager pin | Unverified: no CLI. |
+| Host | Tailrocks distribution | Explicit invocation |
+| --- | --- | --- |
+| Claude Code | Native marketplace plugin | `/tailrocks-macos-skills:tailrocks-macos-design` |
+| Codex | Native marketplace plugin | `$tailrocks-macos-skills:tailrocks-macos-design` in the CLI |
+| Grok Build | Native marketplace plugin | `/tailrocks-macos-design` or `invocableAs` |
+| Muse Code | Native marketplace snapshot | `/tailrocks-macos-design` or picker entry |
+| omp | Native marketplace plugin | `/skill:tailrocks-macos-design` or resolved name |
+| OpenCode V2 | Git package with server plugin | `@tailrocks-macos-design` |
+| Amp | Directory plugin | Ask to load `tailrocks-macos-skills:tailrocks-macos-design` |
+| Antigravity | Native local plugin install | `/tailrocks-macos-design` |
+| pi | Native Git package | `/skill:tailrocks-macos-design` |
+| Kimi Code | Additional native marketplace plugin | `/skill:tailrocks-macos-skills:tailrocks-macos-design` |
 
-No installation check ran for this package revision. No model task
-ran and no skill executed.
+Claude Code, Grok Build, and omp read the shared Claude catalog. Its URL
+sources carry a full commit SHA and a package version. Codex and Muse read
+the full commit in the Codex catalog's `source.ref`.
 
-## User-only enforcement
+Muse's portable importer reads the root Agent Plugins manifest. Keep every
+skill one directory below `skills/`. Muse refuses symlinks in plugin packages.
+[Portable plugin compatibility][muse]
 
-This table records documented support, not runtime verification.
-Enforced: the client stops automatic model invocation of the
-thirteen user-only skills. Limited: the client documents the
-frontmatter but cannot enforce it.
+OpenCode V2 and Amp execute small registrars at plugin load. OpenCode reads
+the installed Markdown and registers the skill with its canonical file path.
+Amp registers each skill directory with `registerSkill`.
 
-| Client | Thirteen user-only skills entry |
-| --- | --- |
-| Claude Code | Enforced (`disable-model-invocation`). |
-| Codex | Enforced (`allow_implicit_invocation: false`). |
-| Kimi Code | Enforced (`disableModelInvocation`). |
-| Grok Build | Enforced (`disable-model-invocation`). |
-| Amp | Limited: lists every skill to the model. |
-| Antigravity | Limited: frontmatter holds `name` and `description` only. |
-| Muse Code | Limited: recall observer can surface skills. |
-| OpenCode V1 | Gated by `permission.skill: ask`. |
+The registrars add skills only. Loading this package makes no model request
+and starts no background task, hook, or MCP server. A selected skill may use
+its bundled scripts when the workflow calls for them.
 
-## Static fit
+Each host controls implicit skill selection and runtime permissions. Preserve
+any explicit-user-invocation rule in the skill. Discovering or registering a
+skill supplies no authority to perform the actions in its instructions.
 
-These facts were observed on 2026-10-07 from the package files. They
-are not install evidence:
+## Verified scope
 
-- All fifteen frontmatter names match their skill directories.
-- All names are 35 characters or less. All descriptions are 408
-  characters or less. The Amp, OpenCode, and Kimi caps fit.
-- The root manifest carries the Agent Plugins 1.0.0 schema id.
-- The Kimi manifest sets `skills` to `./skills/`.
-- Every payload file under `skills/` is text. No file carries the
-  executable bit.
+See [package verification](verification.md) for the tested revision,
+tools, results, and remaining host-specific limits.
 
-## Frontmatter fields
+The shared pinning tests used Claude Code `2.1.328`, Codex CLI
+`0.167.0-alpha.4`, Grok Build `1.0.89`, and Muse Code `1.4.24`.
+Each host installed an older commit while the default branch pointed elsewhere.
 
-Every `skills/*/SKILL.md` file carries these frontmatter keys.
-Observed 2026-10-07 from the package files:
+A separate OpenCode `2.3.2` fixture loaded skills through its live server
+registry and resolved installed script paths. The Amp registrar fixture used
+an API test double. These are distinct from package-specific verification.
 
-- `name` (all 15 skills): skill id. It matches the skill
-  directory.
-- `description` (all 15 skills): task summary. It states the
-  user-only rule where it applies.
-- `argument-hint` (all 15 skills): example invocation arguments
-  for pickers.
-- `disable-model-invocation` (all 15 skills): `true` on the 13
-  user-only skills, `false` on the 2 model-selectable skills.
-- `disableModelInvocation` (13 user-only skills): camel-case
-  twin of `disable-model-invocation` for Kimi Code.
-- `license` (all 15 skills): `Apache-2.0`, matching the package
-  license.
-- `user-invocable` (all 15 skills): `true`. A person can invoke
-  every skill.
-- `when_to_use` (2 model-selectable skills): task trigger for
-  model selection. User-only skills omit it.
+A registry listing establishes discovery. To verify a workflow, exercise its
+specified inputs, permissions, and expected result in the intended host.
+Private Git sources and hosted workspace installations require separate access.
+
+See the [installation guide](installation.md) for install, update, and removal
+commands. The [central distribution guide][distribution] records host-specific
+source formats and test evidence.
+
+[muse]: https://meta-models.github.io/muse-code-sdk/1.4/guides/plugins/concepts/compatibility/
+[distribution]: https://github.com/tailrocks/tailrocks-skills/blob/main/docs/standards/distribution.md

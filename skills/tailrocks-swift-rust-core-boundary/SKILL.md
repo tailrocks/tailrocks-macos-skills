@@ -5,11 +5,7 @@ description: >-
   over a Rust-owned app runtime. Use this skill only when the
   user explicitly requests it. Ordinary Swift writing, review, and
   structure changes belong to separate owners.
-argument-hint: "<boundary architecture, implementation, or review task>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # Swift Rust-Core Boundary
@@ -26,6 +22,11 @@ Those belong to `tailrocks-swift-best-practices`,
 `tailrocks-swift-review`, and `tailrocks-swift-refactor`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
+
+Start only when the user explicitly requests this skill.
 
 Obey the active user request first. If the request conflicts with a
 safety rule in this skill, stop. Report the conflict.

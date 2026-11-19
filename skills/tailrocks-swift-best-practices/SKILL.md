@@ -7,14 +7,7 @@ description: >-
   the active task writes in-scope Swift code. Review, structure
   changes, project setup, and boundary architecture are out of
   scope.
-argument-hint: "<Swift or SwiftUI writing task>"
-disable-model-invocation: false
 license: Apache-2.0
-user-invocable: true
-when_to_use: >-
-  User writes or changes Swift or SwiftUI code and the task needs
-  concurrency, state, failure, availability, accessibility, or
-  interop policy.
 ---
 
 # Swift Best Practices
@@ -39,6 +32,9 @@ effect architecture belongs to
 belongs to `tailrocks-macos-design`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request first. If the request conflicts with a
 safety rule in this skill, stop. Report the conflict.
