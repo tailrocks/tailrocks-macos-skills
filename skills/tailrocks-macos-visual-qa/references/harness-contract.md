@@ -1,13 +1,34 @@
 # macOS visual-QA harness contract
 
-Install the hardened harness into a real project:
+## Locate the harness
+
+Set `SKILL_FILE` to the absolute path of this installed skill's `SKILL.md`.
+Set `PROJECT_ROOT` to the absolute path of the selected project.
+Resolve the harness source from the installed skill.
 
 ```sh
-bun scripts/macos-visual-qa/install.ts --root /absolute/project
+SKILL_DIR=$(dirname "$SKILL_FILE")
+HARNESS_SOURCE=$(realpath "$SKILL_DIR/../../scripts/macos-visual-qa")
 ```
 
-Run `bun run.ts capture -- APP.app OUT.png [--window-title TITLE] [-- APP_ARG...]`. It resolves the bundle's
-real executable and refuses when an exact owner already exists. A native
+Only the setup owner runs the installer, with the user's authorization.
+
+```sh
+bun "$HARNESS_SOURCE/install.ts" --root "$PROJECT_ROOT"
+```
+
+Baseline, regression, and visual QA use the existing project harness.
+If it is missing or fails its recorded identity check, report the blocker.
+Give the setup owner the resolved installer command.
+
+## Use the installed harness
+
+Use the verified destination from the installation receipt.
+The default supervisor path is `$PROJECT_ROOT/Scripts/TailrocksVisualQA/run.ts`.
+Set `RUNNER` to the absolute path of the verified supervisor.
+
+Run `bun "$RUNNER" capture -- APP.app OUT.png [--window-title TITLE] [-- APP_ARG...]`. It resolves the
+bundle's real executable and refuses when an exact owner already exists. A native
 launcher returns the PID and launch token of one invocation-owned instance;
 cleanup terminates only that identity. Launch and window recovery are bounded
 to ten seconds each. Window selection binds to the exact PID, refuses multiple
@@ -15,7 +36,7 @@ matches, captures by window ID, and rechecks ownership before publishing the
 PNG and JSON sidecar. Similar-name decoy applications are never selected.
 Activation is best-effort evidence in the sidecar, never an ownership gate.
 
-Run appearance rows only through `bun run.ts state -- with STATE -- COMMAND ...`. The supervisor
+Run appearance rows only through `bun "$RUNNER" state -- with STATE -- COMMAND ...`. The supervisor
 emits one bounded terminal JSON receipt; the internal script
 snapshots the four accessibility keys plus both appearance keys (including Auto),
 restores each value on exit, retries restoration three times, and retains the
@@ -30,7 +51,7 @@ system-owned elements from the app-scoped gate.
 
 These commands need an interactive macOS GUI. Screen capture needs Screen
 Recording; AX driving needs Accessibility; setting changes may need Automation.
-Run `bun run.ts preflight -- session|screen-recording|accessibility|automation-system-events`
+Run `bun "$RUNNER" preflight -- session|screen-recording|accessibility|automation-system-events`
 for an explicit check. Capture and state commands run their required checks
 before acquiring locks, launching an app, changing a setting, or creating
 output. Missing permission returns a typed blocked receipt. The checks never
@@ -49,7 +70,7 @@ sidecar.
 Build two runnable local fixtures outside temporary storage:
 
 ```sh
-scripts/macos-visual-qa/test-apps/build.sh "$HOME/Library/Caches/tailrocks-visual-qa-fixtures"
+"$HARNESS_SOURCE/test-apps/build.sh" "$HOME/Library/Caches/tailrocks-visual-qa-fixtures"
 ```
 
 Launch `Fixture.app` normally for one window or pass `--two-windows` to its real
