@@ -1,6 +1,6 @@
 # Compatibility and verification
 
-`tailrocks-macos-skills` version `0.29.2` publishes 15 skills from
+`tailrocks-macos-skills` version `0.29.3` publishes 15 skills from
 one `skills/<id>/SKILL.md` tree. Each skill keeps its references, scripts,
 and assets in the installed package.
 
