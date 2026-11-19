@@ -1,6 +1,6 @@
 # Installation
 
-`tailrocks-macos-skills` version `0.29.0` contains 15 skills.
+`tailrocks-macos-skills` version `0.29.1` contains 15 skills.
 The package source is [tailrocks/tailrocks-macos-skills][package].
 The [Tailrocks catalog][catalog] pins one upstream commit per package.
 
