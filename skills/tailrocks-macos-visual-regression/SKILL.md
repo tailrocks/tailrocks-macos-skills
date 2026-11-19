@@ -5,11 +5,7 @@ description: >-
   approved baseline package. Use this skill only when the user
   explicitly requests it. It is read-only on project and baseline.
   A baseline freeze and design approval belong to other owners.
-argument-hint: "regress <feature or screens> --baseline <baseline directory>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # macOS Visual Regression
@@ -29,6 +25,11 @@ no deprecated route. Baseline creation belongs to
 belongs to `tailrocks-macos-visual-qa`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
+
+Start only when the user explicitly requests this skill.
 
 Obey the active user request first. If the request conflicts with a
 safety rule in this skill, stop. Report the conflict.

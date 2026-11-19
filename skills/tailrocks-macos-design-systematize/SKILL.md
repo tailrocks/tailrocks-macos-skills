@@ -5,11 +5,7 @@ description: >-
   with an independent passing review. Use this skill only when the
   user explicitly requests it. Design, review, blessing, capture,
   and production edits belong to other owners.
-argument-hint: "<approved screen and passing review>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # macOS Design Systematize
@@ -30,6 +26,11 @@ Design writes the reference and runs it. This skill stores reusable
 learning from approved work. Keep the two skills separate.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
+
+Start only when the user explicitly requests this skill.
 
 Obey the active user request first. If the request conflicts with a
 safety rule in this skill, stop. Report the conflict.

@@ -26,13 +26,15 @@ need an explicit human command:
 
 ## Guides
 
-- `installation.md` installs the package on eight coding agents.
-- `usage.md` shows how to select each skill and what each skill
-  returns.
-- `compatibility.md` records the test result of each client route.
-- `maintenance.md` lists the checks, the policy version, and the
-  release procedure.
-- `troubleshooting.md` fixes common install and selection failures.
+- [Installation](installation.md) gives the native host routes.
+- [Usage](usage.md) shows how to select a skill and use its arguments.
+- [Runtime requirements](runtime.md) lists the tools and packaged resources.
+- [Package structure](architecture.md) explains file ownership.
+- [Model choices](models.md) explains role selection and effort.
+- [Compatibility](compatibility.md) records host behavior and limits.
+- [Verification](verification.md) lists package checks and observed evidence.
+- [Maintenance](maintenance.md) gives generator and release procedures.
+- [Troubleshooting](troubleshooting.md) helps diagnose installation or use.
 
 ## Skills
 
@@ -59,7 +61,4 @@ Each skill body lives in its own directory under `skills/`. Read
 
 ## Requirements
 
-Build and test work needs Xcode on macOS. Visual work needs an
-interactive graphical session with Screen Recording, Accessibility,
-and Automation grants. Keep the complete package checkout for
-the visual harness installer and the project setup templates.
+See [runtime requirements](runtime.md) for the tools and files the skills use.

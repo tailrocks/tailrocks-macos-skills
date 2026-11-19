@@ -5,11 +5,7 @@ description: >-
   complete the build. Use this skill only when the user explicitly
   requests it. It stays inside exact approval. The audit owner
   finds scope.
-argument-hint: "<audit ledger and approved gap rows>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # Swift Project Remediation
@@ -26,6 +22,11 @@ belongs to `tailrocks-swift-project-audit`. New projects belong to
 `tailrocks-swift-project-setup`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
+
+Start only when the user explicitly requests this skill.
 
 Obey the active user request first. If the request conflicts with a
 safety rule in this skill, stop. Report the conflict.

@@ -31,33 +31,31 @@ Each skill body lives in its own directory. Read
 
 ## Install
 
-Install the package from the central `tailrocks` marketplace. Use
-the qualified id `tailrocks-macos-skills@tailrocks` wherever the
-client accepts it. Each row gives its complete section in
-`docs/installation.md`.
+Install one complete package in your host's chosen scope. The [Tailrocks
+catalog](https://github.com/tailrocks/tailrocks-skills) selects the source commit.
+Use the route for your host.
 
-| Agent | Method |
+| Host | Native install route |
 | --- | --- |
-| Claude Code | [Marketplace install](docs/installation.md#claude-code) |
-| Codex | [Marketplace add](docs/installation.md#codex) |
-| Amp | [Per-skill add](docs/installation.md#amp) |
-| Muse Code | [Marketplace install](docs/installation.md#muse-code) |
-| OpenCode | [Skill-directory copy](docs/installation.md#opencode) |
-| Antigravity | [Local-path install](docs/installation.md#antigravity) |
-| Grok Build | [Marketplace install](docs/installation.md#grok-build) |
-| Kimi Code | [In-session manager](docs/installation.md#kimi-code) |
+| Claude Code | [Marketplace plugin](docs/installation.md#claude-code) |
+| Codex | [Marketplace plugin](docs/installation.md#codex) |
+| Grok Build | [Marketplace plugin](docs/installation.md#grok-build) |
+| Muse Code | [Marketplace snapshot](docs/installation.md#muse-code) |
+| omp | [Marketplace plugin](docs/installation.md#omp) |
+| OpenCode V2 | [Git package](docs/installation.md#opencode) |
+| Amp | [Directory plugin](docs/installation.md#amp) |
+| Antigravity | [Local plugin installer](docs/installation.md#antigravity) |
+| pi | [Git package](docs/installation.md#pi) |
+| Kimi Code | [Marketplace manager](docs/installation.md#kimi-code) |
 
-Quick start on Claude Code (shell):
+Run these commands to install from the Claude Code marketplace.
 
 ```sh
 claude plugin marketplace add tailrocks/tailrocks-skills
 claude plugin install tailrocks-macos-skills@tailrocks --scope user
 ```
 
-Build and test work needs Xcode on macOS. Visual work needs an
-interactive graphical session with Screen Recording, Accessibility,
-and Automation grants. Keep the complete package checkout for
-the visual harness installer and the project setup templates.
+See [runtime requirements](docs/runtime.md) for tools and files the skills use.
 
 ## Use
 
@@ -75,31 +73,19 @@ and the family boundaries.
 
 ## Documentation
 
-- `docs/README.md` indexes the guides.
-- `docs/installation.md` installs the package on eight agents.
-- `docs/usage.md` shows how to select each skill.
-- `docs/compatibility.md` records each route result.
-- `docs/maintenance.md` lists checks, policy, and release steps.
-- `docs/troubleshooting.md` fixes common failures.
+- [Package guide](docs/README.md)
+- [Installation](docs/installation.md)
+- [Usage](docs/usage.md)
+- [Runtime requirements](docs/runtime.md)
+- [Model settings](docs/models.md)
+- [Compatibility and verification](docs/compatibility.md)
+- [Maintenance](docs/maintenance.md)
 
 ## Update and remove
 
-Refresh the marketplace, then the plugin. Remove the plugin when it
-is no longer needed. Commands per agent:
-
-- Claude Code: `claude plugin update
-  tailrocks-macos-skills@tailrocks` or `claude plugin
-  marketplace update tailrocks`. Remove with `claude plugin
-  uninstall tailrocks-macos-skills`.
-- Codex: `codex plugin marketplace upgrade tailrocks`. Remove with
-  `codex plugin remove tailrocks-macos-skills@tailrocks`.
-- Muse: `muse plugins marketplace update tailrocks`, then the
-  remove plus install sequence. Remove with `muse plugins remove
-  tailrocks-macos-skills@tailrocks`.
-- Kimi session: no `update` subcommand. Remove with `/plugins
-  remove tailrocks-macos-skills`, then `/reload`.
-- Amp, OpenCode, Antigravity, Grok: see
-  `docs/installation.md` for the exact steps.
+Use [the host's update and removal steps](docs/installation.md).
+For a pinned Git package, install the new catalog revision and use one copy in
+the chosen scope.
 
 ## Contribute
 

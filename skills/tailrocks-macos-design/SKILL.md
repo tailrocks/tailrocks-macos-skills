@@ -6,14 +6,7 @@ description: >-
   work touches native screen structure, material, component mapping,
   or a prototype. Scores, baselines, captures, and production
   edits belong to other owners.
-argument-hint: "[design|prototype] <feature or screen>"
-disable-model-invocation: false
 license: Apache-2.0
-user-invocable: true
-when_to_use: >-
-  User work touches a native macOS screen, material choice, component
-  mapping, or a runnable prototype, and the task needs design policy
-  or a prototype package.
 ---
 
 # macOS Design
@@ -37,6 +30,9 @@ to `tailrocks-macos-visual-qa`. Comparison belongs to
 `tailrocks-swift-best-practices`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request first. If the request conflicts with a
 safety rule in this skill, stop. Report the conflict.

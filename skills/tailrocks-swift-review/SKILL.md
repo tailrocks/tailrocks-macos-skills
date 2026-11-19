@@ -5,11 +5,7 @@ description: >-
   errors, and one-gap AppKit bridges read-only. Use this skill only
   when the user explicitly requests it. It reports defects with
   evidence. Other owners correct them.
-argument-hint: "<Swift review target, diff, or paths>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # Swift Review
@@ -26,6 +22,11 @@ Correction belongs to `tailrocks-swift-refactor` or
 `tailrocks-swift-best-practices`. A review report never approves.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
+
+Start only when the user explicitly requests this skill.
 
 Obey the active user request first. If the request conflicts with a
 safety rule in this skill, stop. Report the conflict.
